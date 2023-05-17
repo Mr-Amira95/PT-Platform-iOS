@@ -1,0 +1,168 @@
+{
+  "identifier" : "05BD26F9",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "5.0",
+      "familyShareable" : false,
+      "internalID" : "BC833AD9",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14901",
+      "referenceName" : "Package_1",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "10",
+      "familyShareable" : false,
+      "internalID" : "35E96EF9",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14902",
+      "referenceName" : "Package_2",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "15",
+      "familyShareable" : false,
+      "internalID" : "0B6A8643",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14903",
+      "referenceName" : "Package_3",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "20",
+      "familyShareable" : false,
+      "internalID" : "427A2398",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14904",
+      "referenceName" : "Package_4",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "25",
+      "familyShareable" : false,
+      "internalID" : "630EF7CB",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14905",
+      "referenceName" : "Package_5",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "50",
+      "familyShareable" : false,
+      "internalID" : "0F402B81",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14906",
+      "referenceName" : "Package_6",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "100",
+      "familyShareable" : false,
+      "internalID" : "076773C2",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14907",
+      "referenceName" : "Package_7",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "150",
+      "familyShareable" : false,
+      "internalID" : "A0AC34FB",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14908",
+      "referenceName" : "Package_8",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "200",
+      "familyShareable" : false,
+      "internalID" : "1FF96A2E",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_14909",
+      "referenceName" : "Package_9",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "250",
+      "familyShareable" : false,
+      "internalID" : "577A493E",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.qtechnetwork.PT_Platform.Purchase_149010\ncom.qtechnetwork.PT_Platform.Purchase_149010\n",
+      "referenceName" : "Package_10",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 2
+  }
+}

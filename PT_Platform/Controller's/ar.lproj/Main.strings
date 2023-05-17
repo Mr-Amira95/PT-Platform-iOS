@@ -1,0 +1,759 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "0Eh-kK-isL"; */
+"0Eh-kK-isL.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "1QJ-T4-5Af"; */
+"1QJ-T4-5Af.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "1T9-J2-UVF"; */
+"1T9-J2-UVF.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "Need help or have a question? Get in touch with us!"; ObjectID = "2n2-fR-vpq"; */
+"2n2-fR-vpq.text" = "Need help or have a question? Get in touch with us!";
+
+/* Class = "UITextField"; placeholder = "Activity"; ObjectID = "3JQ-sp-OBg"; */
+"3JQ-sp-OBg.placeholder" = "Activity";
+
+/* Class = "UILabel"; text = "Booked Sessions:"; ObjectID = "3PY-CK-9Vv"; */
+"3PY-CK-9Vv.text" = "Booked Sessions:";
+
+/* Class = "UILabel"; text = "Fat"; ObjectID = "4D1-7F-Bbt"; */
+"4D1-7F-Bbt.text" = "Fat";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "4Mi-jF-YlQ"; */
+"4Mi-jF-YlQ.text" = "100";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4rv-pP-sEm"; */
+"4rv-pP-sEm.text" = "Label";
+
+/* Class = "UILabel"; text = "Enter your email"; ObjectID = "4yl-qB-juk"; */
+"4yl-qB-juk.text" = "Enter your email";
+
+/* Class = "UITabBarItem"; title = "Coach"; ObjectID = "595-HE-HEZ"; */
+"595-HE-HEZ.title" = "Coach";
+
+/* Class = "UITextField"; placeholder = "SEARCH WORKOUT"; ObjectID = "5Hr-BP-z3M"; */
+"5Hr-BP-z3M.placeholder" = "SEARCH WORKOUT";
+
+/* Class = "UILabel"; text = "Protein"; ObjectID = "5kW-Qg-2Oo"; */
+"5kW-Qg-2Oo.text" = "Protein";
+
+/* Class = "UILabel"; text = "Upper Chest"; ObjectID = "68k-uB-6dj"; */
+"68k-uB-6dj.text" = "Upper Chest";
+
+/* Class = "UITextField"; placeholder = "password confirm"; ObjectID = "69K-wJ-gac"; */
+"69K-wJ-gac.placeholder" = "password confirm";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "6QC-Lq-s0v"; */
+"6QC-Lq-s0v.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "Request Sent!"; ObjectID = "6XZ-g3-kZI"; */
+"6XZ-g3-kZI.text" = "Request Sent!";
+
+/* Class = "UILabel"; text = "Food"; ObjectID = "6df-XI-E9I"; */
+"6df-XI-E9I.text" = "Food";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "6kI-Xj-NUs"; */
+"6kI-Xj-NUs.text" = "Settings";
+
+/* Class = "UILabel"; text = "Remaining"; ObjectID = "71D-U5-4Wl"; */
+"71D-U5-4Wl.text" = "Remaining";
+
+/* Class = "UILabel"; text = "Thank you!"; ObjectID = "76o-As-evX"; */
+"76o-As-evX.text" = "Thank you!";
+
+/* Class = "UILabel"; text = "Water"; ObjectID = "7LX-xC-uTh"; */
+"7LX-xC-uTh.text" = "Water";
+
+/* Class = "UILabel"; text = "Member since Oct 2020"; ObjectID = "7QW-uQ-kll"; */
+"7QW-uQ-kll.text" = "Member since Oct 2020";
+
+/* Class = "UIButton"; normalTitle = "Technical Support"; ObjectID = "7ge-Rr-3Zs"; */
+"7ge-Rr-3Zs.normalTitle" = "Technical Support";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "7kb-Mu-CUf"; */
+"7kb-Mu-CUf.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "7q2-Jt-Jqj"; */
+"7q2-Jt-Jqj.normalTitle" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Finish"; ObjectID = "89T-8j-azr"; */
+"89T-8j-azr.normalTitle" = "Finish";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "8Hl-nY-P8b"; */
+"8Hl-nY-P8b.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "8LE-m8-PdZ"; */
+"8LE-m8-PdZ.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "8YD-ip-dHx"; */
+"8YD-ip-dHx.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Lable"; ObjectID = "8YF-21-0j5"; */
+"8YF-21-0j5.text" = "Lable";
+
+/* Class = "UITextField"; placeholder = "Height"; ObjectID = "8u4-5I-fU3"; */
+"8u4-5I-fU3.placeholder" = "Height";
+
+/* Class = "UILabel"; text = "KYC"; ObjectID = "AAq-Ru-KUR"; */
+"AAq-Ru-KUR.text" = "KYC";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "AXp-bw-w7J"; */
+"AXp-bw-w7J.text" = "Assigned Coaches";
+
+/* Class = "UILabel"; text = "Choose your Trainer:"; ObjectID = "Bl9-jd-77x"; */
+"Bl9-jd-77x.text" = "Choose your Trainer:";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "BpK-73-qpo"; */
+"BpK-73-qpo.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "BsY-S0-PKn"; */
+"BsY-S0-PKn.text" = "Assigned Coaches";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "CB7-5j-f9c"; */
+"CB7-5j-f9c.normalTitle" = "Next";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "CMj-Pg-LmA"; */
+"CMj-Pg-LmA.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "2g"; ObjectID = "CSJ-x6-bBg"; */
+"CSJ-x6-bBg.text" = "2g";
+
+/* Class = "UILabel"; text = "Exercise"; ObjectID = "Cb9-Oa-noN"; */
+"Cb9-Oa-noN.text" = "Exercise";
+
+/* Class = "UILabel"; text = "Personal Training"; ObjectID = "Cwd-3C-fCU"; */
+"Cwd-3C-fCU.text" = "Personal Training";
+
+/* Class = "UILabel"; text = "16%"; ObjectID = "D38-01-Mt9"; */
+"D38-01-Mt9.text" = "16%";
+
+/* Class = "UILabel"; text = "PT Platform"; ObjectID = "DCd-mp-0K6"; */
+"DCd-mp-0K6.text" = "PT Platform";
+
+/* Class = "UITextField"; placeholder = "i.e. 100 Fat"; ObjectID = "DPD-ij-cRe"; */
+"DPD-ij-cRe.placeholder" = "i.e. 100 Fat";
+
+/* Class = "UILabel"; text = "Spaghetti, 0.8 cup"; ObjectID = "DYh-dM-ns1"; */
+"DYh-dM-ns1.text" = "Spaghetti, 0.8 cup";
+
+/* Class = "UILabel"; text = "KYC"; ObjectID = "DaO-Id-dSy"; */
+"DaO-Id-dSy.text" = "KYC";
+
+/* Class = "UILabel"; text = "Set Your Target"; ObjectID = "DhE-WB-wts"; */
+"DhE-WB-wts.text" = "Set Your Target";
+
+/* Class = "UILabel"; text = "Kg"; ObjectID = "Diq-S2-L9s"; */
+"Diq-S2-L9s.text" = "Kg";
+
+/* Class = "UILabel"; text = "Personal Training"; ObjectID = "E8o-Ao-ZCu"; */
+"E8o-Ao-ZCu.text" = "Personal Training";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "ECw-bn-xm2"; */
+"ECw-bn-xm2.text" = "Assigned Coaches";
+
+/* Class = "UILabel"; text = "="; ObjectID = "EKI-S7-QkT"; */
+"EKI-S7-QkT.text" = "=";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."; ObjectID = "EZm-Jk-EMv"; */
+"EZm-Jk-EMv.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "EeC-Er-i5T"; */
+"EeC-Er-i5T.text" = "Assigned Coaches";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "Egz-Qt-zYi"; */
+"Egz-Qt-zYi.title" = "Profile";
+
+/* Class = "UILabel"; text = "310"; ObjectID = "Ewf-Zh-H8v"; */
+"Ewf-Zh-H8v.text" = "310";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "F5G-Bn-fqk"; */
+"F5G-Bn-fqk.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Today"; ObjectID = "FHh-g0-rGe"; */
+"FHh-g0-rGe.normalTitle" = "Today";
+
+/* Class = "UILabel"; text = "Video Chat"; ObjectID = "FT2-rb-TBc"; */
+"FT2-rb-TBc.text" = "Video Chat";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "G6B-0p-6B7"; */
+"G6B-0p-6B7.title" = "Profile";
+
+/* Class = "UILabel"; text = "About you"; ObjectID = "GDg-ui-0Ee"; */
+"GDg-ui-0Ee.text" = "About you";
+
+/* Class = "UIButton"; normalTitle = "Didn’t receive one? Send again"; ObjectID = "GGb-QI-bpY"; */
+"GGb-QI-bpY.normalTitle" = "Didn’t receive one? Send again";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "GZS-BK-3pP"; */
+"GZS-BK-3pP.text" = "OR";
+
+/* Class = "UILabel"; text = "Fat"; ObjectID = "H9B-ov-djP"; */
+"H9B-ov-djP.text" = "Fat";
+
+/* Class = "UILabel"; text = "I am a Trainee"; ObjectID = "HIu-XW-7rf"; */
+"HIu-XW-7rf.text" = "I am a Trainee";
+
+/* Class = "UIButton"; normalTitle = "Today"; ObjectID = "HUp-PX-0GM"; */
+"HUp-PX-0GM.normalTitle" = "Today";
+
+/* Class = "UIButton"; configuration.title = "Forgot you password?"; ObjectID = "HcO-5g-9xT"; */
+"HcO-5g-9xT.configuration.title" = "Forgot you password?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HcO-5g-9xT"; */
+"HcO-5g-9xT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "I am a Coach"; ObjectID = "HdY-Ep-hhH"; */
+"HdY-Ep-hhH.text" = "I am a Coach";
+
+/* Class = "UIButton"; configuration.title = "History"; ObjectID = "Hf5-eD-AbK"; */
+"Hf5-eD-AbK.configuration.title" = "History";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Hf5-eD-AbK"; */
+"Hf5-eD-AbK.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "ICS-pm-pi0"; */
+"ICS-pm-pi0.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Add to calender"; ObjectID = "Ipa-va-9am"; */
+"Ipa-va-9am.normalTitle" = "Add to calender";
+
+/* Class = "UILabel"; text = "Don’t have an account?"; ObjectID = "IrH-j8-ylJ"; */
+"IrH-j8-ylJ.text" = "Don’t have an account?";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "JNS-OJ-HSX"; */
+"JNS-OJ-HSX.text" = "1";
+
+/* Class = "UILabel"; text = "How to make it"; ObjectID = "JjQ-3C-aRb"; */
+"JjQ-3C-aRb.text" = "How to make it";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Kra-tt-fEq"; */
+"Kra-tt-fEq.text" = "0";
+
+/* Class = "UILabel"; text = "Set Your Target"; ObjectID = "LA2-vi-T4K"; */
+"LA2-vi-T4K.text" = "Set Your Target";
+
+/* Class = "UILabel"; text = "Food"; ObjectID = "LZV-OD-h4p"; */
+"LZV-OD-h4p.text" = "Food";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "Lsv-mk-n5z"; */
+"Lsv-mk-n5z.text" = "Assigned Coaches";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "M5r-NW-b8O"; */
+"M5r-NW-b8O.text" = "1";
+
+/* Class = "UILabel"; text = "80%"; ObjectID = "MNh-gm-rCX"; */
+"MNh-gm-rCX.text" = "80%";
+
+/* Class = "UILabel"; text = "Serving Size"; ObjectID = "MPe-7h-A1K"; */
+"MPe-7h-A1K.text" = "Serving Size";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "MQl-nw-tTe"; */
+"MQl-nw-tTe.text" = "Assigned Coaches";
+
+/* Class = "UILabel"; text = "Terms & Conditions"; ObjectID = "Mle-Ws-9af"; */
+"Mle-Ws-9af.text" = "Terms & Conditions";
+
+/* Class = "UILabel"; text = "View History"; ObjectID = "N8F-El-cyP"; */
+"N8F-El-cyP.text" = "View History";
+
+/* Class = "UILabel"; text = "@username"; ObjectID = "N96-nM-MUJ"; */
+"N96-nM-MUJ.text" = "@username";
+
+/* Class = "UILabel"; text = "Calendar"; ObjectID = "N9L-3v-mYb"; */
+"N9L-3v-mYb.text" = "Calendar";
+
+/* Class = "UILabel"; text = "Recipe Title"; ObjectID = "NEe-f8-9DX"; */
+"NEe-f8-9DX.text" = "Recipe Title";
+
+/* Class = "UITextField"; placeholder = "Potential Clients"; ObjectID = "NF5-JV-wFk"; */
+"NF5-JV-wFk.placeholder" = "Potential Clients";
+
+/* Class = "UITextField"; placeholder = "i.e. 100 Carbs"; ObjectID = "NZT-dA-ybu"; */
+"NZT-dA-ybu.placeholder" = "i.e. 100 Carbs";
+
+/* Class = "UILabel"; text = "Breakfast"; ObjectID = "Nes-VE-YMQ"; */
+"Nes-VE-YMQ.text" = "Breakfast";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "Nky-AD-Pzf"; */
+"Nky-AD-Pzf.text" = "Assigned Coaches";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "Ntw-V4-qKO"; */
+"Ntw-V4-qKO.placeholder" = "Mobile Number";
+
+/* Class = "UILabel"; text = "2,840"; ObjectID = "NvY-Q4-ssg"; */
+"NvY-Q4-ssg.text" = "2,840";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "OAR-ZW-bCc"; */
+"OAR-ZW-bCc.text" = "Language";
+
+/* Class = "UILabel"; text = "Muscle"; ObjectID = "OOc-EX-gZ3"; */
+"OOc-EX-gZ3.text" = "Muscle";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "ObP-v9-uIk"; */
+"ObP-v9-uIk.text" = "1";
+
+/* Class = "UITextField"; placeholder = "SEARCH WORKOUT"; ObjectID = "PNZ-aA-C6R"; */
+"PNZ-aA-C6R.placeholder" = "SEARCH WORKOUT";
+
+/* Class = "UILabel"; text = "1g"; ObjectID = "PZc-RW-fKN"; */
+"PZc-RW-fKN.text" = "1g";
+
+/* Class = "UILabel"; text = "Challenge Of The Day "; ObjectID = "PhF-jK-rel"; */
+"PhF-jK-rel.text" = "Challenge Of The Day ";
+
+/* Class = "UILabel"; text = "Female"; ObjectID = "Q9v-qO-ioi"; */
+"Q9v-qO-ioi.text" = "Female";
+
+/* Class = "UILabel"; text = "20 minutes"; ObjectID = "QVB-6y-MVK"; */
+"QVB-6y-MVK.text" = "20 minutes";
+
+/* Class = "UILabel"; text = "M.Jawher"; ObjectID = "QVg-4I-ANs"; */
+"QVg-4I-ANs.text" = "M.Jawher";
+
+/* Class = "UILabel"; text = "Target"; ObjectID = "Qfk-AG-87z"; */
+"Qfk-AG-87z.text" = "Target";
+
+/* Class = "UILabel"; text = "Chicken"; ObjectID = "QlX-wt-j93"; */
+"QlX-wt-j93.text" = "Chicken";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "RPM-e5-grZ"; */
+"RPM-e5-grZ.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "Carbs"; ObjectID = "RUs-Pf-xw7"; */
+"RUs-Pf-xw7.text" = "Carbs";
+
+/* Class = "UIButton"; normalTitle = "Explore Workout"; ObjectID = "ReR-Yh-UYW"; */
+"ReR-Yh-UYW.normalTitle" = "Explore Workout";
+
+/* Class = "UILabel"; text = "Grilled chicken, 4.0 oz"; ObjectID = "Rf3-I8-qgJ"; */
+"Rf3-I8-qgJ.text" = "Grilled chicken, 4.0 oz";
+
+/* Class = "UILabel"; text = "Protein"; ObjectID = "Rnp-9s-3NT"; */
+"Rnp-9s-3NT.text" = "Protein";
+
+/* Class = "UILabel"; text = "Weight Unit"; ObjectID = "S8u-1T-wXi"; */
+"S8u-1T-wXi.text" = "Weight Unit";
+
+/* Class = "UILabel"; text = "Progress"; ObjectID = "Sgo-rp-tVp"; */
+"Sgo-rp-tVp.text" = "Progress";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "Sp8-YL-mai"; */
+"Sp8-YL-mai.text" = "Settings";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "SyF-59-5BL"; */
+"SyF-59-5BL.text" = "Assigned Coaches";
+
+/* Class = "UIButton"; normalTitle = "Sign up here"; ObjectID = "UAj-gy-xz6"; */
+"UAj-gy-xz6.normalTitle" = "Sign up here";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "UcL-Yt-Uhg"; */
+"UcL-Yt-Uhg.text" = "1";
+
+/* Class = "UIButton"; configuration.title = "Contact Us"; ObjectID = "UwS-9F-m9k"; */
+"UwS-9F-m9k.configuration.title" = "Contact Us";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UwS-9F-m9k"; */
+"UwS-9F-m9k.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Calculate"; ObjectID = "V2e-v0-BR2"; */
+"V2e-v0-BR2.normalTitle" = "Calculate";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "V3c-OD-yTR"; */
+"V3c-OD-yTR.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Fat"; ObjectID = "VbJ-X2-lIV"; */
+"VbJ-X2-lIV.text" = "Fat";
+
+/* Class = "UIButton"; normalTitle = "Workout history"; ObjectID = "Vd0-JF-IhD"; */
+"Vd0-JF-IhD.normalTitle" = "Workout history";
+
+/* Class = "UILabel"; text = "Subscriptions"; ObjectID = "VfL-Se-Zuw"; */
+"VfL-Se-Zuw.text" = "Subscriptions";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "WPL-xh-gtl"; */
+"WPL-xh-gtl.placeholder" = "Confirm Password";
+
+/* Class = "UILabel"; text = "Log Out"; ObjectID = "WnQ-GY-fnP"; */
+"WnQ-GY-fnP.text" = "Log Out";
+
+/* Class = "UILabel"; text = "Calendar"; ObjectID = "Wo1-KQ-vDH"; */
+"Wo1-KQ-vDH.text" = "Calendar";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "Wr8-lW-TeA"; */
+"Wr8-lW-TeA.text" = "1";
+
+/* Class = "UILabel"; text = "Nutrition history"; ObjectID = "Wxg-ur-IGj"; */
+"Wxg-ur-IGj.text" = "Nutrition history";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "X8U-Mz-bav"; */
+"X8U-Mz-bav.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITextField"; placeholder = "Nick Name"; ObjectID = "Y8X-Tv-3IC"; */
+"Y8X-Tv-3IC.placeholder" = "Nick Name";
+
+/* Class = "UILabel"; text = "Protein"; ObjectID = "YCW-UQ-o3L"; */
+"YCW-UQ-o3L.text" = "Protein";
+
+/* Class = "UIButton"; normalTitle = "All"; ObjectID = "YH9-bc-sqL"; */
+"YH9-bc-sqL.normalTitle" = "All";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "YR0-y1-BLc"; */
+"YR0-y1-BLc.text" = "1";
+
+/* Class = "UILabel"; text = "I am a Coach"; ObjectID = "Yhe-Uy-8ea"; */
+"Yhe-Uy-8ea.text" = "I am a Coach";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "YyE-XI-vcX"; */
+"YyE-XI-vcX.title" = "Profile";
+
+/* Class = "UITabBarItem"; title = "My PTs"; ObjectID = "ZJv-BC-Y4t"; */
+"ZJv-BC-Y4t.title" = "My PTs";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "Zo9-so-lmQ"; */
+"Zo9-so-lmQ.title" = "Profile";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "ZqG-K4-GlH"; */
+"ZqG-K4-GlH.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "a94-aS-GDZ"; */
+"a94-aS-GDZ.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Age"; ObjectID = "aBP-2y-khE"; */
+"aBP-2y-khE.placeholder" = "Age";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "aZV-2Q-qTm"; */
+"aZV-2Q-qTm.text" = "Male";
+
+/* Class = "UILabel"; text = "Calories"; ObjectID = "agM-HB-MsU"; */
+"agM-HB-MsU.text" = "Calories";
+
+/* Class = "UIButton"; configuration.title = "Follow Us"; ObjectID = "aiq-Tm-6TX"; */
+"aiq-Tm-6TX.configuration.title" = "Follow Us";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aiq-Tm-6TX"; */
+"aiq-Tm-6TX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Number of Servings"; ObjectID = "aka-BE-0K3"; */
+"aka-BE-0K3.text" = "Number of Servings";
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "al7-fd-bT6"; */
+"al7-fd-bT6.placeholder" = "Title";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "ayQ-Yv-0Ni"; */
+"ayQ-Yv-0Ni.text" = "Profile";
+
+/* Class = "UILabel"; text = "Your request is awaiting your PT's approval. We'll notify you soon!"; ObjectID = "bJH-0B-eGP"; */
+"bJH-0B-eGP.text" = "Your request is awaiting your PT's approval. We'll notify you soon!";
+
+/* Class = "UIButton"; configuration.title = "Home workouts"; ObjectID = "bhm-in-UUz"; */
+"bhm-in-UUz.configuration.title" = "Home workouts";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bhm-in-UUz"; */
+"bhm-in-UUz.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Recipes"; ObjectID = "bls-Ac-ZLE"; */
+"bls-Ac-ZLE.normalTitle" = "Recipes";
+
+/* Class = "UILabel"; text = "Lbs"; ObjectID = "brS-Y5-lYD"; */
+"brS-Y5-lYD.text" = "Lbs";
+
+/* Class = "UILabel"; text = "Target"; ObjectID = "byY-Mf-aFz"; */
+"byY-Mf-aFz.text" = "Target";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "c2T-Eh-8PQ"; */
+"c2T-Eh-8PQ.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Please enter the verification code that we have sent to your email"; ObjectID = "cIl-UW-gb1"; */
+"cIl-UW-gb1.text" = "Please enter the verification code that we have sent to your email";
+
+/* Class = "UILabel"; text = "Search"; ObjectID = "co2-B2-pcQ"; */
+"co2-B2-pcQ.text" = "Search";
+
+/* Class = "UILabel"; text = "I am a Trainee"; ObjectID = "com-k9-tMJ"; */
+"com-k9-tMJ.text" = "I am a Trainee";
+
+/* Class = "UITextField"; placeholder = "i.e. 1000 Calories"; ObjectID = "cxG-La-BC5"; */
+"cxG-La-BC5.placeholder" = "i.e. 1000 Calories";
+
+/* Class = "UITextField"; placeholder = "SEARCH WORKOUT"; ObjectID = "d8J-WL-qt3"; */
+"d8J-WL-qt3.placeholder" = "SEARCH WORKOUT";
+
+/* Class = "UILabel"; text = "Carbs"; ObjectID = "d9p-Oe-PdC"; */
+"d9p-Oe-PdC.text" = "Carbs";
+
+/* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "dKB-iM-0Ap"; */
+"dKB-iM-0Ap.text" = "Assigned Coaches";
+
+/* Class = "UILabel"; text = "Fat"; ObjectID = "dRe-0i-9P7"; */
+"dRe-0i-9P7.text" = "Fat";
+
+/* Class = "UILabel"; text = "Workout history"; ObjectID = "dYu-06-7jJ"; */
+"dYu-06-7jJ.text" = "Workout history";
+
+/* Class = "UIButton"; normalTitle = "Meals"; ObjectID = "dvO-ph-2T7"; */
+"dvO-ph-2T7.normalTitle" = "Meals";
+
+/* Class = "UIButton"; configuration.title = "Forgot you password?"; ObjectID = "eEQ-yS-S8v"; */
+"eEQ-yS-S8v.configuration.title" = "Forgot you password?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eEQ-yS-S8v"; */
+"eEQ-yS-S8v.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Submit Feedback"; ObjectID = "eTA-Fo-I2M"; */
+"eTA-Fo-I2M.normalTitle" = "Submit Feedback";
+
+/* Class = "UILabel"; text = "12Cal"; ObjectID = "eYG-1f-5yq"; */
+"eYG-1f-5yq.text" = "12Cal";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "eZ4-Hg-hC7"; */
+"eZ4-Hg-hC7.title" = "Profile";
+
+/* Class = "UIButton"; configuration.title = "Home"; ObjectID = "f4C-AN-2Eu"; */
+"f4C-AN-2Eu.configuration.title" = "Home";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f4C-AN-2Eu"; */
+"f4C-AN-2Eu.normalTitle" = "Button";
+
+/* Class = "UITextField"; text = "4.0 oz"; ObjectID = "fbL-FA-06D"; */
+"fbL-FA-06D.text" = "4.0 oz";
+
+/* Class = "UILabel"; text = "On"; ObjectID = "ffv-Rk-yse"; */
+"ffv-Rk-yse.text" = "On";
+
+/* Class = "UILabel"; text = "Calendar"; ObjectID = "fgu-Px-DuM"; */
+"fgu-Px-DuM.text" = "Calendar";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "fp6-Ql-TfM"; */
+"fp6-Ql-TfM.normalTitle" = "Next";
+
+/* Class = "UITextField"; placeholder = "SEARCH WORKOUT"; ObjectID = "gIc-rG-2ja"; */
+"gIc-rG-2ja.placeholder" = "SEARCH WORKOUT";
+
+/* Class = "UITabBarItem"; title = "My PTs"; ObjectID = "gKP-we-gXt"; */
+"gKP-we-gXt.title" = "My PTs";
+
+/* Class = "UILabel"; text = "Add Food"; ObjectID = "gWQ-tG-cIh"; */
+"gWQ-tG-cIh.text" = "Add Food";
+
+/* Class = "UILabel"; text = "Recipes and Diet Plans"; ObjectID = "gWz-jM-WiV"; */
+"gWz-jM-WiV.text" = "Recipes and Diet Plans";
+
+/* Class = "UIButton"; normalTitle = "Today"; ObjectID = "gaB-pc-Yc0"; */
+"gaB-pc-Yc0.normalTitle" = "Today";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "gmX-s4-bVH"; */
+"gmX-s4-bVH.title" = "Home";
+
+/* Class = "UITextField"; placeholder = "i.e. 100 Protein"; ObjectID = "gph-m6-obT"; */
+"gph-m6-obT.placeholder" = "i.e. 100 Protein";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "hUS-gF-b2O"; */
+"hUS-gF-b2O.text" = "Gender";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "huh-YP-iYm"; */
+"huh-YP-iYm.title" = "Profile";
+
+/* Class = "UILabel"; text = "Fat"; ObjectID = "hyN-6C-w4K"; */
+"hyN-6C-w4K.text" = "Fat";
+
+/* Class = "UITextField"; placeholder = "Weight"; ObjectID = "i8b-ZH-Qhr"; */
+"i8b-ZH-Qhr.placeholder" = "Weight";
+
+/* Class = "UITextField"; placeholder = "SEARCH WORKOUT"; ObjectID = "i8w-wj-lXR"; */
+"i8w-wj-lXR.placeholder" = "SEARCH WORKOUT";
+
+/* Class = "UITextField"; placeholder = "    SEARCH TRAINER"; ObjectID = "iOK-Rg-5OE"; */
+"iOK-Rg-5OE.placeholder" = "    SEARCH TRAINER";
+
+/* Class = "UILabel"; text = "Push Notifications"; ObjectID = "ir3-Ss-uHs"; */
+"ir3-Ss-uHs.text" = "Push Notifications";
+
+/* Class = "UILabel"; text = "3\\10 Challenged Complete"; ObjectID = "j8E-rL-khC"; */
+"j8E-rL-khC.text" = "3\\10 Challenged Complete";
+
+/* Class = "UILabel"; text = "22g"; ObjectID = "j8d-cx-HXg"; */
+"j8d-cx-HXg.text" = "22g";
+
+/* Class = "UILabel"; text = "Carbs"; ObjectID = "jkT-Zn-BpD"; */
+"jkT-Zn-BpD.text" = "Carbs";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "joh-SR-9Ud"; */
+"joh-SR-9Ud.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Recent Items"; ObjectID = "jw0-DT-kdw"; */
+"jw0-DT-kdw.text" = "Recent Items";
+
+/* Class = "UIButton"; configuration.title = "Contact Us"; ObjectID = "k1q-Xa-1Ju"; */
+"k1q-Xa-1Ju.configuration.title" = "Contact Us";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "k1q-Xa-1Ju"; */
+"k1q-Xa-1Ju.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "kOe-oQ-HNj"; */
+"kOe-oQ-HNj.text" = "Title";
+
+/* Class = "UILabel"; text = "Sign in"; ObjectID = "kUI-py-vPj"; */
+"kUI-py-vPj.text" = "Sign in";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "lOP-ma-S03"; */
+"lOP-ma-S03.title" = "Profile";
+
+/* Class = "UILabel"; text = "Tell us"; ObjectID = "lS0-jx-fro"; */
+"lS0-jx-fro.text" = "Tell us";
+
+/* Class = "UILabel"; text = "Carbs"; ObjectID = "lU8-tc-ClH"; */
+"lU8-tc-ClH.text" = "Carbs";
+
+/* Class = "UILabel"; text = "Protein"; ObjectID = "llz-6K-McD"; */
+"llz-6K-McD.text" = "Protein";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "mCG-fe-Wmf"; */
+"mCG-fe-Wmf.title" = "Profile";
+
+/* Class = "UIButton"; configuration.title = "Personalised"; ObjectID = "mFN-RV-rqG"; */
+"mFN-RV-rqG.configuration.title" = "Personalised";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mFN-RV-rqG"; */
+"mFN-RV-rqG.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "321 Calories, Carbs 8g, Fat 5g, Protein 23g"; ObjectID = "mP0-EF-Fc6"; */
+"mP0-EF-Fc6.text" = "321 Calories, Carbs 8g, Fat 5g, Protein 23g";
+
+/* Class = "UIButton"; normalTitle = "Sign up here"; ObjectID = "mPG-9K-Wfw"; */
+"mPG-9K-Wfw.normalTitle" = "Sign up here";
+
+/* Class = "UILabel"; text = "Don’t have an account?"; ObjectID = "mUN-VV-ILd"; */
+"mUN-VV-ILd.text" = "Don’t have an account?";
+
+/* Class = "UITabBarItem"; title = "My PTs"; ObjectID = "mXW-NA-eGQ"; */
+"mXW-NA-eGQ.title" = "My PTs";
+
+/* Class = "UIButton"; normalTitle = "Exercise history"; ObjectID = "mbr-xl-Th1"; */
+"mbr-xl-Th1.normalTitle" = "Exercise history";
+
+/* Class = "UILabel"; text = "KYC"; ObjectID = "mvP-wz-HsO"; */
+"mvP-wz-HsO.text" = "KYC";
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "ncs-Ee-Veg"; */
+"ncs-Ee-Veg.text" = "Contact Us";
+
+/* Class = "UILabel"; text = "Our team will get back to you soon!"; ObjectID = "oOE-0X-cxd"; */
+"oOE-0X-cxd.text" = "Our team will get back to you soon!";
+
+/* Class = "UILabel"; text = "Sign in"; ObjectID = "ohE-Rs-QUO"; */
+"ohE-Rs-QUO.text" = "Sign in";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "oz5-hi-lta"; */
+"oz5-hi-lta.text" = "100";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "p0N-kp-vhs"; */
+"p0N-kp-vhs.title" = "Profile";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "pb9-KX-mvi"; */
+"pb9-KX-mvi.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pb9-KX-mvi"; */
+"pb9-KX-mvi.normalTitle" = "Button";
+
+/* Class = "UITextField"; text = "Chicken (Grilled Chicken)"; ObjectID = "prA-jz-mug"; */
+"prA-jz-mug.text" = "Chicken (Grilled Chicken)";
+
+/* Class = "UITextField"; text = "1"; ObjectID = "qD5-mS-bSt"; */
+"qD5-mS-bSt.text" = "1";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "qFL-Hp-DLX"; */
+"qFL-Hp-DLX.text" = "1";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."; ObjectID = "qc9-dJ-Yym"; */
+"qc9-dJ-Yym.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
+/* Class = "UILabel"; text = "PT Platform"; ObjectID = "sKR-I5-O0d"; */
+"sKR-I5-O0d.text" = "PT Platform";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "seA-85-uEF"; */
+"seA-85-uEF.title" = "Profile";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "siC-4Q-rnE"; */
+"siC-4Q-rnE.text" = "-";
+
+/* Class = "UILabel"; text = "4%"; ObjectID = "tlj-De-gTP"; */
+"tlj-De-gTP.text" = "4%";
+
+/* Class = "UIButton"; normalTitle = "Nutrition history"; ObjectID = "u9Q-m5-VAd"; */
+"u9Q-m5-VAd.normalTitle" = "Nutrition history";
+
+/* Class = "UITextField"; placeholder = "Message"; ObjectID = "uBf-4B-8bq"; */
+"uBf-4B-8bq.placeholder" = "Message";
+
+/* Class = "UILabel"; text = "210"; ObjectID = "uJJ-iA-DHf"; */
+"uJJ-iA-DHf.text" = "210";
+
+/* Class = "UILabel"; text = "Weight"; ObjectID = "uVS-Pt-WOZ"; */
+"uVS-Pt-WOZ.text" = "Weight";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "upU-gR-xg7"; */
+"upU-gR-xg7.text" = "1";
+
+/* Class = "UIButton"; normalTitle = "Continue with Google"; ObjectID = "uyD-W0-ocZ"; */
+"uyD-W0-ocZ.normalTitle" = "Continue with Google";
+
+/* Class = "UILabel"; text = "Spaghetti Cup"; ObjectID = "v2g-C1-iwT"; */
+"v2g-C1-iwT.text" = "Spaghetti Cup";
+
+/* Class = "UILabel"; text = "Exercise history"; ObjectID = "v9C-iK-fHu"; */
+"v9C-iK-fHu.text" = "Exercise history";
+
+/* Class = "UILabel"; text = "Ingredients"; ObjectID = "vQG-iL-sOx"; */
+"vQG-iL-sOx.text" = "Ingredients";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "vRU-Pf-IRc"; */
+"vRU-Pf-IRc.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Progress"; ObjectID = "vi1-aQ-0Dk"; */
+"vi1-aQ-0Dk.text" = "Progress";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "vqs-j8-dHf"; */
+"vqs-j8-dHf.title" = "Profile";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "w5I-dB-kNH"; */
+"w5I-dB-kNH.normalTitle" = "Send";
+
+/* Class = "UITextField"; placeholder = "Social Media Link"; ObjectID = "wAM-af-NbY"; */
+"wAM-af-NbY.placeholder" = "Social Media Link";
+
+/* Class = "UILabel"; text = "3 Hours"; ObjectID = "wGZ-Yt-5Yd"; */
+"wGZ-Yt-5Yd.text" = "3 Hours";
+
+/* Class = "UIButton"; normalTitle = "Continue with Facebook"; ObjectID = "xiE-PU-hKf"; */
+"xiE-PU-hKf.normalTitle" = "Continue with Facebook";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "xxS-4d-d48"; */
+"xxS-4d-d48.text" = "1";
+
+/* Class = "UIButton"; configuration.title = "Cross fit"; ObjectID = "xyl-Xz-aS9"; */
+"xyl-Xz-aS9.configuration.title" = "Cross fit";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xyl-Xz-aS9"; */
+"xyl-Xz-aS9.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Return to main screen"; ObjectID = "y8B-QJ-EbO"; */
+"y8B-QJ-EbO.normalTitle" = "Return to main screen";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "yCe-y3-1P2"; */
+"yCe-y3-1P2.title" = "Profile";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "yqd-vb-g73"; */
+"yqd-vb-g73.text" = "1";
+
+/* Class = "UILabel"; text = "Off"; ObjectID = "zAp-Li-wav"; */
+"zAp-Li-wav.text" = "Off";
+
+/* Class = "UILabel"; text = "+"; ObjectID = "zUe-IT-D8p"; */
+"zUe-IT-D8p.text" = "+";
+
+/* Class = "UILabel"; text = "Cal"; ObjectID = "zkr-af-9Eh"; */
+"zkr-af-9Eh.text" = "Cal";
+
+/* Class = "UILabel"; text = "2,530"; ObjectID = "zpb-QE-VpW"; */
+"zpb-QE-VpW.text" = "2,530";

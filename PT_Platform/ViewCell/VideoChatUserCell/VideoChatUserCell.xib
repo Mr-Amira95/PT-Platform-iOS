@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HgR-EU-rYp" customClass="VideoChatUserCell" customModule="PT_Platform" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HgR-EU-rYp" id="g2g-Vr-vMG">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-bY-CNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-MP-RgS">
+                                <rect key="frame" x="8" y="7" width="121" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OXB-1O-5GK"/>
+                                    <constraint firstAttribute="width" constant="121" id="ctC-sd-8Rg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" name="MainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAW-Yt-IVO">
+                                <rect key="frame" x="8" y="36" width="121" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="35l-uG-4Ma"/>
+                                    <constraint firstAttribute="width" constant="121" id="quW-en-18X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5m-vj-Y4s">
+                                <rect key="frame" x="137" y="24.5" width="106" height="31"/>
+                                <color key="backgroundColor" name="MainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="0mD-s9-HY8"/>
+                                    <constraint firstAttribute="width" constant="106" id="BLJ-pJ-JeI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="JOIN SESSION">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmX-CM-77K">
+                                <rect key="frame" x="251" y="24.5" width="61" height="31"/>
+                                <color key="backgroundColor" name="MainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="Gdv-FV-0A6"/>
+                                    <constraint firstAttribute="height" constant="31" id="MIs-e4-RNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="CANCEL">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ffQ-MP-RgS" firstAttribute="leading" secondItem="MMQ-bY-CNQ" secondAttribute="leading" constant="8" id="4n7-xU-evm"/>
+                            <constraint firstItem="lmX-CM-77K" firstAttribute="leading" secondItem="D5m-vj-Y4s" secondAttribute="trailing" constant="8" symbolic="YES" id="6Pt-6H-j5F"/>
+                            <constraint firstAttribute="trailing" secondItem="lmX-CM-77K" secondAttribute="trailing" constant="8" id="D9k-Ig-28k"/>
+                            <constraint firstAttribute="bottom" secondItem="OAW-Yt-IVO" secondAttribute="bottom" constant="7" id="G54-Dj-8Eu"/>
+                            <constraint firstItem="OAW-Yt-IVO" firstAttribute="top" secondItem="ffQ-MP-RgS" secondAttribute="bottom" constant="8" symbolic="YES" id="KsL-mD-h3w"/>
+                            <constraint firstItem="ffQ-MP-RgS" firstAttribute="top" secondItem="MMQ-bY-CNQ" secondAttribute="top" constant="7" id="ZB1-O7-BV1"/>
+                            <constraint firstItem="D5m-vj-Y4s" firstAttribute="centerY" secondItem="MMQ-bY-CNQ" secondAttribute="centerY" id="ZNl-B1-Gej"/>
+                            <constraint firstItem="D5m-vj-Y4s" firstAttribute="leading" secondItem="OAW-Yt-IVO" secondAttribute="trailing" constant="8" symbolic="YES" id="er6-3k-nY4"/>
+                            <constraint firstItem="OAW-Yt-IVO" firstAttribute="leading" secondItem="MMQ-bY-CNQ" secondAttribute="leading" constant="8" id="jha-1c-G40"/>
+                            <constraint firstItem="lmX-CM-77K" firstAttribute="centerY" secondItem="MMQ-bY-CNQ" secondAttribute="centerY" id="lff-4s-H30"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MMQ-bY-CNQ" firstAttribute="leading" secondItem="g2g-Vr-vMG" secondAttribute="leading" id="7Fb-YG-DRj"/>
+                    <constraint firstAttribute="trailing" secondItem="MMQ-bY-CNQ" secondAttribute="trailing" id="ZDw-tG-i22"/>
+                    <constraint firstItem="MMQ-bY-CNQ" firstAttribute="top" secondItem="g2g-Vr-vMG" secondAttribute="top" id="jDA-NW-MsX"/>
+                    <constraint firstAttribute="bottom" secondItem="MMQ-bY-CNQ" secondAttribute="bottom" id="wyi-HY-Oz4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="cE5-GB-UQS"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnCancel" destination="lmX-CM-77K" id="CrD-5m-WEN"/>
+                <outlet property="btnJion" destination="D5m-vj-Y4s" id="a5T-YF-GzG"/>
+                <outlet property="lblDateTime" destination="OAW-Yt-IVO" id="ubx-7V-zRJ"/>
+                <outlet property="lblName" destination="ffQ-MP-RgS" id="xmA-0P-aU0"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="117.85714285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.55294117647058827" green="0.77647058823529413" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

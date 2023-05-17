@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="BreakfastCell" customModule="PT_Platform" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRv-GX-egD">
+                        <rect key="frame" x="15" y="10" width="260" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="260" id="N4l-8a-MLn"/>
+                            <constraint firstAttribute="height" constant="21" id="yNj-wo-Y8J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="huU-kW-Tcl">
+                        <rect key="frame" x="0.0" y="41" width="320" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9P8-T5-F9P"/>
+                            <constraint firstAttribute="width" constant="320" id="lM9-dy-Frt"/>
+                        </constraints>
+                    </tableView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74A-Vg-qN1">
+                        <rect key="frame" x="0.0" y="83" width="320" height="36"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D36-Ve-DcV">
+                                <rect key="frame" x="15" y="3" width="290" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="+ Add Breakfast">
+                                    <color key="titleColor" name="MainColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D36-Ve-DcV" firstAttribute="leading" secondItem="74A-Vg-qN1" secondAttribute="leading" constant="15" id="EOW-fD-DkZ"/>
+                            <constraint firstAttribute="trailing" secondItem="D36-Ve-DcV" secondAttribute="trailing" constant="15" id="de2-gL-fu4"/>
+                            <constraint firstAttribute="height" constant="36" id="efj-gP-pXY"/>
+                            <constraint firstItem="D36-Ve-DcV" firstAttribute="top" secondItem="74A-Vg-qN1" secondAttribute="top" constant="3" id="lP1-Ja-rze"/>
+                            <constraint firstAttribute="width" constant="320" id="oJ6-AJ-azG"/>
+                            <constraint firstAttribute="bottom" secondItem="D36-Ve-DcV" secondAttribute="bottom" constant="3" id="xjp-q6-Zzd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="huU-kW-Tcl" secondAttribute="trailing" id="5BK-W6-OSd"/>
+                    <constraint firstAttribute="trailing" secondItem="MRv-GX-egD" secondAttribute="trailing" constant="45" id="M90-hV-rXZ"/>
+                    <constraint firstAttribute="trailing" secondItem="74A-Vg-qN1" secondAttribute="trailing" id="SQ8-iJ-ReX"/>
+                    <constraint firstItem="huU-kW-Tcl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VOx-hn-bbm"/>
+                    <constraint firstItem="74A-Vg-qN1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YDB-Kf-rFQ"/>
+                    <constraint firstItem="MRv-GX-egD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dwR-Ur-P6E"/>
+                    <constraint firstItem="74A-Vg-qN1" firstAttribute="top" secondItem="huU-kW-Tcl" secondAttribute="bottom" constant="2" id="eRk-cp-jQw"/>
+                    <constraint firstAttribute="bottom" secondItem="74A-Vg-qN1" secondAttribute="bottom" id="h8R-Ma-f4p"/>
+                    <constraint firstItem="MRv-GX-egD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jJL-9f-MYb"/>
+                    <constraint firstItem="huU-kW-Tcl" firstAttribute="top" secondItem="MRv-GX-egD" secondAttribute="bottom" constant="10" id="spT-hh-p2m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnAddFood" destination="D36-Ve-DcV" id="AFw-jd-rNc"/>
+                <outlet property="tableView" destination="huU-kW-Tcl" id="j71-Cd-i4W"/>
+                <outlet property="viewAddFood" destination="74A-Vg-qN1" id="uOS-AS-am6"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="102.12053571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.55294117647058827" green="0.77647058823529413" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

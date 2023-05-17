@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Details2Cell" customModule="PT_Platform" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtW-Se-YIc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News1" translatesAutoresizingMaskIntoConstraints="NO" id="4ZR-9B-AH5">
+                                <rect key="frame" x="10" y="10" width="110" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="AnT-qh-T1A"/>
+                                    <constraint firstAttribute="width" constant="110" id="YMP-YF-qmU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Squats" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyk-sH-QIv">
+                                <rect key="frame" x="133" y="10" width="179" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="EHH-Ze-rxH"/>
+                                    <constraint firstAttribute="width" constant="179" id="ReH-nh-3TS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pyk-sH-QIv" secondAttribute="trailing" constant="8" id="2l1-Gc-Lya"/>
+                            <constraint firstItem="4ZR-9B-AH5" firstAttribute="top" secondItem="XtW-Se-YIc" secondAttribute="top" constant="10" id="7W8-ek-hTT"/>
+                            <constraint firstItem="pyk-sH-QIv" firstAttribute="leading" secondItem="4ZR-9B-AH5" secondAttribute="trailing" constant="13" id="A7y-8I-CnY"/>
+                            <constraint firstAttribute="bottom" secondItem="pyk-sH-QIv" secondAttribute="bottom" constant="10" id="RRw-3c-8If"/>
+                            <constraint firstItem="pyk-sH-QIv" firstAttribute="top" secondItem="XtW-Se-YIc" secondAttribute="top" constant="10" id="RSi-ps-uac"/>
+                            <constraint firstAttribute="bottom" secondItem="4ZR-9B-AH5" secondAttribute="bottom" constant="10" id="Yry-OU-dNq"/>
+                            <constraint firstItem="4ZR-9B-AH5" firstAttribute="leading" secondItem="XtW-Se-YIc" secondAttribute="leading" constant="10" id="lcY-9O-Nui"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XtW-Se-YIc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Rs-yf-iK8"/>
+                    <constraint firstAttribute="bottom" secondItem="XtW-Se-YIc" secondAttribute="bottom" id="Lrg-sQ-RbO"/>
+                    <constraint firstAttribute="trailing" secondItem="XtW-Se-YIc" secondAttribute="trailing" id="YDX-EI-Byk"/>
+                    <constraint firstItem="XtW-Se-YIc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YLw-l5-C4y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="detailimage" destination="4ZR-9B-AH5" id="beY-KI-bLO"/>
+                <outlet property="detileTiltle" destination="pyk-sH-QIv" id="GDH-Vm-ybU"/>
+            </connections>
+            <point key="canvasLocation" x="-55" y="113"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="News1" width="417" height="182"/>
+    </resources>
+</document>

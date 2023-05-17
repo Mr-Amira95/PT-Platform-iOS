@@ -1,0 +1,123 @@
+
+/* Class = "UILabel"; text = "Muscle : "; ObjectID = "0or-Nw-SrE"; */
+"0or-Nw-SrE.text" = "Muscle : ";
+
+/* Class = "UILabel"; text = "MON"; ObjectID = "1S6-VA-Yv4"; */
+"1S6-VA-Yv4.text" = "MON";
+
+/* Class = "UITextField"; text = "Set number"; ObjectID = "1ak-2p-Ii0"; */
+"1ak-2p-Ii0.text" = "Set number";
+
+/* Class = "UILabel"; text = "LEFT ARM : "; ObjectID = "3In-Ic-CTE"; */
+"3In-Ic-CTE.text" = "LEFT ARM : ";
+
+/* Class = "UILabel"; text = "RIGHT CALF : "; ObjectID = "3hg-VT-UcG"; */
+"3hg-VT-UcG.text" = "RIGHT CALF : ";
+
+/* Class = "UILabel"; text = "WAIST : "; ObjectID = "3zK-HQ-VOb"; */
+"3zK-HQ-VOb.text" = "WAIST : ";
+
+/* Class = "UILabel"; text = "Select a coach"; ObjectID = "5lP-OM-pCR"; */
+"5lP-OM-pCR.text" = "Select a coach";
+
+/* Class = "UILabel"; text = "STEPS : "; ObjectID = "8kE-f2-wYB"; */
+"8kE-f2-wYB.text" = "STEPS : ";
+
+/* Class = "UILabel"; text = "RIGHT THIGH : "; ObjectID = "EOW-bz-oEx"; */
+"EOW-bz-oEx.text" = "RIGHT THIGH : ";
+
+/* Class = "UILabel"; text = "Feb 2021"; ObjectID = "Fj3-pC-j1R"; */
+"Fj3-pC-j1R.text" = "Feb 2021";
+
+/* Class = "UILabel"; text = "RIGHT ARM : "; ObjectID = "GIj-0u-dpD"; */
+"GIj-0u-dpD.text" = "RIGHT ARM : ";
+
+/* Class = "UILabel"; text = "BELLY : "; ObjectID = "LiW-M1-DSt"; */
+"LiW-M1-DSt.text" = "BELLY : ";
+
+/* Class = "UILabel"; text = "Add New Value"; ObjectID = "Maz-M1-jZ0"; */
+"Maz-M1-jZ0.text" = "Add New Value";
+
+/* Class = "UILabel"; text = "LOWER BELLY : "; ObjectID = "SZc-ZW-Bs7"; */
+"SZc-ZW-Bs7.text" = "LOWER BELLY : ";
+
+/* Class = "UILabel"; text = "HIPS : "; ObjectID = "Suh-Jp-3L4"; */
+"Suh-Jp-3L4.text" = "HIPS : ";
+
+/* Class = "UILabel"; text = "FRI"; ObjectID = "TKH-of-xYu"; */
+"TKH-of-xYu.text" = "FRI";
+
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "Uz0-5L-J4E"; */
+"Uz0-5L-J4E.normalTitle" = "Update";
+
+/* Class = "UILabel"; text = "WATER : "; ObjectID = "W9E-Rl-zw2"; */
+"W9E-Rl-zw2.text" = "WATER : ";
+
+/* Class = "UILabel"; text = "FAT :"; ObjectID = "WKP-gR-Qyf"; */
+"WKP-gR-Qyf.text" = "FAT :";
+
+/* Class = "UILabel"; text = "TUE"; ObjectID = "WTa-Dj-BLi"; */
+"WTa-Dj-BLi.text" = "TUE";
+
+/* Class = "UILabel"; text = "Add New Value"; ObjectID = "XTR-dA-0gj"; */
+"XTR-dA-0gj.text" = "Add New Value";
+
+/* Class = "UITextField"; placeholder = "Weight"; ObjectID = "aGl-4g-J0d"; */
+"aGl-4g-J0d.placeholder" = "Weight";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "aWt-Wg-Rop"; */
+"aWt-Wg-Rop.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "LEFT THIGH : "; ObjectID = "bFM-xJ-3vj"; */
+"bFM-xJ-3vj.text" = "LEFT THIGH : ";
+
+/* Class = "UILabel"; text = "SAT"; ObjectID = "cWc-Nu-Yen"; */
+"cWc-Nu-Yen.text" = "SAT";
+
+/* Class = "UITextField"; placeholder = "Note"; ObjectID = "dgN-mh-YFu"; */
+"dgN-mh-YFu.placeholder" = "Note";
+
+/* Class = "UILabel"; text = "NECK : "; ObjectID = "fg4-xP-1IG"; */
+"fg4-xP-1IG.text" = "NECK : ";
+
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "imD-xb-Bde"; */
+"imD-xb-Bde.normalTitle" = "Update";
+
+/* Class = "UITextField"; placeholder = "Repititions"; ObjectID = "kyG-Q9-q1G"; */
+"kyG-Q9-q1G.placeholder" = "Repititions";
+
+/* Class = "UILabel"; text = "CHEST : "; ObjectID = "laJ-GV-Gbn"; */
+"laJ-GV-Gbn.text" = "CHEST : ";
+
+/* Class = "UILabel"; text = "Select a date"; ObjectID = "m0e-uC-PtU"; */
+"m0e-uC-PtU.text" = "Select a date";
+
+/* Class = "UILabel"; text = "ACTIVE CALORIES : "; ObjectID = "mY2-ZO-Z2o"; */
+"mY2-ZO-Z2o.text" = "ACTIVE CALORIES : ";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "mwc-qz-8Gz"; */
+"mwc-qz-8Gz.normalTitle" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "n3u-Nr-zuT"; */
+"n3u-Nr-zuT.normalTitle" = "Done";
+
+/* Class = "UITextField"; text = "Weight unit"; ObjectID = "nlw-b0-HdC"; */
+"nlw-b0-HdC.text" = "Weight unit";
+
+/* Class = "UILabel"; text = "LEFT CALF : "; ObjectID = "oXK-sD-c7U"; */
+"oXK-sD-c7U.text" = "LEFT CALF : ";
+
+/* Class = "UILabel"; text = "WED"; ObjectID = "riP-pO-vnM"; */
+"riP-pO-vnM.text" = "WED";
+
+/* Class = "UILabel"; text = "Weight :"; ObjectID = "sRF-1W-Tg4"; */
+"sRF-1W-Tg4.text" = "Weight :";
+
+/* Class = "UILabel"; text = "SUN"; ObjectID = "tbr-Qk-cud"; */
+"tbr-Qk-cud.text" = "SUN";
+
+/* Class = "UILabel"; text = "THU"; ObjectID = "uyO-DT-4na"; */
+"uyO-DT-4na.text" = "THU";
+
+/* Class = "UILabel"; text = "UPPER BELLY : "; ObjectID = "zaR-k5-knH"; */
+"zaR-k5-knH.text" = "UPPER BELLY : ";
