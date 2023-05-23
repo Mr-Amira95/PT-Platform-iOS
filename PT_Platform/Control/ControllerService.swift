@@ -1996,7 +1996,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let is_free = data2["is_free"] as? Bool ?? false
                                let permissions = data2["permissions"] as? NSDictionary
                                if permissions != nil{
-                                    permissionsCallVideo = permissions?["call_video"] as! Int
+                                    permissionsCallVideo = Int(permissions?["call_video"] as! String) ?? 0
                                     permissionsWorkoutSchedule = permissions?["workout_schedule"] as! Bool
                                     permissionsFoodPlan = permissions!["food_plan"] as! Bool
                                }
@@ -2026,13 +2026,13 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let price = "\(String(format: "%.0f", ceil(Double(amount) ?? 0.0))) \(currency)"
                                let style = data2["style"] as! String
                                let purchase_apple_id = data2["purchase_apple_id"] as? String ?? ""
-                               let date = data2["date"] as! Double
+                               let date = Double(data2["date"] as! String) ?? 0.0
                                let is_free = data2["is_free"] as! Bool
                                let permissions = data2["permissions"] as? NSDictionary
                                if permissions != nil{
-                                    permissionsCallVideo = permissions?["call_video"] as! Int
-                                    permissionsWorkoutSchedule = permissions?["workout_schedule"] as! Bool
-                                    permissionsFoodPlan = permissions?["food_plan"] as! Bool
+                                   permissionsCallVideo = Int(permissions?["call_video"] as! String) ?? 0
+                                   permissionsWorkoutSchedule = permissions?["workout_schedule"] as! Bool
+                                   permissionsFoodPlan = permissions?["food_plan"] as! Bool
                                }
                                var startAndEndDate = ""
                                if data2["user_package"] is [String:Any] {
