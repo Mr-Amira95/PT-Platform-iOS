@@ -131,10 +131,10 @@ extension NutritionSupplementsVC : UICollectionViewDelegate,UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrainerCell", for: indexPath) as? TrainerCell
         if Shared.shared.btnSubBack == "Supplements" || Shared.shared.btnSubBack == "المكملات"{
             cell?.lbl.text = datalist[indexPath.row].title as? String
-            cell?.img.sd_setImage(with: URL(string:datalist[indexPath.row].image as! String), placeholderImage:UIImage(named: "Diet1"))
+            cell?.img.sd_setImage(with: URL(string:datalist[indexPath.row].image as! String), placeholderImage:UIImage(named: ""))
         }else{
             cell?.lbl.text = datalistRecipes[indexPath.row].title as? String
-            cell?.img.sd_setImage(with: URL(string:datalistRecipes[indexPath.row].image as! String), placeholderImage:UIImage(named: "Diet1"))
+            cell?.img.sd_setImage(with: URL(string:datalistRecipes[indexPath.row].image as! String), placeholderImage:UIImage(named: ""))
         }
         return cell!
     }

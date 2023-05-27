@@ -22,13 +22,16 @@ class CollectionPackagesCell: UICollectionViewCell {
             collectionView.register(UINib(nibName: "PackagesCell", bundle: nil), forCellWithReuseIdentifier: "PackagesCell")
         }
     }
-    
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var lblTitleHeight: NSLayoutConstraint!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         datalist = Shared.shared.subscriptionMArray as! [PackegeSubscriptionM]
+        collectionViewHeight.constant = datalist.isEmpty ? 0.0 : 380.0
+        lblTitleHeight.constant = datalist.isEmpty ? 0.0 : 38.0
+        lblTitle.isHidden = datalist.isEmpty
     }
-
 }
 
 
@@ -50,6 +53,8 @@ extension CollectionPackagesCell : UICollectionViewDelegate,UICollectionViewData
             cell?.imgBackground.image = UIImage(named: "PackageSilver")
         }else if package.style == "style_free"{
             cell?.imgBackground.image = UIImage(named: "FITNESS-1")
+        }else {
+            cell?.imgBackground.image = UIImage(named: "freepackages_bg")
         }
     
         cell?.lblPackageName.text = package.name

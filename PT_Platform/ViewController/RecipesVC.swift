@@ -33,7 +33,7 @@ class RecipesVC: UIViewController {
         lblTitle.text = Shared.shared.btnSubBack
         lblTitle2.text = Shared.shared.RecipesName
         lblName.text = Shared.shared.NewsTitle
-        img.sd_setImage(with: URL(string:Shared.shared.NewsImage), placeholderImage:UIImage(named: "Diet1"))
+        img.sd_setImage(with: URL(string:Shared.shared.NewsImage), placeholderImage:UIImage(named: ""))
         lblDescription.text = Shared.shared.NewsDescription
         lblTime.text = Shared.shared.RecipesTime
         lblIngredients.text = Shared.shared.RecipesIngredients

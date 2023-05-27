@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hHg-Gd-fx1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hHg-Gd-fx1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -3611,12 +3611,12 @@
         <scene sceneID="YWD-Tr-Gb6">
             <objects>
                 <viewController storyboardIdentifier="AssignedCoachesVC" modalPresentationStyle="fullScreen" id="n67-rE-Uf6" customClass="AssignedCoachesVC" customModule="PT_Platform" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="yfK-lL-TVV">
+                    <view key="view" contentMode="scaleToFill" id="yfK-lL-TVV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-Cg-UKi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-Cg-UKi">
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RV4-To-h32">
                                         <rect key="frame" x="8" y="8" width="340" height="53"/>
@@ -7788,11 +7788,11 @@
                                     <constraint firstItem="6Ag-PA-Kqz" firstAttribute="top" secondItem="KZI-dp-P87" secondAttribute="top" constant="8" id="yQe-Rp-Tl0"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd0-JF-IhD">
-                                <rect key="frame" x="37" y="211" width="339" height="60"/>
+                            <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd0-JF-IhD">
+                                <rect key="frame" x="37" y="211" width="339" height="0.0"/>
                                 <color key="backgroundColor" name="MainColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="GZS-7H-u7V"/>
+                                    <constraint firstAttribute="height" id="GZS-7H-u7V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -7809,7 +7809,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbr-xl-Th1">
-                                <rect key="frame" x="38" y="290" width="339" height="60"/>
+                                <rect key="frame" x="38" y="230" width="339" height="60"/>
                                 <color key="backgroundColor" name="MainColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9M5-Qk-lXq"/>
@@ -7829,7 +7829,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9Q-m5-VAd">
-                                <rect key="frame" x="38" y="369" width="339" height="60"/>
+                                <rect key="frame" x="38" y="309" width="339" height="60"/>
                                 <color key="backgroundColor" name="MainColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8y0-p6-wop"/>
@@ -11202,13 +11202,13 @@
     </scenes>
     <designables>
         <designable name="1T9-J2-UVF">
-            <size key="intrinsicContentSize" width="95" height="25.5"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="3G5-ua-4z5">
             <size key="intrinsicContentSize" width="5" height="25.5"/>
         </designable>
         <designable name="69K-wJ-gac">
-            <size key="intrinsicContentSize" width="156.5" height="24"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="6QC-Lq-s0v">
             <size key="intrinsicContentSize" width="95" height="25.5"/>
@@ -11223,7 +11223,7 @@
             <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="ICS-pm-pi0">
-            <size key="intrinsicContentSize" width="47" height="25.5"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="NF5-JV-wFk">
             <size key="intrinsicContentSize" width="141.5" height="25.5"/>
@@ -11232,10 +11232,10 @@
             <size key="intrinsicContentSize" width="135" height="25.5"/>
         </designable>
         <designable name="U5A-lO-EiK">
-            <size key="intrinsicContentSize" width="85" height="24"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="V3c-OD-yTR">
-            <size key="intrinsicContentSize" width="47" height="25.5"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="WPL-xh-gtl">
             <size key="intrinsicContentSize" width="160" height="24"/>
@@ -11244,19 +11244,19 @@
             <size key="intrinsicContentSize" width="96" height="25.5"/>
         </designable>
         <designable name="ZqG-K4-GlH">
-            <size key="intrinsicContentSize" width="85" height="24"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="hTc-qE-HR3">
-            <size key="intrinsicContentSize" width="5" height="25.5"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="joh-SR-9Ud">
-            <size key="intrinsicContentSize" width="85" height="24"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="uLu-1i-Mf9">
-            <size key="intrinsicContentSize" width="160" height="24"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="vRU-Pf-IRc">
-            <size key="intrinsicContentSize" width="94" height="25.5"/>
+            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
         </designable>
         <designable name="wAM-af-NbY">
             <size key="intrinsicContentSize" width="152.5" height="25.5"/>

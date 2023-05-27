@@ -9,6 +9,7 @@ import UIKit
 import IQKeyboardManagerSwift
 import LanguageManager_iOS
 import OneSignal
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         IQKeyboardManager.shared.previousNextDisplayMode = .alwaysShow
+        FirebaseApp.configure()
         Thread.sleep(forTimeInterval: 1)
         OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
         OneSignal.initWithLaunchOptions(launchOptions)

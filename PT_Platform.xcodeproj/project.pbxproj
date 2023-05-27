@@ -240,6 +240,7 @@
 		BDD73B5F28367239002D129B /* ControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B5E28367239002D129B /* ControllerService.swift */; };
 		BDD73B6128367E44002D129B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B6028367E44002D129B /* Constant.swift */; };
 		BDD73B632837B2ED002D129B /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B622837B2ED002D129B /* Spinner.swift */; };
+		CE2809C12A1E870300A6AEF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2809C02A1E870300A6AEF0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -502,6 +503,7 @@
 		BDD73B5E28367239002D129B /* ControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerService.swift; sourceTree = "<group>"; };
 		BDD73B6028367E44002D129B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		BDD73B622837B2ED002D129B /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		CE2809C02A1E870300A6AEF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6048185DFA64516B07BCADD /* Pods_PT_Platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PT_Platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1206,6 +1208,7 @@
 				A1B046CA27830EDD006A75C8 /* ViewController */,
 				A1B48CD82781C3400067AF9B /* Delegate */,
 				A1B48CCD2781C2DA0067AF9B /* Assets.xcassets */,
+				CE2809C02A1E870300A6AEF0 /* GoogleService-Info.plist */,
 				A1B48CD22781C2DA0067AF9B /* Info.plist */,
 				A1D9CD112922D39800EB7136 /* Localizable.strings */,
 			);
@@ -1617,6 +1620,7 @@
 				A1BC768428D1F07300D87D14 /* PackagesCell2.xib in Resources */,
 				A1BF2BE328D6F22700780A0D /* BreakfastCell.xib in Resources */,
 				A1812A8828C4C6DC008A971C /* CollectionPackagesPTCell.xib in Resources */,
+				CE2809C12A1E870300A6AEF0 /* GoogleService-Info.plist in Resources */,
 				27CA543A27AB665A000E8768 /* Q2Cell.xib in Resources */,
 				27D574ED27A7323E00DC1E39 /* Details2Cell.xib in Resources */,
 				A1B896F328D313B100D29E29 /* MasterCell.xib in Resources */,
@@ -2049,7 +2053,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;
@@ -2089,7 +2093,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;

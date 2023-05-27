@@ -12,25 +12,25 @@ class CollectionPackagesPTCell: UICollectionViewCell {
     
     var datalist = [PackegePTM]()
     var Vc : ShopVC?
-
     
     @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var collectionView: UICollectionView!
-    {
-        didSet{
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
             self.collectionView.delegate = self
             self.collectionView.dataSource = self
             collectionView.register(UINib(nibName: "PackagesCell2", bundle: nil), forCellWithReuseIdentifier: "PackagesCell2")
         }
     }
-
-
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var lblTitleHeight: NSLayoutConstraint!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         datalist = Shared.shared.pTMArray as! [PackegePTM]
+        collectionViewHeight.constant = datalist.isEmpty ? 0.0 : 380.0
+        lblTitleHeight.constant = datalist.isEmpty ? 0.0 : 38.0
+        lblTitle.isHidden = datalist.isEmpty
     }
-    
-
 }
 
 extension CollectionPackagesPTCell : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
@@ -49,6 +49,8 @@ extension CollectionPackagesPTCell : UICollectionViewDelegate,UICollectionViewDa
             cell?.imgBackground.image = UIImage(named: "PackageBronze")
         }else if package.style == "style_silver"{
             cell?.imgBackground.image = UIImage(named: "PackageSilver")
+        }else {
+            cell?.imgBackground.image = UIImage(named: "freepackages_bg")
         }
         cell?.lblPackageName.text = package.name
         cell?.lblPackageDis.text = package.description
