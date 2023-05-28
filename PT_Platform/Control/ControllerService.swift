@@ -31,6 +31,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                             let user = data["user"] as! NSDictionary
                             let id = user["id"] as? Int ?? 0
                             Shared.shared.saveid(auth: "\(id)")
+                            Shared.shared.setusertype(auth: (user["role"] as? String ?? "").capitalized)
                             if Shared.shared.getusertype() == "Coach"{
                                 Shared.shared.saveCoachId(auth: id)
                             }
@@ -1703,7 +1704,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let description = data2["description"]as! String
                                let image = data2["image"]as! String
                                let name = data2["name"]as! String
-                               let time = data2["time"]as! Int
+                               let time = Int(data2["time"]as! String) ?? 0
                                let ingredients = data2["ingredients"] as! [String]
                                var ingredient = ""
                                for i in ingredients{
@@ -2513,8 +2514,8 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let weight_unit = data2["weight_unit"] as? String ?? ""
                                let note = data2["note"] as? String ?? ""
                                let number = data2["number"] as? Int ?? 0
-                               let weight = data2["weight"] as? Int ?? 0
-                               let repetition = data2["repetition"] as? Int ?? 0
+                               let weight = Double(data2["weight"] as? String ?? "0") ?? 0
+                               let repetition = Int(data2["repetition"] as? String ?? "0") ?? 0
                                let obj = exercisesHistoryDetailsM(id: id, created_at: created_at, weight_unit: weight_unit, number: number, weight: weight, repetition: repetition, note: note)
                                Datalist.append(obj)
                            }

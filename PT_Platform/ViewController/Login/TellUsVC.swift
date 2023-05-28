@@ -51,7 +51,7 @@ class TellUsVC: UIViewController {
         Flag = 2
         imgCoach.image = UIImage(named: "IconUnSelect")
         imgTrainee.image = UIImage(named: "IconSelect")
-        Shared.shared.setusertype(auth: "Trainee")
+        Shared.shared.setusertype(auth: "User")
     }
     
     

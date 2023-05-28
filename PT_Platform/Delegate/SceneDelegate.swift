@@ -73,7 +73,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             print(Parameter)
             ControllerService.instance.SetDataDevice(param: Parameter) { (message, bool) in
                 if bool{
-                    if Shared.shared.getusertype() == "Trainee"{
+                    if Shared.shared.getusertype() != "Coach"{
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let root = storyboard.instantiateViewController(withIdentifier: "ManTabBar") as! ManTabBar
                         self.window?.rootViewController = root

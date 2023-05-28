@@ -16,7 +16,7 @@ class exercisesHistoryDetailsM{
     var note : Any
     
     
-    init(id:Int,created_at:String,weight_unit:String,number:Int,weight:Int,repetition:Int,note:String){
+    init(id:Int,created_at:String,weight_unit:String,number:Int,weight:Double,repetition:Int,note:String){
         self.id = id
         self.created_at = created_at
         self.weight_unit = weight_unit
