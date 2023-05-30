@@ -1801,42 +1801,42 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            for data2 in data{
                                let weight = data2["weight"] != nil
                                if weight{
-                                   let weight = data2["weight"] as! Int
+                                   let weight = Int((data2["weight"] as? String) ?? "") ?? 0
                                    valueKey = weight
                                    key = "weight"
                                    Shared.shared.healthsWeight = weight
                                }
                                let muscle = data2["muscle"] != nil
                                if muscle{
-                                   let muscle = data2["muscle"] as! Int
+                                   let muscle = Int(data2["muscle"] as? String ?? "0") ?? 0
                                    valueKey = muscle
                                    key = "muscle"
                                    Shared.shared.healthsMuscle = muscle
                                }
                                let fat = data2["fat"] != nil
                                if fat{
-                                   let fat = data2["fat"] as! Int
+                                   let fat = Int(data2["fat"] as? String ?? "0") ?? 0
                                    valueKey = fat
                                    key = "fat"
                                    Shared.shared.healthsFat = fat
                                }
                                let water = data2["water"] != nil
                                if water{
-                                   let water = data2["water"] as! Int
+                                   let water = Int(data2["water"] as? String ?? "0") ?? 0
                                    valueKey = water
                                    key = "water"
                                    Shared.shared.healthsWater = water
                                }
                                let active_calories = data2["active_calories"] != nil
                                if active_calories{
-                                   let active_calories = data2["active_calories"] as! Int
+                                   let active_calories = Int(data2["active_calories"] as? String ?? "0") ?? 0
                                    valueKey = active_calories
                                    key = "active_calories"
                                    Shared.shared.healthsActiveCalories = active_calories
                                }
                                let steps = data2["steps"] != nil
                                if steps{
-                                   let steps = data2["steps"] as! Int
+                                   let steps = Int(data2["steps"] as? String ?? "0") ?? 0
                                    valueKey = steps
                                    key = "steps"
                                    Shared.shared.healthsSteps = steps
@@ -1882,19 +1882,19 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            for data2 in data{
                                let date = data2["date"] as! String
                                var splitDate = date.split(separator: "T")
-                               let neck = data2["neck"] as! Double
-                               let chest = data2["chest"] as! Double
-                               let left_arm = data2["left_arm"] as! Double
-                               let right_arm = data2["right_arm"] as! Double
-                               let waist = data2["waist"] as! Double
-                               let belly = data2["belly"] as! Double
-                               let lower_belly = data2["lower_belly"] as! Double
-                               let upper_belly = data2["upper_belly"] as! Double
-                               let hips = data2["hips"] as! Double
-                               let left_thigh = data2["left_thigh"] as! Double
-                               let right_thigh = data2["right_thigh"] as! Double
-                               let lift_calf = data2["lift_calf"] as! Double
-                               let right_calf = data2["right_calf"] as! Double
+                               let neck = Double((data2["neck"] as? String) ?? "0.0") ?? 0.0
+                               let chest = Double((data2["chest"] as? String) ?? "0.0") ?? 0.0
+                               let left_arm = Double((data2["left_arm"] as? String) ?? "0.0") ?? 0.0
+                               let right_arm = Double((data2["right_arm"] as? String) ?? "0.0") ?? 0.0
+                               let waist = Double((data2["waist"] as? String) ?? "0.0") ?? 0.0
+                               let belly = Double((data2["belly"] as? String) ?? "0.0") ?? 0.0
+                               let lower_belly = Double((data2["lower_belly"] as? String) ?? "0.0") ?? 0.0
+                               let upper_belly = Double((data2["upper_belly"] as? String) ?? "0.0") ?? 0.0
+                               let hips = Double((data2["hips"] as? String) ?? "0.0") ?? 0.0
+                               let left_thigh = Double((data2["left_thigh"] as? String) ?? "0.0") ?? 0.0
+                               let right_thigh = Double((data2["right_thigh"] as? String) ?? "0.0") ?? 0.0
+                               let lift_calf = Double((data2["lift_calf"] as? String) ?? "0.0") ?? 0.0
+                               let right_calf = Double((data2["right_calf"] as? String) ?? "0.0") ?? 0.0
                                let obj = BodyMeasurementsM(date: String(splitDate[0]), neck: neck, chest: chest, left_arm: left_arm, right_arm: right_arm, waist: waist, belly: belly, lower_belly: lower_belly, upper_belly: upper_belly, hips: hips, left_thigh: left_thigh, right_thigh: right_thigh, lift_calf: lift_calf, right_calf: right_calf)
                                Datalist.append(obj)
                            }

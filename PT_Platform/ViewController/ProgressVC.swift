@@ -89,25 +89,29 @@ class ProgressVC: UIViewController {
                 for i in health{
                     if i.key == "fat"{
                         self.lblFat.text = "\(String(format: "%.1f", ceil((i.value)*100)/100))%"
-                        self.viewFat.startProgress(to:  i.value,duration: 1.0)
+                        let fatValue = i.value == 0.0 ? 1.0 : i.value
+                        self.viewFat.startProgress(to: fatValue,duration: 1.0)
                         if i.type == "decrease"{
                             self.imgFat.image = UIImage(named: "FatDown")
                         }
                     }else if i.key == "muscle"{
                         self.lblMuscle.text = "\(String(format: "%.1f", ceil((i.value)*100)/100))%"
-                        self.viewMuscle.startProgress(to:  i.value,duration: 1.0)
+                        let muscleValue = i.value == 0.0 ? 1.0 : i.value
+                        self.viewMuscle.startProgress(to: muscleValue,duration: 1.0)
                         if i.type == "decrease"{
                             self.imgMuscle.image = UIImage(named: "MuscleDown")
                         }
                     }else if i.key == "weight"{
                         self.lblWeight.text = "\(String(format: "%.1f", ceil((i.value)*100)/100))%"
-                        self.viewWeight.startProgress(to:  i.value,duration: 1.0)
+                        let weightValue = i.value == 0.0 ? 1.0 : i.value
+                        self.viewWeight.startProgress(to: weightValue, duration: 1.0)
                         if i.type == "decrease"{
                             self.imgWeight.image = UIImage(named: "WeightDown")
                         }
                     }else if i.key == "water"{
                         self.lblWater.text = "\(String(format: "%.1f", ceil((i.value)*100)/100))%"
-                        self.viewWater.startProgress(to:  i.value,duration: 1.0)
+                        let waterValue = i.value == 0.0 ? 1.0 : i.value
+                        self.viewWater.startProgress(to: waterValue, duration: 1.0)
                         if i.type == "decrease"{
                             self.imgWater.image = UIImage(named: "WaterDown")
                         }

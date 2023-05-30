@@ -104,17 +104,20 @@ class NutritionVC: UIViewController {
                 self.lblCarbs.text = "\(target_carb)"
                 Shared.shared.nutritionCarbs = "\(target_carb)"
                 self.lblCarbsNew.text = "\(carb)"
-                self.viewCarbs.startProgress(to: CGFloat(Float(carb)/Float(target_carb)*100), duration: 1.0)
+                let carbValue: CGFloat = (carb == 0) ? 1 : CGFloat(Float(carb)/Float(target_carb)*100)
+                self.viewCarbs.startProgress(to: carbValue, duration: 1.0)
                 
                 self.lblFat.text = "\(target_fat)"
                 Shared.shared.nutritionFat = "\(target_fat)"
                 self.lblFatNew.text = "\(fat)"
-                self.viewFat.startProgress(to: CGFloat(Float(fat)/Float(target_fat)*100), duration: 1.0)
+                let fatValue: CGFloat = (fat == 0) ? 1 : CGFloat(Float(fat)/Float(target_fat)*100)
+                self.viewFat.startProgress(to: fatValue, duration: 1.0)
                 
                 self.lblProtein.text = "\(target_protein)"
                 Shared.shared.nutritionProtein = "\(target_protein)"
                 self.lblProteinNew.text = "\(protein)"
-                self.viewProtei.startProgress(to: CGFloat(Float(protein)/Float(target_protein)*100), duration: 1.0)
+                let proteinValue: CGFloat = (protein == 0) ? 1 : CGFloat(Float(protein)/Float(target_protein)*100)
+                self.viewProtei.startProgress(to: proteinValue, duration: 1.0)
             }else{
                 ToastView.shared.short(self.view, txt_msg: message)
             }
