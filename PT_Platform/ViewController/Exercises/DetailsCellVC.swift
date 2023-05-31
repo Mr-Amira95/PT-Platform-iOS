@@ -32,6 +32,9 @@ class DetailsCellVC: UIViewController {
     @IBOutlet weak var VideoView: UIView!
     @IBOutlet weak var btnSeeMore: UIButton!
     
+    @IBOutlet weak var btnAddToFavourite: UIButton!
+    @IBOutlet weak var btnAddToTodayWorkout: UIButton!
+
     @IBOutlet weak var tableView: UITableView!{
         didSet{
             tableView.dataSource = self
@@ -39,10 +42,23 @@ class DetailsCellVC: UIViewController {
             tableView.register(UINib(nibName: "Details2Cell", bundle: nil), forCellReuseIdentifier: "Details2Cell")
         }
     }
-    
+    var onAddRemoveFavourite: ((Bool) -> Void)?
+    var onAddRemoveTodayWorkout: ((Bool) -> Void)?
+    var isAddedToFav = false
+    var isAddedToTodayWorkout = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        onAddRemoveFavourite = { [weak self] isAdded in
+            let title = !isAdded ? "Add to favourites" : "Remove from favourites"
+            self?.btnAddToFavourite.setTitle(title, for: .normal)
+            self?.isAddedToFav = isAdded
+        }
+        onAddRemoveTodayWorkout = { [weak self] isAdded in
+            let title = !isAdded ? "Add to today's workout" : "Remove from today's workout"
+            self?.btnAddToTodayWorkout.setTitle(title, for: .normal)
+            self?.isAddedToTodayWorkout = isAdded
+        }
         if LanguageManager.shared.currentLanguage == .en{
             btnBack.setImage(UIImage(named: "btnBack"), for: .normal)
         }else{
@@ -130,6 +146,8 @@ class DetailsCellVC: UIViewController {
                 if category.count == 0{
                     ToastView.shared.short(self.view, txt_msg: "No video")
                 }else{
+                    self.onAddRemoveFavourite?((category[0].is_favourite != 0))
+                    self.onAddRemoveTodayWorkout?((category[0].is_today_log != 0))
                     self.image = category[0].image
                     self.counter = 0
                     self.url = category[0].video
@@ -234,6 +252,8 @@ class DetailsCellVC: UIViewController {
                         self.counter = 0
                         self.url = category[0].video
                         Shared.shared.video_id = category[0].id
+                        self.onAddRemoveFavourite?((category[0].is_favourite != 0))
+                        self.onAddRemoveTodayWorkout?((category[0].is_today_log != 0))
                         self.video()
                         self.imgVideos.sd_setImage(with: URL(string: self.image), completed: nil)
                         self.tableView.reloadData()
@@ -375,7 +395,9 @@ class DetailsCellVC: UIViewController {
             Spinner.instance.removeSpinner()
             if bool{
                 ToastView.shared.short(self.view, txt_msg: message)
+                self.onAddRemoveFavourite?(!self.isAddedToFav)
             }else{
+                self.onAddRemoveFavourite?(false)
                 ToastView.shared.short(self.view, txt_msg: message)
             }
         }
@@ -386,8 +408,10 @@ class DetailsCellVC: UIViewController {
         ControllerService.instance.SetWorkoutVideoPage(param: parameter) { message, bool in
             Spinner.instance.removeSpinner()
             if bool{
+                self.onAddRemoveTodayWorkout?(!self.isAddedToTodayWorkout)
                 ToastView.shared.short(self.view, txt_msg: message)
             }else{
+                self.onAddRemoveTodayWorkout?(false)
                 ToastView.shared.short(self.view, txt_msg: message)
             }
         }
