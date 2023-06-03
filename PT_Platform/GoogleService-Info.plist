@@ -2,22 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>101262153637-1vnqv5alkra9ffpbg91tkuaj13pkq5f4.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.101262153637-1vnqv5alkra9ffpbg91tkuaj13pkq5f4</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAXKryoS5KvlQxxgbFG3vBmMWzFpgH-K7E</string>
+	<string>AIzaSyCnjF8rhnRil-OodaYyEDahIjaBpmL2QHs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>101262153637</string>
+	<string>942113943843</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.qtechnetworks.gyms</string>
 	<key>PROJECT_ID</key>
-	<string>pt-platform-f1584</string>
+	<string>chat-test-7fd32</string>
 	<key>STORAGE_BUCKET</key>
-	<string>pt-platform-f1584.appspot.com</string>
+	<string>chat-test-7fd32.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +25,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:101262153637:ios:0339c550890f038dddba4c</string>
+	<string>1:942113943843:ios:d7a5b61ae1e2a91d6d9c96</string>
+	<key>DATABASE_URL</key>
+	<string>https://chat-test-7fd32-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

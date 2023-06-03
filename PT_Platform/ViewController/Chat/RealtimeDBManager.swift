@@ -13,7 +13,7 @@ import MessageKit
 
 class RealtimeDBManager {
     static let shared = RealtimeDBManager()
-    private let database = Database.database(url: "https://pt-platform-f1584-default-rtdb.firebaseio.com").reference()
+    private let database = Database.database(url: "https://chat-test-7fd32-default-rtdb.firebaseio.com/").reference()
     
     private init() {}
     
@@ -60,14 +60,14 @@ class RealtimeDBManager {
             let messages: [Message] = [value].compactMap({ dictionary in
                 print(dictionary)
                 guard let message = dictionary["message"] as? String,
-                      let receiverId = dictionary["receiverId"] as? Int,
+                      let receiverId = dictionary["receiverId"] as? String,
                       let senderId = dictionary["senderId"] as? String,
-                      let time = dictionary["time"] as? Double
+                      let time = dictionary["time"] as? String
                 else {
                     print("Something with date formatter probably")
                     return Message(sender: Sender(senderId: "", displayName: ""), messageId: "", sentDate: Date(), kind: .text(""))
                 }
-                let date = Date(timeIntervalSince1970: time)
+                let date = Date(timeIntervalSince1970: Double(time) ?? 0.0)
                 //                    let dateFormatter = DateFormatter()
                 //                    dateFormatter.timeStyle = DateFormatter.Style.medium //Set time style
                 //                    dateFormatter.dateStyle = DateFormatter.Style.medium //Set date style
