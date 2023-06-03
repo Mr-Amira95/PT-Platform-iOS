@@ -241,6 +241,8 @@
 		BDD73B6128367E44002D129B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B6028367E44002D129B /* Constant.swift */; };
 		BDD73B632837B2ED002D129B /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B622837B2ED002D129B /* Spinner.swift */; };
 		CE2809C12A1E870300A6AEF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2809C02A1E870300A6AEF0 /* GoogleService-Info.plist */; };
+		CEC95A632A2A98DB0074D556 /* RealtimeDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */; };
+		CEC95A652A2AACAB0074D556 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95A642A2AACAB0074D556 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -504,6 +506,8 @@
 		BDD73B6028367E44002D129B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		BDD73B622837B2ED002D129B /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		CE2809C02A1E870300A6AEF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDBManager.swift; sourceTree = "<group>"; };
+		CEC95A642A2AACAB0074D556 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E6048185DFA64516B07BCADD /* Pods_PT_Platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PT_Platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -535,6 +539,8 @@
 			children = (
 				27493C8027AA024D00C7395A /* ChatListVC.swift */,
 				27493C8227AA026000C7395A /* ChatVC.swift */,
+				CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */,
+				CEC95A642A2AACAB0074D556 /* ChatViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1814,6 +1820,7 @@
 				A1130D3828477143000B4F4E /* BreakfastVC.swift in Sources */,
 				BDD73B5D2836524B002D129B /* SignInAfterSignUPVC.swift in Sources */,
 				A13F85762929355900828FAA /* exercisesHistoryDetailsM.swift in Sources */,
+				CEC95A652A2AACAB0074D556 /* ChatViewController.swift in Sources */,
 				27B0EEB027A89C8D00900014 /* NutritionCalorieCalculatorVC.swift in Sources */,
 				A1C481E427859517008B224D /* TraineeVC.swift in Sources */,
 				A1B896E028D301FA00D29E29 /* PersonalizedVideoM.swift in Sources */,
@@ -1837,6 +1844,7 @@
 				A1A9F146292615E700955D37 /* FoodListCell.swift in Sources */,
 				A161370528BB87E200117E38 /* CalendarHelper.swift in Sources */,
 				27FB756727A0842800FCF643 /* ChooswTrainerVC.swift in Sources */,
+				CEC95A632A2A98DB0074D556 /* RealtimeDBManager.swift in Sources */,
 				A1B896F728D33C3000D29E29 /* PersonalizedImageCell.swift in Sources */,
 				BDD73B5F28367239002D129B /* ControllerService.swift in Sources */,
 				A1C481E227857C5F008B224D /* SignInVC.swift in Sources */,
@@ -2053,7 +2061,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;
@@ -2093,7 +2101,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;
