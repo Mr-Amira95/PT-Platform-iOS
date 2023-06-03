@@ -108,7 +108,7 @@ extension ListOfUserInCoachVC : UICollectionViewDelegate,UICollectionViewDataSou
             self.navigationController?.pushViewController(controller, animated: true)
         }else if Shared.shared.enterListUser == "Live Chat"{
             let storyboard = UIStoryboard(name: "Chat", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
+            let controller = storyboard.instantiateViewController(withIdentifier: "ChatVC") as! ChatViewController
             let navigationController = UINavigationController(rootViewController: controller)
             self.present(navigationController, animated: true, completion: nil)
         }else if Shared.shared.enterListUser == "Challenges"{

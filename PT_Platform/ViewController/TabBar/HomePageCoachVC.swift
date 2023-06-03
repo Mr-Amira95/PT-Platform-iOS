@@ -367,7 +367,7 @@ extension HomePageCoachVC : UICollectionViewDelegate,UICollectionViewDataSource,
                 self.navigationController?.pushViewController(controller, animated: true)
             }else{
                 let storyboard = UIStoryboard(name: "Chat", bundle: nil)
-                let controller = storyboard.instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
+                let controller = storyboard.instantiateViewController(withIdentifier: "ChatVC") as! ChatViewController
                 let navigationController = UINavigationController(rootViewController: controller)
                 self.present(navigationController, animated: true, completion: nil)
             }

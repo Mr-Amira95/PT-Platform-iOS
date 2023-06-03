@@ -52,25 +52,22 @@ class RealtimeDBManager {
             let userID = Shared.shared.getid() ?? ""
             path = ("\(coachID)/\(userID)/messages")
         }
-        database.child(path).observe(.value, with: {snapshot in
-            guard let value = snapshot.value as? [[String: Any]] else{
+        database.child(path).observeSingleEvent(of: .childAdded, with: {snapshot in
+            guard let value = snapshot.value as? [String: Any] else{
 //                completion(.failure(Erro()))
                 return
             }
-            let messages: [Message] = (value as [[String?: Any?]]).compactMap({ dictionary in
+            let messages: [Message] = [value].compactMap({ dictionary in
                 print(dictionary)
                 guard let message = dictionary["message"] as? String,
-                      let receiverId = dictionary["receiverId"] as? String,
+                      let receiverId = dictionary["receiverId"] as? Int,
                       let senderId = dictionary["senderId"] as? String,
-                      let time = dictionary["time"] as? String
+                      let time = dictionary["time"] as? Double
                 else {
                     print("Something with date formatter probably")
                     return Message(sender: Sender(senderId: "", displayName: ""), messageId: "", sentDate: Date(), kind: .text(""))
                 }
-                guard let timeResult = (time as? Double) else {
-                    return Message(sender: Sender(senderId: "", displayName: ""), messageId: "", sentDate: Date(), kind: .text(""))
-                }
-                let date = Date(timeIntervalSince1970: timeResult)
+                let date = Date(timeIntervalSince1970: time)
                 //                    let dateFormatter = DateFormatter()
                 //                    dateFormatter.timeStyle = DateFormatter.Style.medium //Set time style
                 //                    dateFormatter.dateStyle = DateFormatter.Style.medium //Set date style
@@ -79,7 +76,7 @@ class RealtimeDBManager {
                 let sender = Sender(senderId: senderId,
                                     displayName: senderId)
                 let finalMessage = Message(sender: sender,
-                                           messageId: message+senderId+receiverId,
+                                           messageId: message+senderId+String(receiverId),
                                            sentDate: date,
                                            kind: .text(message))
                 return finalMessage
