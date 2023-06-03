@@ -92,6 +92,7 @@ class DetailsCellVC: UIViewController {
             self.lblTitle.isHidden = true
             self.counter = 0
             self.url = Shared.shared.urlFav
+            self.onAddRemoveFavourite?(true)
             self.video()
             self.imgVideos.sd_setImage(with: URL(string: Shared.shared.imgFav), completed: nil)
             txtDescription.text = Shared.shared.descriptionFav
@@ -99,6 +100,7 @@ class DetailsCellVC: UIViewController {
         }else if Shared.shared.btnBack == "Today’s Workout" || Shared.shared.btnBack == "تمارين اليوم"{
             self.counter = 0
             self.url = Shared.shared.urlFav
+            self.onAddRemoveTodayWorkout?(true)
             self.video()
             self.imgVideos.sd_setImage(with: URL(string: Shared.shared.imgFav), completed: nil)
             txtDescription.text = Shared.shared.descriptionFav

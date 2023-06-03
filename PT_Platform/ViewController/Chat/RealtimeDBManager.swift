@@ -18,11 +18,23 @@ class RealtimeDBManager {
     private init() {}
     
     func sendMessage(_ newMessage: Message) {
-        guard let userID = Shared.shared.getid() else {
-            return
-        }
-        guard let coachID = Shared.shared.getCoachId() else {
-            return
+//        guard let userID = Shared.shared.getid() else {
+//            return
+//        }
+//        guard let coachID = Shared.shared.getCoachId() else {
+//            return
+//        }
+        var path = ""
+        var coachID = 0
+        var userID = ""
+        if Shared.shared.getusertype() == "Coach"{
+            coachID = Shared.shared.getCoachId() ?? 0
+            userID = Shared.shared.getid() ?? ""
+            path = "chat/\(coachID)/\(Shared.shared.selectUserInCoach)/messages"
+        } else {
+            coachID = Shared.shared.getCoachId() ?? 0
+            userID = Shared.shared.getid() ?? ""
+            path = ("chat/\(coachID)/\(userID)/messages")
         }
         var messageText = ""
         
@@ -33,12 +45,12 @@ class RealtimeDBManager {
             break
         }
         let message = [
-            "senderId" : userID,
-            "receiverId": coachID,
-            "message" : messageText,
-            "time" : Int(newMessage.sentDate.timeIntervalSince1970)
-        ] as [String : Any]
-        database.child("\(coachID)/\(userID)/messages").childByAutoId().setValue(message)
+            "senderId" : "\(userID)",
+            "receiverId": "\(coachID)",
+            "message" : "\(messageText)",
+            "time" : "\(Int(newMessage.sentDate.timeIntervalSince1970))"
+        ] as [String : String]
+        database.child(path).childByAutoId().setValue(message)
     }
 
     
@@ -46,18 +58,26 @@ class RealtimeDBManager {
         var path = ""
         if Shared.shared.getusertype() == "Coach"{
             let coachID = Shared.shared.getCoachId() ?? 0
-            path = "\(coachID)/\(Shared.shared.selectUserInCoach)/messages"
+            path = "chat/\(coachID)/\(Shared.shared.selectUserInCoach)/messages"
         } else {
             let coachID = Shared.shared.getCoachId() ?? 0
             let userID = Shared.shared.getid() ?? ""
-            path = ("\(coachID)/\(userID)/messages")
+            path = ("chat/\(coachID)/\(userID)/messages")
         }
-        database.child(path).observeSingleEvent(of: .childAdded, with: {snapshot in
+        database.child(path).observe(.value, with: {snapshot in
+            var messagesDict: [[String : Any]] = []
+            for dataSnapshot in snapshot.children {
+                if let messageData = dataSnapshot as? DataSnapshot {
+                    if let message1 = messageData.value as? [String: Any] {
+                        messagesDict.append(message1)
+                    }
+                }
+            }
             guard let value = snapshot.value as? [String: Any] else{
 //                completion(.failure(Erro()))
                 return
             }
-            let messages: [Message] = [value].compactMap({ dictionary in
+            let messages: [Message] = messagesDict.compactMap({ dictionary in
                 print(dictionary)
                 guard let message = dictionary["message"] as? String,
                       let receiverId = dictionary["receiverId"] as? String,
