@@ -2577,7 +2577,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEk-Cv-3yh">
                                         <rect key="frame" x="0.0" y="62" width="414" height="756"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uV-Hm-kbl">
+                                            <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uV-Hm-kbl">
                                                 <rect key="frame" x="349" y="11" width="40" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="cwR-YM-qW0"/>
@@ -3611,11 +3611,11 @@
         <scene sceneID="YWD-Tr-Gb6">
             <objects>
                 <viewController storyboardIdentifier="AssignedCoachesVC" modalPresentationStyle="fullScreen" id="n67-rE-Uf6" customClass="AssignedCoachesVC" customModule="PT_Platform" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="yfK-lL-TVV">
+                    <view key="view" contentMode="scaleToFill" id="yfK-lL-TVV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-Cg-UKi">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-Cg-UKi">
                                 <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RV4-To-h32">

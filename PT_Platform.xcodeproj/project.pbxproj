@@ -240,6 +240,8 @@
 		BDD73B5F28367239002D129B /* ControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B5E28367239002D129B /* ControllerService.swift */; };
 		BDD73B6128367E44002D129B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B6028367E44002D129B /* Constant.swift */; };
 		BDD73B632837B2ED002D129B /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B622837B2ED002D129B /* Spinner.swift */; };
+		CE8BBCC42A2E37DB00361AD0 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */; };
+		CE8BBCC62A2E380400361AD0 /* NSLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC52A2E380400361AD0 /* NSLayoutHelper.swift */; };
 		CEC95A632A2A98DB0074D556 /* RealtimeDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */; };
 		CEC95A652A2AACAB0074D556 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95A642A2AACAB0074D556 /* ChatViewController.swift */; };
 		CEC95A672A2ACC610074D556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC95A662A2ACC610074D556 /* GoogleService-Info.plist */; };
@@ -505,6 +507,8 @@
 		BDD73B5E28367239002D129B /* ControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerService.swift; sourceTree = "<group>"; };
 		BDD73B6028367E44002D129B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		BDD73B622837B2ED002D129B /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
+		CE8BBCC52A2E380400361AD0 /* NSLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutHelper.swift; sourceTree = "<group>"; };
 		CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDBManager.swift; sourceTree = "<group>"; };
 		CEC95A642A2AACAB0074D556 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		CEC95A662A2ACC610074D556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -594,6 +598,8 @@
 				A10E336C283CF82D0063FB1D /* Toast.swift */,
 				A161370428BB87E200117E38 /* CalendarHelper.swift */,
 				A1C594002924E2E4007210FC /* ImagePicker.swift */,
+				CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */,
+				CE8BBCC52A2E380400361AD0 /* NSLayoutHelper.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -1725,6 +1731,7 @@
 				A10E336D283CF82D0063FB1D /* Toast.swift in Sources */,
 				A1812A8728C4C6DC008A971C /* CollectionPackagesPTCell.swift in Sources */,
 				277ACB0D279E1F1C006F756A /* Shared.swift in Sources */,
+				CE8BBCC62A2E380400361AD0 /* NSLayoutHelper.swift in Sources */,
 				A1B48CC92781C2D60067AF9B /* verificationcodeVC.swift in Sources */,
 				27B0EEB227A8B22D00900014 /* NutritionSupplementsVC.swift in Sources */,
 				27CA543527AB6648000E8768 /* Q1Cell.swift in Sources */,
@@ -1812,6 +1819,7 @@
 				27B0EEB627A8BB5100900014 /* SupplementsCell.swift in Sources */,
 				A134BB73283FB52D00135B68 /* NavDetailsCellVC.swift in Sources */,
 				27D574EC27A7323E00DC1E39 /* Details2Cell.swift in Sources */,
+				CE8BBCC42A2E37DB00361AD0 /* DeviceHelper.swift in Sources */,
 				27D95E8C27B099CC00973D2F /* DayCell.swift in Sources */,
 				A147665F27A232E10019A77C /* ManTabBar.swift in Sources */,
 				A1BBFBA128BCBA4A0006CD74 /* AvailableCell.swift in Sources */,
@@ -2061,7 +2069,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;
@@ -2101,7 +2109,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;

@@ -206,9 +206,10 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                     let success = dic["success"] as! NSNumber
                     if success == 1{
                         complition("", true)
-                    }else{
-                       let message = dic["data"] as! NSString
+                    } else if let message = dic["data"] as? NSString {
                        complition(message as String, false)
+                    } else if let errors = dic["errors"] as? [String : String], let msg = errors["password"] {
+                        complition(msg, false)
                     }
                 case .failure(let error):
                     print(error)

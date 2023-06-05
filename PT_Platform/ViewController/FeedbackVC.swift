@@ -11,7 +11,11 @@ import LanguageManager_iOS
 class FeedbackVC: UIViewController {
     
     @IBOutlet weak var txtTitle: UITextField!
-    @IBOutlet weak var txtMessage: UITextView!
+    @IBOutlet weak var txtMessage: UITextView! {
+        didSet {
+            txtMessage.backgroundColor = .white
+        }
+    }
     @IBOutlet weak var lblBtnBack: UILabel!
     @IBOutlet weak var lbl: UILabel!
     @IBOutlet weak var imgBack: UIImageView!
