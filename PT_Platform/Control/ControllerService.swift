@@ -1430,15 +1430,15 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                        let success = dic["success"] as? NSNumber
                        if success == 1{
                            let data = dic["data"] as! NSDictionary
-                            let carb = data["carb"] as? Int ?? 0
-                            let fat = data["fat"] as? Int ?? 0
-                            let protein = data["protein"] as? Int ?? 0
-                            let calories = data["food_target"] as? Int ?? 0
-                            let user = data["user"] as! NSDictionary
-                           let target_carb = user["target_carb"] as? Int ?? 0
-                           let target_fat = user["target_fat"] as? Int ?? 0
-                           let target_protein = user["target_protein"] as? Int ?? 0
-                           let target_calorie = user["target_calorie"] as? Int ?? 0
+                           let carb = data["carb"] as? Int ?? 0
+                           let fat = data["fat"] as? Int ?? 0
+                           let protein = data["protein"] as? Int ?? 0
+                           let calories = data["food_target"] as? Int ?? 0
+                           let user = data["user"] as! NSDictionary
+                           let target_carb = Int(user["target_carb"] as? String ?? "") ?? 0
+                           let target_fat = Int(user["target_fat"] as? String ?? "") ?? 0
+                           let target_protein = Int(user["target_protein"] as? String ?? "") ?? 0
+                           let target_calorie = Int(user["target_calorie"] as? String ?? "") ?? 0
                            complition("",carb, fat, protein, calories, target_carb, target_fat, target_protein, target_calorie, true)
                        }else{
                            let errors = dic["errors"] as! NSDictionary
