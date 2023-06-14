@@ -460,6 +460,7 @@ extension HomePageCoachVC : UICollectionViewDelegate,UICollectionViewDataSource,
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0]
             let parameter = ["password" : textField?.text ?? "",
+                             "password_confirmation" : textField?.text ?? "",
                              "device_player_id" : Shared.shared.device_player_id ?? 0] as [String : Any]
             if textField?.text ?? "" == ""{
                 self.Alert1(Message: "Please, enter your password")

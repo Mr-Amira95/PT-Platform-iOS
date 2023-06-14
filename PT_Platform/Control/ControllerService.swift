@@ -1705,7 +1705,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let description = data2["description"]as! String
                                let image = data2["image"]as! String
                                let name = data2["name"]as! String
-                               let time = Int(data2["time"]as! String) ?? 0
+                               let time = data2["time"] as? Int ?? 0
                                let ingredients = data2["ingredients"] as! [String]
                                var ingredient = ""
                                for i in ingredients{
@@ -1998,7 +1998,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let is_free = data2["is_free"] as? Bool ?? false
                                let permissions = data2["permissions"] as? NSDictionary
                                if permissions != nil{
-                                    permissionsCallVideo = Int(permissions?["call_video"] as! String) ?? 0
+                                    permissionsCallVideo = permissions?["call_video"] as? Int ?? 0
                                     permissionsWorkoutSchedule = permissions?["workout_schedule"] as! Bool
                                     permissionsFoodPlan = permissions!["food_plan"] as! Bool
                                }
@@ -2028,11 +2028,11 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let price = "\(String(format: "%.0f", ceil(Double(amount) ?? 0.0))) \(currency)"
                                let style = data2["style"] as! String
                                let purchase_apple_id = data2["purchase_apple_id"] as? String ?? ""
-                               let date = Double(data2["date"] as! String) ?? 0.0
+                               let date = Double(data2["date"] as! Int) ?? 0.0
                                let is_free = data2["is_free"] as! Bool
                                let permissions = data2["permissions"] as? NSDictionary
                                if permissions != nil{
-                                   permissionsCallVideo = Int(permissions?["call_video"] as! String) ?? 0
+                                   permissionsCallVideo = permissions?["call_video"] as? Int ?? 0
                                    permissionsWorkoutSchedule = permissions?["workout_schedule"] as! Bool
                                    permissionsFoodPlan = permissions?["food_plan"] as! Bool
                                }
@@ -2079,9 +2079,9 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            let url = data["url"] as? String ?? ""
                            complition(url,true)
                        }else{
-                           let errors = dic["errors"] as! NSDictionary
-                           let message = errors["payment_method"] as! String
-                           complition(message,false)
+                           let errors = dic["errors"] as? String ?? ""
+//                           let message = errors["payment_method"] as! String
+                           complition(errors,false)
                        }
                    case .failure(let error):
                        print(error)

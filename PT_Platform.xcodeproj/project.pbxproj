@@ -221,7 +221,6 @@
 		A1DF6CEA28ABBF140077350A /* BodyM2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF6CE828ABBF140077350A /* BodyM2Cell.swift */; };
 		A1DF6CEB28ABBF140077350A /* BodyM2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DF6CE928ABBF140077350A /* BodyM2Cell.xib */; };
 		A1E25D2C2918DEB000981140 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E25D2B2918DEB000981140 /* HealthKit.framework */; };
-		A1F4E5F129B2944C00E1DA1C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4E5F029B2944C00E1DA1C /* StoreKit.framework */; };
 		A1F9AFC728A91D9900EFA36E /* BodyMeasurementsM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9AFC628A91D9900EFA36E /* BodyMeasurementsM.swift */; };
 		A1FD4E4528E1DD1F00AACDAE /* VideoChatCoachVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD4E4428E1DD1F00AACDAE /* VideoChatCoachVC.swift */; };
 		A1FD4E4728E1DE5D00AACDAE /* VideoChatCoachM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD4E4628E1DE5D00AACDAE /* VideoChatCoachM.swift */; };
@@ -240,6 +239,8 @@
 		BDD73B5F28367239002D129B /* ControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B5E28367239002D129B /* ControllerService.swift */; };
 		BDD73B6128367E44002D129B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B6028367E44002D129B /* Constant.swift */; };
 		BDD73B632837B2ED002D129B /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B622837B2ED002D129B /* Spinner.swift */; };
+		CE358ED92A39154B0097D58B /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE358ED82A39154B0097D58B /* WebViewViewController.swift */; };
+		CE358EDB2A3915F50097D58B /* WebViewSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE358EDA2A3915F50097D58B /* WebViewSB.storyboard */; };
 		CE8BBCC42A2E37DB00361AD0 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */; };
 		CE8BBCC62A2E380400361AD0 /* NSLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC52A2E380400361AD0 /* NSLayoutHelper.swift */; };
 		CEC95A632A2A98DB0074D556 /* RealtimeDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */; };
@@ -507,6 +508,8 @@
 		BDD73B5E28367239002D129B /* ControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerService.swift; sourceTree = "<group>"; };
 		BDD73B6028367E44002D129B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		BDD73B622837B2ED002D129B /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		CE358ED82A39154B0097D58B /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		CE358EDA2A3915F50097D58B /* WebViewSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewSB.storyboard; sourceTree = "<group>"; };
 		CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
 		CE8BBCC52A2E380400361AD0 /* NSLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutHelper.swift; sourceTree = "<group>"; };
 		CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDBManager.swift; sourceTree = "<group>"; };
@@ -522,7 +525,6 @@
 			files = (
 				47EB6D79C5959FC2655F78F9 /* Pods_PT_Platform.framework in Frameworks */,
 				A1E25D2C2918DEB000981140 /* HealthKit.framework in Frameworks */,
-				A1F4E5F129B2944C00E1DA1C /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -904,6 +906,7 @@
 				A1B48CCF2781C2DA0067AF9B /* LaunchScreen.storyboard */,
 				A1D9CD1A2923790B00EB7136 /* Popup.storyboard */,
 				A1D9CD1F2923793B00EB7136 /* Questions.storyboard */,
+				CE358EDA2A3915F50097D58B /* WebViewSB.storyboard */,
 			);
 			path = "Controller's";
 			sourceTree = "<group>";
@@ -1185,6 +1188,7 @@
 				27D95E6727B0721800973D2F /* ChallengedCompleteVC.swift */,
 				27D95E6527B06A9300973D2F /* RecipesVC.swift */,
 				27D95E8727B0934100973D2F /* ProgressVC.swift */,
+				CE358ED82A39154B0097D58B /* WebViewViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1641,6 +1645,7 @@
 				A1FD4E5E28E3083500AACDAE /* UserCell.xib in Resources */,
 				A1DF6CEB28ABBF140077350A /* BodyM2Cell.xib in Resources */,
 				27D95E7A27B0871500973D2F /* BodyCell.xib in Resources */,
+				CE358EDB2A3915F50097D58B /* WebViewSB.storyboard in Resources */,
 				A1D9CD182923790B00EB7136 /* Popup.storyboard in Resources */,
 				27D95E8D27B099CC00973D2F /* DayCell.xib in Resources */,
 				27CA542A27AB6610000E8768 /* TitleCell.xib in Resources */,
@@ -1849,6 +1854,7 @@
 				A1C3869028A29A420078F098 /* ChallengesM.swift in Sources */,
 				A1D7F1E8279A1BAE00A868EF /* ThankYouVC.swift in Sources */,
 				A1B046CC27830F19006A75C8 /* TellUsVC.swift in Sources */,
+				CE358ED92A39154B0097D58B /* WebViewViewController.swift in Sources */,
 				A1A9F146292615E700955D37 /* FoodListCell.swift in Sources */,
 				A161370528BB87E200117E38 /* CalendarHelper.swift in Sources */,
 				27FB756727A0842800FCF643 /* ChooswTrainerVC.swift in Sources */,
@@ -2063,13 +2069,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5419F946AB250B26F0C3469E /* Pods-PT_Platform.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;
@@ -2103,13 +2108,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A38A5C49DAC7F75A58EEF8AA /* Pods-PT_Platform.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;
