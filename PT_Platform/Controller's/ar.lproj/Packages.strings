@@ -29,8 +29,8 @@
 /* Class = "UILabel"; text = "Silver Package "; ObjectID = "Kgb-sC-aTn"; */
 "Kgb-sC-aTn.text" = "Silver Package ";
 
-/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet"; ObjectID = "Ws7-Tx-JaP"; */
-"Ws7-Tx-JaP.text" = "Lorem ipsum dolor sit amet";
+/* Class = "UILabel"; text = ""; ObjectID = "Ws7-Tx-JaP"; */
+"Ws7-Tx-JaP.text" = "";
 
 /* Class = "UILabel"; text = "Please subscribe to proceed!"; ObjectID = "ckB-GL-kEu"; */
 "ckB-GL-kEu.text" = "Please subscribe to proceed!";

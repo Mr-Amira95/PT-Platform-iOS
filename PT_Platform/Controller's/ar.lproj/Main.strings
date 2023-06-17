@@ -80,8 +80,8 @@
 /* Class = "UIButton"; normalTitle = "Finish"; ObjectID = "89T-8j-azr"; */
 "89T-8j-azr.normalTitle" = "Finish";
 
-/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "8Hl-nY-P8b"; */
-"8Hl-nY-P8b.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+/* Class = "UITextView"; text = ""; ObjectID = "8Hl-nY-P8b"; */
+"8Hl-nY-P8b.text" = "";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "8LE-m8-PdZ"; */
 "8LE-m8-PdZ.placeholder" = "Password";
@@ -155,8 +155,8 @@
 /* Class = "UILabel"; text = "="; ObjectID = "EKI-S7-QkT"; */
 "EKI-S7-QkT.text" = "=";
 
-/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."; ObjectID = "EZm-Jk-EMv"; */
-"EZm-Jk-EMv.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+/* Class = "UILabel"; text = ""; ObjectID = "EZm-Jk-EMv"; */
+"EZm-Jk-EMv.text" = "";
 
 /* Class = "UILabel"; text = "Assigned Coaches"; ObjectID = "EeC-Er-i5T"; */
 "EeC-Er-i5T.text" = "Assigned Coaches";
@@ -386,8 +386,8 @@
 /* Class = "UILabel"; text = "Nutrition history"; ObjectID = "Wxg-ur-IGj"; */
 "Wxg-ur-IGj.text" = "Nutrition history";
 
-/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "X8U-Mz-bav"; */
-"X8U-Mz-bav.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+/* Class = "UITextView"; text = ""; ObjectID = "X8U-Mz-bav"; */
+"X8U-Mz-bav.text" = "";
 
 /* Class = "UITextField"; placeholder = "Nick Name"; ObjectID = "Y8X-Tv-3IC"; */
 "Y8X-Tv-3IC.placeholder" = "Nick Name";
@@ -461,8 +461,8 @@
 /* Class = "UILabel"; text = "Target"; ObjectID = "byY-Mf-aFz"; */
 "byY-Mf-aFz.text" = "Target";
 
-/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "c2T-Eh-8PQ"; */
-"c2T-Eh-8PQ.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+/* Class = "UITextView"; text = ""; ObjectID = "c2T-Eh-8PQ"; */
+"c2T-Eh-8PQ.text" = "";
 
 /* Class = "UILabel"; text = "Please enter the verification code that we have sent to your email"; ObjectID = "cIl-UW-gb1"; */
 "cIl-UW-gb1.text" = "Please enter the verification code that we have sent to your email";
@@ -665,8 +665,8 @@
 /* Class = "UILabel"; text = "1"; ObjectID = "qFL-Hp-DLX"; */
 "qFL-Hp-DLX.text" = "1";
 
-/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."; ObjectID = "qc9-dJ-Yym"; */
-"qc9-dJ-Yym.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+/* Class = "UILabel"; text = ""; ObjectID = "qc9-dJ-Yym"; */
+"qc9-dJ-Yym.text" = "";
 
 /* Class = "UILabel"; text = "PT Platform"; ObjectID = "sKR-I5-O0d"; */
 "sKR-I5-O0d.text" = "PT Platform";
