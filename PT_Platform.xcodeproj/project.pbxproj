@@ -217,10 +217,8 @@
 		A1D9CD132923789C00EB7136 /* Packages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D9CD152923789C00EB7136 /* Packages.storyboard */; };
 		A1D9CD182923790B00EB7136 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D9CD1A2923790B00EB7136 /* Popup.storyboard */; };
 		A1D9CD1D2923793B00EB7136 /* Questions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D9CD1F2923793B00EB7136 /* Questions.storyboard */; };
-		A1DF6CE628ABAAEF0077350A /* AddHealthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF6CE528ABAAEF0077350A /* AddHealthVC.swift */; };
 		A1DF6CEA28ABBF140077350A /* BodyM2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF6CE828ABBF140077350A /* BodyM2Cell.swift */; };
 		A1DF6CEB28ABBF140077350A /* BodyM2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DF6CE928ABBF140077350A /* BodyM2Cell.xib */; };
-		A1E25D2C2918DEB000981140 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E25D2B2918DEB000981140 /* HealthKit.framework */; };
 		A1F9AFC728A91D9900EFA36E /* BodyMeasurementsM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9AFC628A91D9900EFA36E /* BodyMeasurementsM.swift */; };
 		A1FD4E4528E1DD1F00AACDAE /* VideoChatCoachVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD4E4428E1DD1F00AACDAE /* VideoChatCoachVC.swift */; };
 		A1FD4E4728E1DE5D00AACDAE /* VideoChatCoachM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD4E4628E1DE5D00AACDAE /* VideoChatCoachM.swift */; };
@@ -239,6 +237,7 @@
 		BDD73B5F28367239002D129B /* ControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B5E28367239002D129B /* ControllerService.swift */; };
 		BDD73B6128367E44002D129B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B6028367E44002D129B /* Constant.swift */; };
 		BDD73B632837B2ED002D129B /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD73B622837B2ED002D129B /* Spinner.swift */; };
+		CE26848D2A3DBB2000534585 /* AddHealthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF6CE528ABAAEF0077350A /* AddHealthVC.swift */; };
 		CE358ED92A39154B0097D58B /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE358ED82A39154B0097D58B /* WebViewViewController.swift */; };
 		CE358EDB2A3915F50097D58B /* WebViewSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE358EDA2A3915F50097D58B /* WebViewSB.storyboard */; };
 		CE8BBCC42A2E37DB00361AD0 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */; };
@@ -524,7 +523,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EB6D79C5959FC2655F78F9 /* Pods_PT_Platform.framework in Frameworks */,
-				A1E25D2C2918DEB000981140 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1775,7 +1773,6 @@
 				27CA542D27AB6622000E8768 /* AgeCell.swift in Sources */,
 				277ACB15279E3521006F756A /* NewsCell.swift in Sources */,
 				27CA543127AB6639000E8768 /* WeightCell.swift in Sources */,
-				A1DF6CE628ABAAEF0077350A /* AddHealthVC.swift in Sources */,
 				A1BBFBA528BCC6BE0006CD74 /* AvailableTableCell.swift in Sources */,
 				A1FD4E5D28E3083500AACDAE /* UserCell.swift in Sources */,
 				A1C594052925179E007210FC /* ListFoodPopupVC.swift in Sources */,
@@ -1819,6 +1816,7 @@
 				A1BF2BE628D6F54D00780A0D /* DinnerCell.swift in Sources */,
 				A139E91428ED82D60002CC5C /* LunchCell.swift in Sources */,
 				A199550528AE36EE00C17917 /* QuestionsCell.swift in Sources */,
+				CE26848D2A3DBB2000534585 /* AddHealthVC.swift in Sources */,
 				A1B4A830292395C80017D074 /* SelectLanguageVc.swift in Sources */,
 				A1BB4C3028ACE7EB00E11BD7 /* PackegePTM.swift in Sources */,
 				27B0EEB627A8BB5100900014 /* SupplementsCell.swift in Sources */,

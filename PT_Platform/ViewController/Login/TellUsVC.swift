@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import HealthKit
 
 class TellUsVC: UIViewController {
     
@@ -16,21 +15,10 @@ class TellUsVC: UIViewController {
     @IBOutlet weak var imgTrainee: UIImageView!
     
     var Flag = 0
-    let healthStore = HKHealthStore()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let allTypes = Set([HKObjectType.workoutType(),
-                            HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!,
-                            HKObjectType.quantityType(forIdentifier: .distanceCycling)!,
-                            HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning)!,
-                            HKObjectType.quantityType(forIdentifier: .heartRate)!])
 
-        healthStore.requestAuthorization(toShare: allTypes, read: allTypes) { (success, error) in
-            if !success {
-                // Handle the error here.
-            }
-        }
         viewCoach.layer.cornerRadius = 10
         viewCoach.layer.borderWidth = 2
         viewCoach.layer.borderColor = UIColor(named: "MainColor")?.cgColor

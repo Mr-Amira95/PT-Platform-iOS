@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import HealthKit
 import KRProgressHUD
 import LanguageManager_iOS
 
@@ -29,7 +28,6 @@ class AddHealthVC: UIViewController {
     @IBOutlet weak var btnBack: UIButton!
     
     
-    let healthStore = HKHealthStore()
     var onlyHealth = 0.0
     
     let endDate = Date()
@@ -54,7 +52,6 @@ class AddHealthVC: UIViewController {
             txtSteps.textAlignment = .right
         }
         setBorder()
-        helthSteps2()
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
         // Do any additional setup after loading the view.
         if txtSteps.text?.count == 0{
@@ -106,85 +103,5 @@ class AddHealthVC: UIViewController {
                 }
             }
         }
-
-        
-    }
-    
-
-}
-
-
-extension AddHealthVC{
-    func helthSteps2(){
-        let healthKitTypes: Set = [ HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)! ]
-        self.healthStore.requestAuthorization(toShare: healthKitTypes, read: healthKitTypes) { (bool, error) in
-            if (bool) {
-                self.getSteps { (result) in
-                    DispatchQueue.main.async {
-                        let stepCount = Int(result)
-                    }
-                }
-            }
-        }
-    }
-    func getSteps(completion: @escaping (Double) -> Void){
-        var calender = Calendar.current
-        calender.timeZone = TimeZone.current
-        calender.locale = Locale.current
-        
-        let interval = NSDateComponents()
-        interval.hour = 1
-        guard let quantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount) else {
-            fatalError("*** Unable to create a step count type ***")
-        }
-        
-        let currentDateTime = Date()
-        let userCalendar = Calendar.current
-        let requestedComponents: Set<Calendar.Component> = [.year,.month,.day]
-        let dateTimeComponents = userCalendar.dateComponents(requestedComponents, from: currentDateTime)
-        let day = dateTimeComponents.day ?? 0
-        let month = dateTimeComponents.month ?? 0
-        let year = dateTimeComponents.year ?? 0
-        
-        let isoDate = "\(year)-\(month)-\(day - 1) 20:59:59 +0000"
-
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        dateFormatter.dateFormat = "yyyy-MM-dd' 'HH:mm:ssZ"
-        let date = dateFormatter.date(from:isoDate)!
-
-        let query = HKStatisticsCollectionQuery(quantityType: quantityType,
-                                                quantitySamplePredicate: nil,
-                                                options: [.cumulativeSum , .separateBySource],
-                                                anchorDate: date,
-                                                intervalComponents: interval as DateComponents)
-        
-        // Set the results handler
-        query.initialResultsHandler = {
-            query, results, error in
-            
-            
-            guard let statsCollection = results else {
-                // Perform proper error handling here
-                fatalError("*** An error occurred while calculating the statistics: \(error?.localizedDescription) ***")
-            }
-
-            let endDate = Date()
-            var count = 0.0
-            statsCollection.enumerateStatistics(from: date, to: endDate) { statistics, stop in
-                if let quantity = statistics.sumQuantity() {
-                    let date = statistics.startDate
-                    let value = quantity.doubleValue(for: HKUnit.count())
-                    count += quantity.doubleValue(for: HKUnit.count())
-                                    
-                    DispatchQueue.main.async {
-                        self.onlyHealth = count
-                        self.txtSteps.text = "\(Int(count))"
-                        completion(count)
-                    }
-                }
-            }
-        }
-        healthStore.execute(query)
     }
 }
