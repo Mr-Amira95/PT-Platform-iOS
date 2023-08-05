@@ -118,23 +118,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="brF-uz-L8I">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="brF-uz-L8I">
+                                <rect key="frame" x="40" y="309.5" width="334" height="291"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qoz-Os-Qdc"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="brF-uz-L8I" firstAttribute="top" secondItem="88f-wu-AMB" secondAttribute="top" id="CSx-Lv-7Ky"/>
-                            <constraint firstItem="brF-uz-L8I" firstAttribute="leading" secondItem="Qoz-Os-Qdc" secondAttribute="leading" id="IyT-rh-BuL"/>
-                            <constraint firstItem="Qoz-Os-Qdc" firstAttribute="trailing" secondItem="brF-uz-L8I" secondAttribute="trailing" id="Ks5-ty-huD"/>
-                            <constraint firstAttribute="bottom" secondItem="brF-uz-L8I" secondAttribute="bottom" id="bRv-yg-Y2K"/>
+                            <constraint firstItem="brF-uz-L8I" firstAttribute="centerY" secondItem="Qoz-Os-Qdc" secondAttribute="centerY" id="7X2-3J-PR6"/>
+                            <constraint firstItem="brF-uz-L8I" firstAttribute="centerX" secondItem="Qoz-Os-Qdc" secondAttribute="centerX" id="Jeu-m8-Wno"/>
+                            <constraint firstItem="Qoz-Os-Qdc" firstAttribute="trailing" secondItem="brF-uz-L8I" secondAttribute="trailing" constant="40" id="TEy-ax-wWo"/>
+                            <constraint firstItem="brF-uz-L8I" firstAttribute="leading" secondItem="Qoz-Os-Qdc" secondAttribute="leading" constant="40" id="u3v-Vt-7iG"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cT-5Q-wcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2032" y="524"/>
+            <point key="canvasLocation" x="-2033.3333333333335" y="523.66071428571422"/>
         </scene>
         <!--Tell UsVC-->
         <scene sceneID="tne-QT-ifu">
@@ -5456,10 +5456,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxq-lj-OqX">
-                                <rect key="frame" x="0.0" y="48" width="414" height="826"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 11" translatesAutoresizingMaskIntoConstraints="NO" id="hlF-yz-FeU">
-                                        <rect key="frame" x="-2" y="-46" width="419" height="910"/>
+                                        <rect key="frame" x="-2" y="-46" width="419" height="898"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDs-v4-MrZ">
                                         <rect key="frame" x="8" y="8" width="398" height="53"/>
@@ -11276,7 +11276,7 @@
         <image name="IconShare" width="16" height="18"/>
         <image name="IconTwiter" width="41" height="41"/>
         <image name="IconUnSelect" width="31" height="30"/>
-        <image name="Logo" width="279" height="116"/>
+        <image name="Logo" width="1372" height="291"/>
         <image name="Mask Group 11" width="414" height="910"/>
         <image name="Me" width="36" height="36"/>
         <image name="MuscleUp" width="9" height="8"/>
