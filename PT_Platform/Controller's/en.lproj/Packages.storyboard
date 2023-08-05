@@ -14,11 +14,11 @@
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="PersonalTrainingVC" id="Y6W-OH-hqX" customClass="PersonalTrainingVC" customModule="PT_Platform" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWj-op-J1o">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWj-op-J1o">
                                 <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MlK-2v-1TZ">
@@ -415,14 +415,14 @@
                                 <rect key="frame" x="38" y="620" width="339" height="242"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nX-VI-Gx5">
-                                        <rect key="frame" x="0.0" y="182" width="339" height="60"/>
+                                        <rect key="frame" x="0.0" y="192" width="339" height="50"/>
                                         <color key="backgroundColor" name="MainColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Ujx-hP-57E"/>
+                                            <constraint firstAttribute="height" constant="50" id="Ujx-hP-57E"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Checkout">
+                                        <state key="normal" title="Pay with in app purchase">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -434,8 +434,28 @@
                                             <action selector="btnCheckout:" destination="HUX-Ge-Iz3" eventType="touchUpInside" id="cLG-B9-GST"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ci3-uP-dwa">
+                                        <rect key="frame" x="0.0" y="130" width="339" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fF1-J9-WrU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Pay via credit card">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnCheckoutViaCreditCard:" destination="HUX-Ge-Iz3" eventType="touchUpInside" id="TCf-uK-vsl"/>
+                                        </connections>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0w-IJ-mEd">
-                                        <rect key="frame" x="0.0" y="0.0" width="339" height="166"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="339" height="106"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="w51-vE-Od0">
                                                 <rect key="frame" x="0.0" y="0.0" width="339" height="106"/>
@@ -538,6 +558,8 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="w51-vE-Od0" secondAttribute="bottom" id="7gy-J0-V8U"/>
+                                            <constraint firstAttribute="height" constant="106" id="Plo-FO-xDb"/>
                                             <constraint firstItem="w51-vE-Od0" firstAttribute="top" secondItem="w0w-IJ-mEd" secondAttribute="top" id="Zn5-Nm-ngC"/>
                                             <constraint firstAttribute="trailing" secondItem="w51-vE-Od0" secondAttribute="trailing" id="h8V-zN-6oR"/>
                                             <constraint firstItem="w51-vE-Od0" firstAttribute="leading" secondItem="w0w-IJ-mEd" secondAttribute="leading" id="hVf-GB-HXM"/>
@@ -546,10 +568,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ci3-uP-dwa" secondAttribute="trailing" id="Jys-8p-KWA"/>
                                     <constraint firstAttribute="trailing" secondItem="7nX-VI-Gx5" secondAttribute="trailing" id="O74-14-aXS"/>
                                     <constraint firstAttribute="height" constant="242" id="O7c-3m-mLw"/>
-                                    <constraint firstItem="7nX-VI-Gx5" firstAttribute="top" secondItem="w0w-IJ-mEd" secondAttribute="bottom" constant="16" id="ODS-Lx-7Bg"/>
+                                    <constraint firstItem="ci3-uP-dwa" firstAttribute="leading" secondItem="G8S-8D-cuO" secondAttribute="leading" id="Q0i-wK-wza"/>
                                     <constraint firstItem="7nX-VI-Gx5" firstAttribute="leading" secondItem="G8S-8D-cuO" secondAttribute="leading" id="W0G-dK-u12"/>
+                                    <constraint firstItem="7nX-VI-Gx5" firstAttribute="top" secondItem="ci3-uP-dwa" secondAttribute="bottom" constant="12" id="gGP-Aa-0O6"/>
                                     <constraint firstItem="w0w-IJ-mEd" firstAttribute="top" secondItem="G8S-8D-cuO" secondAttribute="top" id="kT6-CP-zEX"/>
                                     <constraint firstItem="w0w-IJ-mEd" firstAttribute="leading" secondItem="G8S-8D-cuO" secondAttribute="leading" id="nbv-zf-9Td"/>
                                     <constraint firstAttribute="trailing" secondItem="w0w-IJ-mEd" secondAttribute="trailing" id="rm0-6y-uC0"/>
@@ -827,6 +851,9 @@ journey of change now</string>
         <image name="SignInImg" width="415" height="896"/>
         <image name="Succesful" width="265" height="265"/>
         <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="MainColor">
             <color red="0.55294117647058827" green="0.77647058823529413" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
