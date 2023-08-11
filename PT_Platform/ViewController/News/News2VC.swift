@@ -54,8 +54,13 @@ class News2VC: UIViewController {
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
-    
+    @IBAction func btnInfo(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "SourceInfo", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SourceInfoViewController") as! SourceInfoViewController
+        controller.type = .supplements
+        controller.modalPresentationStyle = .overCurrentContext
+        self.present(controller, animated: true)
+    }
     func getDataForNotification(){
         ControllerService.instance.NewsfeedForNotification { id, title, description, image, bool in
             if bool{

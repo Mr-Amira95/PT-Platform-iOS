@@ -138,5 +138,11 @@ extension NutritionCalorieCalculatorVC: UIPickerViewDelegate, UIPickerViewDataSo
             Shared.shared.activity = activityValue[row]
         }
     }
-    
+    @IBAction func btnInfo(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "SourceInfo", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SourceInfoViewController") as! SourceInfoViewController
+        controller.type = .caloricBalanceEquation
+        controller.modalPresentationStyle = .overCurrentContext
+        self.present(controller, animated: true)
+    }
 }

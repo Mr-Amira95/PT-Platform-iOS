@@ -185,5 +185,11 @@ extension NutritionVC : UICollectionViewDelegate,UICollectionViewDataSource,UICo
         
     }
     
-
+    @IBAction func btnInfo(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "SourceInfo", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SourceInfoViewController") as! SourceInfoViewController
+        controller.type = .caloriesCalculator
+        controller.modalPresentationStyle = .overCurrentContext
+        self.present(controller, animated: true)
+    }
 }

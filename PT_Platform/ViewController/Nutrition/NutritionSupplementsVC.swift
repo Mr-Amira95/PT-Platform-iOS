@@ -76,7 +76,13 @@ class NutritionSupplementsVC: UIViewController {
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
+    @IBAction func btnInfo(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "SourceInfo", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SourceInfoViewController") as! SourceInfoViewController
+        controller.type = .supplements
+        controller.modalPresentationStyle = .overCurrentContext
+        self.present(controller, animated: true)
+    }
     @IBAction func btnSearch(_ sender: Any) {
         let aString = txtSearch.text!
         let newString = aString.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
@@ -92,6 +98,13 @@ class NutritionSupplementsVC: UIViewController {
     
 
 }
+extension NutritionSupplementsVC: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        return true
+    }
+}
+
+
 extension NutritionSupplementsVC: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if txtSearch.text?.isEmpty == false {

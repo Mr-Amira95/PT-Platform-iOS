@@ -240,6 +240,12 @@
 		CE26848D2A3DBB2000534585 /* AddHealthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF6CE528ABAAEF0077350A /* AddHealthVC.swift */; };
 		CE358ED92A39154B0097D58B /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE358ED82A39154B0097D58B /* WebViewViewController.swift */; };
 		CE358EDB2A3915F50097D58B /* WebViewSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE358EDA2A3915F50097D58B /* WebViewSB.storyboard */; };
+		CE4E665C2A85E229002EB152 /* OneSignal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6767702A85D8160069F724 /* OneSignal.xcframework */; };
+		CE4E665E2A85E2D1002EB152 /* OneSignal.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE6767702A85D8160069F724 /* OneSignal.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE4E66612A85E443002EB152 /* OneSignalOutcomes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4E665F2A85E41A002EB152 /* OneSignalOutcomes.xcframework */; };
+		CE4E66622A85E443002EB152 /* OneSignalOutcomes.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE4E665F2A85E41A002EB152 /* OneSignalOutcomes.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE4E66642A85F294002EB152 /* SourceInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4E66632A85F294002EB152 /* SourceInfo.storyboard */; };
+		CE67676F2A8591CF0069F724 /* SourceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67676E2A8591CF0069F724 /* SourceInfoViewController.swift */; };
 		CE8BBCC42A2E37DB00361AD0 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */; };
 		CE8BBCC62A2E380400361AD0 /* NSLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC52A2E380400361AD0 /* NSLayoutHelper.swift */; };
 		CEC95A632A2A98DB0074D556 /* RealtimeDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */; };
@@ -256,6 +262,18 @@
 			files = (
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4E665D2A85E2BF002EB152 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE4E665E2A85E2D1002EB152 /* OneSignal.xcframework in Embed Frameworks */,
+				CE4E66622A85E443002EB152 /* OneSignalOutcomes.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -509,6 +527,10 @@
 		BDD73B622837B2ED002D129B /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		CE358ED82A39154B0097D58B /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		CE358EDA2A3915F50097D58B /* WebViewSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewSB.storyboard; sourceTree = "<group>"; };
+		CE4E665F2A85E41A002EB152 /* OneSignalOutcomes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OneSignalOutcomes.xcframework; path = Pods/OneSignal/iOS_SDK/OneSignalSDK/OneSignal_Outcomes/OneSignalOutcomes.xcframework; sourceTree = "<group>"; };
+		CE4E66632A85F294002EB152 /* SourceInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SourceInfo.storyboard; sourceTree = "<group>"; };
+		CE67676E2A8591CF0069F724 /* SourceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceInfoViewController.swift; sourceTree = "<group>"; };
+		CE6767702A85D8160069F724 /* OneSignal.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OneSignal.xcframework; path = Pods/OneSignal/iOS_SDK/OneSignalSDK/OneSignal_XCFramework/OneSignal.xcframework; sourceTree = "<group>"; };
 		CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
 		CE8BBCC52A2E380400361AD0 /* NSLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutHelper.swift; sourceTree = "<group>"; };
 		CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDBManager.swift; sourceTree = "<group>"; };
@@ -522,6 +544,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4E66612A85E443002EB152 /* OneSignalOutcomes.xcframework in Frameworks */,
+				CE4E665C2A85E229002EB152 /* OneSignal.xcframework in Frameworks */,
 				47EB6D79C5959FC2655F78F9 /* Pods_PT_Platform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1187,6 +1211,8 @@
 				27D95E6527B06A9300973D2F /* RecipesVC.swift */,
 				27D95E8727B0934100973D2F /* ProgressVC.swift */,
 				CE358ED82A39154B0097D58B /* WebViewViewController.swift */,
+				CE67676E2A8591CF0069F724 /* SourceInfoViewController.swift */,
+				CE4E66632A85F294002EB152 /* SourceInfo.storyboard */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1520,6 +1546,8 @@
 		F9E57B2F7E0A5A646D5E866C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE4E665F2A85E41A002EB152 /* OneSignalOutcomes.xcframework */,
+				CE6767702A85D8160069F724 /* OneSignal.xcframework */,
 				A1F4E5F029B2944C00E1DA1C /* StoreKit.framework */,
 				A1E25D2B2918DEB000981140 /* HealthKit.framework */,
 				E6048185DFA64516B07BCADD /* Pods_PT_Platform.framework */,
@@ -1538,6 +1566,7 @@
 				A1B48CBD2781C2D60067AF9B /* Sources */,
 				A1B48CBE2781C2D60067AF9B /* Frameworks */,
 				A1B48CBF2781C2D60067AF9B /* Resources */,
+				CE4E665D2A85E2BF002EB152 /* Embed Frameworks */,
 				C68F9881BBFB9E1F51AD1B20 /* [CP] Embed Pods Frameworks */,
 				A13D5B85292816CE0019A257 /* Embed App Extensions */,
 			);
@@ -1654,6 +1683,7 @@
 				A13F857229291E6C00828FAA /* DetailsExercisesHistoryCell.xib in Resources */,
 				27D95E8627B087B200973D2F /* WeightProCell.xib in Resources */,
 				27D95E9227B0AB0C00973D2F /* BodyMCell.xib in Resources */,
+				CE4E66642A85F294002EB152 /* SourceInfo.storyboard in Resources */,
 				A139E91A28EDD1290002CC5C /* VideoChatUserCell.xib in Resources */,
 				A1B48CCC2781C2D60067AF9B /* Main.storyboard in Resources */,
 				27D95E6427B0511900973D2F /* ChallengeCell.xib in Resources */,
@@ -1717,6 +1747,7 @@
 				A1CA4BE329365D64006702F8 /* PersonalizedImageVC.swift in Sources */,
 				A1BC767F28D1D98300D87D14 /* NoAuthorizedVC.swift in Sources */,
 				27CA541027AB28E8000E8768 /* ShopVC.swift in Sources */,
+				CE67676F2A8591CF0069F724 /* SourceInfoViewController.swift in Sources */,
 				27FB756B27A084CD00FCF643 /* TrainerCell.swift in Sources */,
 				27ABA10B27A0AA25000FA900 /* HomePageCoachVC.swift in Sources */,
 				27ABA10F27A0B017000FA900 /* HomePageCoachCell.swift in Sources */,
@@ -2072,8 +2103,9 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "PT Platform";
@@ -2109,8 +2141,9 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PT_Platform/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "PT Platform";
