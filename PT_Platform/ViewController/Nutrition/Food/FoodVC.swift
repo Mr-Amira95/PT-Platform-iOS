@@ -90,7 +90,7 @@ class FoodVC: UIViewController {
                 self.lblTarget.text = "\(user_target)"
                 self.lblFood.text = "\(food_target)"
                 self.lblExercise.text = "\(exercise_target)"
-                let remaining = user_target - food_target + exercise_target
+                let remaining = user_target - food_target
                 self.lblRemaining.text = "\(remaining)"
                 
                 self.datalistBreakfast = breakfast

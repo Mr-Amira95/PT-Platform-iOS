@@ -61,9 +61,9 @@ enum SourceType {
         case .food:
             return "The information about Food in our application is sourced from WebTeb (webteb.com)."
         case .caloricBalanceEquation:
-            return "Sourced from Mayo Clinic (mayoclinic.org), a trusted and reputable health resource."
+            return "Sourced from Mayo Clinic https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/calories/art-20048065, a trusted and reputable health resource."
         case .caloriesCalculator:
-            return "Based on the Benedict Harris Formula, sourced from Mayo Clinic (mayoclinic.org), a trusted and reputable health resource."
+            return "Based on the Benedict Harris Formula, sourced from Mayo Clinic (https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/calorie-calculator/itt-20402304), a trusted and reputable health resource."
         }
     }
     
