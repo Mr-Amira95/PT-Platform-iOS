@@ -19,7 +19,17 @@ class RecipesVC: UIViewController {
     @IBOutlet weak var imgBack: UIImageView!
     @IBOutlet weak var lblIngredients: UILabel!
     
-    
+    @IBOutlet weak var textViewIngredients: UITextView! {
+        didSet {
+//            textViewIngredients.isSelectable = false
+        }
+    }
+    @IBOutlet weak var textViewDescription: UITextView! {
+        didSet {
+//            textViewDescription.isSelectable = false
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if LanguageManager.shared.currentLanguage == .en{
@@ -34,9 +44,21 @@ class RecipesVC: UIViewController {
         lblTitle2.text = Shared.shared.RecipesName
         lblName.text = Shared.shared.NewsTitle
         img.sd_setImage(with: URL(string:Shared.shared.NewsImage), placeholderImage:UIImage(named: ""))
-        lblDescription.text = Shared.shared.NewsDescription
+        
+        textViewDescription.attributedText = Shared.shared.NewsDescription.htmlToAttributedString
+        let string = NSMutableAttributedString(attributedString: textViewDescription.attributedText)
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+        string.addAttributes(attributes, range: (string.string as NSString).range(of: string.string))
+        textViewDescription.attributedText = string
+        textViewDescription.textColor = .white
         lblTime.text = Shared.shared.RecipesTime
-        lblIngredients.text = Shared.shared.RecipesIngredients
+        
+        textViewIngredients.attributedText = Shared.shared.RecipesIngredients.htmlToAttributedString
+        let string2 = NSMutableAttributedString(attributedString: textViewIngredients.attributedText)
+        let attributes2 = [NSAttributedString.Key.foregroundColor: UIColor.red]
+        string2.addAttributes(attributes2, range: (string2.string as NSString).range(of: string2.string))
+        textViewIngredients.attributedText = string2
+        textViewIngredients.textColor = .white
     }
     
     @IBAction func btnBack(_ sender: Any) {
@@ -48,5 +70,20 @@ class RecipesVC: UIViewController {
         controller.type = .recipesandDietPlans
         controller.modalPresentationStyle = .overCurrentContext
         self.present(controller, animated: true)
+    }
+}
+
+
+extension String {
+    var htmlToAttributedString: NSAttributedString? {
+        guard let data = data(using: .utf8) else { return nil }
+        do {
+            return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue], documentAttributes: nil)
+        } catch {
+            return nil
+        }
+    }
+    var htmlToString: String {
+        return htmlToAttributedString?.string ?? ""
     }
 }
