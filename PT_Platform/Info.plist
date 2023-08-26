@@ -4,8 +4,6 @@
 <dict>
 	<key>CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION</key>
 	<string>YES</string>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
