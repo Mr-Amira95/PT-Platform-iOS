@@ -1290,10 +1290,10 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            for data2 in data{
                                let id = data2["id"] as? Int ?? 0
                                let sku = data2["sku"] as? String ?? ""
-                               let calorie = Double(data2["calorie"] as? String ?? "0.0") ?? 0.0
-                               let carb = Double(data2["carb"] as? String ?? "0.0") ?? 0.0
-                               let fat = Double(data2["fat"] as? String ?? "0.0") ?? 0.0
-                               let protein = Double(data2["protein"] as? String ?? "0.0") ?? 0.0
+                               let calorie = data2["calorie"] as? Double ?? 0.0
+                               let carb = data2["carb"] as? Double ?? 0.0
+                               let fat = data2["fat"] as? Double ?? 0.0
+                               let protein = data2["protein"] as? Double ?? 0.0
                                let name = data2["name"] as? String ?? ""
                                let title = data2["title"] as? String ?? ""
                                let obj = FoodsM(id: id, sku: sku, calorie: calorie, carb: carb, fat: fat, protein: protein, name: name, title: title)

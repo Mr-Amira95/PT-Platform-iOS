@@ -52,7 +52,7 @@ extension CollectionPackagesCell : UICollectionViewDelegate,UICollectionViewData
         }else if package.style == "style_silver"{
             cell?.imgBackground.image = UIImage(named: "PackageSilver")
         }else if package.style == "style_free"{
-            cell?.imgBackground.image = UIImage(named: "FITNESS-1")
+            cell?.imgBackground.image = UIImage(named: "freepackages_bg")
         }else {
             cell?.imgBackground.image = UIImage(named: "freepackages_bg")
         }
