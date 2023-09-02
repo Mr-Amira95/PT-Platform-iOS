@@ -248,6 +248,7 @@
 		CE67676F2A8591CF0069F724 /* SourceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67676E2A8591CF0069F724 /* SourceInfoViewController.swift */; };
 		CE8BBCC42A2E37DB00361AD0 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC32A2E37DB00361AD0 /* DeviceHelper.swift */; };
 		CE8BBCC62A2E380400361AD0 /* NSLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BBCC52A2E380400361AD0 /* NSLayoutHelper.swift */; };
+		CE963F9B2A9C70BE008A1925 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4E5F029B2944C00E1DA1C /* StoreKit.framework */; };
 		CEC95A632A2A98DB0074D556 /* RealtimeDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95A622A2A98DB0074D556 /* RealtimeDBManager.swift */; };
 		CEC95A652A2AACAB0074D556 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95A642A2AACAB0074D556 /* ChatViewController.swift */; };
 		CEC95A672A2ACC610074D556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC95A662A2ACC610074D556 /* GoogleService-Info.plist */; };
@@ -547,6 +548,7 @@
 				CE4E66612A85E443002EB152 /* OneSignalOutcomes.xcframework in Frameworks */,
 				CE4E665C2A85E229002EB152 /* OneSignal.xcframework in Frameworks */,
 				47EB6D79C5959FC2655F78F9 /* Pods_PT_Platform.framework in Frameworks */,
+				CE963F9B2A9C70BE008A1925 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2103,7 +2105,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2144,7 +2146,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;

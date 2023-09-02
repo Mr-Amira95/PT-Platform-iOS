@@ -36,7 +36,10 @@ class AssignedCoachesVC: UIViewController {
         getAssignedCoach()
     }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        Spinner.instance.removeSpinner()
+    }
     func getAssignedCoach(){
         let parameter = ["skip" : "0",
                          "filter" : "assigned_coaches"]

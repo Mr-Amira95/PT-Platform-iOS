@@ -111,7 +111,13 @@ class HomePageCoachVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if Shared.shared.getusertype() != "Coach"{
+        super.viewWillAppear(animated)
+        if Shared.shared.getCoachId() == 0 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "ChooswTrainerVC")
+            controller.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(controller, animated: true)
+        } else if Shared.shared.getusertype() != "Coach"{
             getAssignedCoach()
         }
     }
@@ -170,7 +176,7 @@ class HomePageCoachVC: UIViewController {
     }
     
     func getdata(){
-        Spinner.instance.showSpinner(onView: view)
+//        Spinner.instance.showSpinner(onView: view)
         ControllerService.instance.userscoaches { category, bool in
             if bool{
                 Spinner.instance.removeSpinner()
@@ -184,6 +190,7 @@ class HomePageCoachVC: UIViewController {
                     Shared.shared.bannerIn = "second"
                     self.getdataBaneer()
                 }else{
+                    Spinner.instance.removeSpinner()
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadHomePageCoachVC"), object: nil)
                 }
             }
@@ -230,6 +237,7 @@ class HomePageCoachVC: UIViewController {
                     ToastView.shared.short(self.view, txt_msg: "No assigned coaches to show")
                 }
             }else{
+                Spinner.instance.removeSpinner()
                 ToastView.shared.short(self.view, txt_msg: message)
             }
         }
