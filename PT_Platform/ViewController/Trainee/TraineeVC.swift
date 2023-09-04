@@ -11,8 +11,16 @@ class TraineeVC: UIViewController {
     @IBOutlet weak var first_nameTxt: SkyFloatingLabelTextField!
     @IBOutlet weak var last_nameTxt: SkyFloatingLabelTextField!
     @IBOutlet weak var emailTxt: SkyFloatingLabelTextField!
-    @IBOutlet weak var passwordTxt: SkyFloatingLabelTextField!
-    @IBOutlet weak var password_confirmationTxt: SkyFloatingLabelTextField!
+    @IBOutlet weak var passwordTxt: SkyFloatingLabelTextField! {
+        didSet {
+            passwordTxt.textContentType = .oneTimeCode
+        }
+    }
+    @IBOutlet weak var password_confirmationTxt: SkyFloatingLabelTextField! {
+        didSet {
+            password_confirmationTxt.textContentType = .oneTimeCode
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
