@@ -172,10 +172,10 @@ extension ListFoodPopupVC : UITableViewDataSource, UITableViewDelegate {
                                for data2 in data{
                                    let id = data2["id"] as? Int ?? 0
                                    let sku = data2["sku"] as? String ?? ""
-                                   let calorie = data2["calorie"] as? Double ?? 0.0
-                                   let carb = data2["carb"] as? Double ?? 0.0
-                                   let fat = data2["fat"] as? Double ?? 0.0
-                                   let protein = data2["protein"] as? Double ?? 0.0
+                                   let calorie = data2["calorie"] as? String ?? ""
+                                   let carb = data2["carb"] as? String ?? ""
+                                   let fat = data2["fat"] as? String ?? ""
+                                   let protein = data2["protein"] as? String ?? ""
                                    let name = data2["name"] as? String ?? ""
                                    let title = data2["title"] as? String ?? ""
                                    

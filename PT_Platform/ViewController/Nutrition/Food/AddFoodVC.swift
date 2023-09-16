@@ -53,17 +53,17 @@ class AddFoodVC: UIViewController {
         self.dataList = Shared.shared.FoodListMArray as! [FoodsM]
         let indexPath = Shared.shared.FoodListId
         
-        self.foodId = dataList[indexPath].id
+        self.foodId = Int(dataList[indexPath].id) ?? 0
         self.txt.text = dataList[indexPath].name
-        self.lblProteinValue.text = String(format: "%.2f", ceil((dataList[indexPath].protein)*100)/100)
-        self.lblFatValue.text = String(format: "%.2f", ceil((dataList[indexPath].fat)*100)/100)
-        self.lblCarbsValue.text = String(format: "%.2f", ceil((dataList[indexPath].carb)*100)/100)
-        self.lblCalories.text = "\(Int(dataList[indexPath].calorie))"
+        self.lblProteinValue.text = String(format: "%.2f", ceil((dataList[indexPath].protein.toDouble)*100)/100)
+        self.lblFatValue.text = String(format: "%.2f", ceil((dataList[indexPath].fat.toDouble)*100)/100)
+        self.lblCarbsValue.text = String(format: "%.2f", ceil((dataList[indexPath].carb.toDouble)*100)/100)
+        self.lblCalories.text = "\(dataList[indexPath].calorie)"
         
-        self.protein = Float(dataList[indexPath].protein)
-        self.fat = Float(dataList[indexPath].fat)
-        self.carb = Float(dataList[indexPath].carb)
-        self.calorie = Float(dataList[indexPath].calorie)
+        self.protein = (dataList[indexPath].protein).toFloat
+        self.fat = (dataList[indexPath].fat).toFloat
+        self.carb = (dataList[indexPath].carb).toFloat
+        self.calorie = (dataList[indexPath].calorie).toFloat
         self.stepperQ.value = 1
         }
     
@@ -73,17 +73,17 @@ class AddFoodVC: UIViewController {
                 if foods.count != 0{
                     self.dataList = foods
                     Shared.shared.FoodListMArray = foods as NSArray
-                    self.foodId = foods[0].id
+                    self.foodId = Int(foods[0].id) ?? 0
                     self.txt.text = foods[0].name
-                    self.lblProteinValue.text = String(format: "%.2f", ceil((foods[0].protein)*100)/100)
-                    self.lblFatValue.text = String(format: "%.2f", ceil((foods[0].fat)*100)/100)
-                    self.lblCarbsValue.text = String(format: "%.2f", ceil((foods[0].carb)*100)/100)
-                    self.lblCalories.text = "\(Int(foods[0].calorie))"
+                    self.lblProteinValue.text = String(format: "%.2f", ceil((foods[0].protein.toDouble)*100)/100)
+                    self.lblFatValue.text = String(format: "%.2f", ceil((foods[0].fat.toDouble)*100)/100)
+                    self.lblCarbsValue.text = String(format: "%.2f", ceil((foods[0].carb.toDouble)*100)/100)
+                    self.lblCalories.text = "\((foods[0].calorie))"
                     
-                    self.protein = Float(foods[0].protein)
-                    self.fat = Float(foods[0].fat)
-                    self.carb = Float(foods[0].carb)
-                    self.calorie = Float(foods[0].calorie)
+                    self.protein = (foods[0].protein).toFloat
+                    self.fat = (foods[0].fat).toFloat
+                    self.carb = (foods[0].carb).toFloat
+                    self.calorie = (foods[0].calorie).toFloat
                 }else{
                     ToastView.shared.short(self.view, txt_msg: "List food is empty")
                 }
@@ -102,6 +102,7 @@ class AddFoodVC: UIViewController {
     
     
     @IBAction func btnDone(_ sender: Any) {
+        print(foodId)
         let parameter = ["food_id" : foodId,
                          "type":Shared.shared.typeFood,
                          "number":stepperQ.value] as [String : Any]

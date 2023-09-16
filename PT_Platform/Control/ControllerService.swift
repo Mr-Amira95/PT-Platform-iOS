@@ -1289,11 +1289,11 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            let data = dic["data"] as! [[String:Any]]
                            for data2 in data{
                                let id = data2["id"] as? Int ?? 0
-                               let sku = data2["sku"] as? String ?? ""
-                               let calorie = data2["calorie"] as? Double ?? 0.0
-                               let carb = data2["carb"] as? Double ?? 0.0
-                               let fat = data2["fat"] as? Double ?? 0.0
-                               let protein = data2["protein"] as? Double ?? 0.0
+                               let sku = data2["sku"] as? String ?? "0"
+                               let calorie = data2["calorie"] as? String ?? "0"
+                               let carb = data2["carb"] as? String ?? "0"
+                               let fat = data2["fat"] as? String ?? "0"
+                               let protein = data2["protein"] as? String ?? "0"
                                let name = data2["name"] as? String ?? ""
                                let title = data2["title"] as? String ?? ""
                                let obj = FoodsM(id: id, sku: sku, calorie: calorie, carb: carb, fat: fat, protein: protein, name: name, title: title)
@@ -1415,7 +1415,11 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                }
             }
         }
-    func nutritionNumbersApi(complition: @escaping(_ message: String,_ carb: Int,_ fat: Int,_ protein: Int,_ calories: Int,_ target_carb: Int,_ target_fat: Int,_ target_protein: Int,_ target_calorie: Int,_ value:Bool)-> Void){
+    
+    
+    
+    // moahmmad edit
+    func nutritionNumbersApi(complition: @escaping(_ message: String,_ carb: Int,_ fat: Int,_ protein: Int,_ calories: Int,_ target_carb: String,_ target_fat: String,_ target_protein: String,_ target_calorie: String,_ value:Bool)-> Void){
         let headers2: HTTPHeaders = ["Accept":"application/json",
                                     "Authorization":"Bearer \(Shared.shared.getUserToken() ?? "")",
                                      "Accept-Language": Shared.shared.getUserLanguage() ?? "en"]
@@ -1435,15 +1439,15 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            let protein = data["protein"] as? Int ?? 0
                            let calories = data["food_target"] as? Int ?? 0
                            let user = data["user"] as! NSDictionary
-                           let target_carb = user["target_carb"] as? Int ?? 0
-                           let target_fat = user["target_fat"] as? Int ?? 0
-                           let target_protein = user["target_protein"] as? Int ?? 0
-                           let target_calorie = user["target_calorie"] as? Int ?? 0
+                           let target_carb = user["target_carb"] as? String ?? "0"
+                           let target_fat = user["target_fat"] as? String ?? "0"
+                           let target_protein = user["target_protein"] as? String ?? "0"
+                           let target_calorie = user["target_calorie"] as? String ?? "0"
                            complition("",carb, fat, protein, calories, target_carb, target_fat, target_protein, target_calorie, true)
                        }else{
                            let errors = dic["errors"] as! NSDictionary
                            let message = errors["message"] as! String
-                           complition(message,0, 0, 0, 0, 0, 0, 0, 0, false)
+                           complition(message,0,0,0,0, "0", "0","0", "0", false)
                        }
                    case .failure(let error):
                        print(error)
@@ -1883,19 +1887,19 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            for data2 in data{
                                let date = data2["date"] as! String
                                var splitDate = date.split(separator: "T")
-                               let neck = data2["neck"] as? Double ?? 0.0
-                               let chest = data2["chest"] as? Double ?? 0.0
-                               let left_arm = data2["left_arm"] as? Double ?? 0.0
-                               let right_arm = data2["right_arm"] as? Double ?? 0.0
-                               let waist = data2["waist"] as? Double ?? 0.0
-                               let belly = data2["belly"] as? Double ?? 0.0
-                               let lower_belly = data2["lower_belly"] as? Double ?? 0.0
-                               let upper_belly = data2["upper_belly"] as? Double ?? 0.0
-                               let hips = data2["hips"] as? Double ?? 0.0
-                               let left_thigh = data2["left_thigh"] as? Double ?? 0.0
-                               let right_thigh = data2["right_thigh"] as? Double ?? 0.0
-                               let lift_calf = data2["lift_calf"] as? Double ?? 0.0
-                               let right_calf = data2["right_calf"] as? Double ?? 0.0
+                               let neck = data2["neck"] as? String ?? "0.0"
+                               let chest = data2["chest"] as? String ?? "0.0"
+                               let left_arm = data2["left_arm"] as? String ?? "0.0"
+                               let right_arm = data2["right_arm"] as? String ?? "0.0"
+                               let waist = data2["waist"] as? String ?? "0.0"
+                               let belly = data2["belly"] as? String ?? "0.0"
+                               let lower_belly = data2["lower_belly"] as? String ?? "0.0"
+                               let upper_belly = data2["upper_belly"] as? String ?? "0.0"
+                               let hips = data2["hips"] as? String ?? ""
+                               let left_thigh = data2["left_thigh"] as? String ?? "0.0"
+                               let right_thigh = data2["right_thigh"] as? String ?? "0.0"
+                               let lift_calf = data2["lift_calf"] as? String ?? "0.0"
+                               let right_calf = data2["right_calf"] as? String ?? "0.0"
                                let obj = BodyMeasurementsM(date: String(splitDate[0]), neck: neck, chest: chest, left_arm: left_arm, right_arm: right_arm, waist: waist, belly: belly, lower_belly: lower_belly, upper_belly: upper_belly, hips: hips, left_thigh: left_thigh, right_thigh: right_thigh, lift_calf: lift_calf, right_calf: right_calf)
                                Datalist.append(obj)
                            }
@@ -1985,7 +1989,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            let data = dic["data"] as! NSDictionary
                            let subscription = data["subscription"] as! [[String:Any]]
                            for data2 in subscription{
-                               let id = data2["id"] as! Int
+                               let id = data2["id"] as? Int ?? 0
                                let name = data2["name"] as? String ?? ""
                                let description = data2["description"] as? String ?? ""
                                let price_object = data2["price_object"] as! NSDictionary
@@ -1994,7 +1998,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let price = "\(String(format: "%.0f", ceil(Double(amount) ?? 0.0))) \(currency)"
                                let style = data2["style"] as? String ?? ""
                                let purchase_apple_id = data2["purchase_apple_id"] as? String ?? ""
-                               let date = data2["date"] as? Double ?? 0.0
+                               let date = data2["date"] as? String ?? "00:00"
                                let is_free = data2["is_free"] as? Bool ?? false
                                let permissions = data2["permissions"] as? NSDictionary
                                if permissions != nil{
@@ -2019,16 +2023,16 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            }
                            let personal_training = data["personal_training"] as! [[String:Any]]
                            for data2 in personal_training{
-                               let id = data2["id"] as! Int
-                               let name = data2["name"] as! String
-                               let description = data2["description"] as! String
+                               let id = data2["id"] as? String ?? "0"
+                               let name = data2["name"] as? String ??  ""
+                               let description = data2["description"] as? String ?? ""
                                let price_object = data2["price_object"] as! NSDictionary
                                let amount = price_object["amount"] as? String ?? ""
                                let currency = price_object["currency"] as? String ?? ""
                                let price = "\(String(format: "%.0f", ceil(Double(amount) ?? 0.0))) \(currency)"
                                let style = data2["style"] as! String
                                let purchase_apple_id = data2["purchase_apple_id"] as? String ?? ""
-                               let date = Double(data2["date"] as! Int) ?? 0.0
+                               let date = String(data2["date"] as! String)
                                let is_free = data2["is_free"] as! Bool
                                let permissions = data2["permissions"] as? NSDictionary
                                if permissions != nil{
@@ -2514,9 +2518,9 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let created_at = data2["created_at"] as? String ?? ""
                                let weight_unit = data2["weight_unit"] as? String ?? ""
                                let note = data2["note"] as? String ?? ""
-                               let number = data2["number"] as? Int ?? 0
-                               let weight = data2["weight"] as? Double ?? 0.0
-                               let repetition = data2["repetition"] as? Int ?? 0
+                               let number = data2["number"] as? String ?? "0"
+                               let weight = data2["weight"] as? String ?? "0"
+                               let repetition = data2["repetition"] as? String ?? "0"
                                let obj = exercisesHistoryDetailsM(id: id, created_at: created_at, weight_unit: weight_unit, number: number, weight: weight, repetition: repetition, note: note)
                                Datalist.append(obj)
                            }

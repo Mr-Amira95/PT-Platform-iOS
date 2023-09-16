@@ -113,33 +113,66 @@ extension QuestionsVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionsCell", for: indexPath) as? QuestionsCell
         cell?.setData(data: datalist[indexPath.row])
+//        cell?.txtAnswer.text = datalist[indexPath.row].answer
+//        cell?.lblQuestion.text = datalist[indexPath.row].question
             cell!.selectionStyle = .none
         if LanguageManager.shared.currentLanguage == .ar{
             cell?.txtAnswer.textAlignment = .right
         }
+        
         if Shared.shared.getusertype() == "Coach"{
             cell?.txtAnswer.isEnabled = false
             cell?.txtAnswer.textColor = UIColor(named: "MainColor")
         }else{
             cell?.txtAnswer.isEnabled = true
+          
             cell?.txtAnswer.addTarget(self, action: #selector(TextfieldEditAction), for: .editingDidEnd)
         }
+        cell?.txtAnswer.tag = indexPath.row
+      
+//        let obj = ["question_id" :datalist[indexPath.row].question,
+//                   "answer" : datalist[indexPath.row].answer]
+//        array.append(obj as [String : Any])
             return cell!
     }
-    @objc func TextfieldEditAction(sender: UIButton) {
-        var index = 0
-        array.removeAll()
-        for i in datalist{
-            let indexPath = IndexPath(row: index, section: 0)
-            if let cell = tableView.cellForRow(at: indexPath) as? QuestionsCell {
-              let text = cell.txtAnswer.text
-                let obj = ["question_id" : i.id,
-                           "answer" : text ?? ""]
-                if text ?? "" != ""{
-                    array.append(obj)
+    @objc func TextfieldEditAction(sender: UITextField) {
+        print(sender.tag)
+//        var index = 0
+//        array.removeAll()
+//        for i in datalist{
+//            let indexPath = IndexPath(row: index, section: 0)
+//            if let cell = tableView.cellForRow(at: indexPath) as? QuestionsCell {
+//                let text = sender.text ?? ""
+//                cell.txtAnswer.text = sender.text
+//                let obj = ["question_id" : i.id,
+//                           "answer" : sender.text ?? ""]
+//                print(sender.text)
+//                if text ?? "" != ""{
+//                    array.append(obj)
+//                }
+//              }
+//            index += 1
+//        }
+        for (index,i) in datalist.enumerated(){
+            if index  == sender.tag{
+                let indexPath = IndexPath(row:sender.tag, section: 0)
+                if let cell = tableView.cellForRow(at: indexPath) as? QuestionsCell {
+                    cell.txtAnswer.text = sender.text
+                    datalist[sender.tag].answer = sender.text
                 }
-              }
-            index += 1
+                let obj = ["question_id" : i.id,"answer" : sender.text ?? ""]
+                array.append(obj)
+                break
+            }else{
+                let indexPath = IndexPath(row:index, section: 0)
+                if let cell = tableView.cellForRow(at: indexPath) as? QuestionsCell {
+                    cell.txtAnswer.text = i.answer
+                }
+                let obj = ["question_id" : i.id,"answer" : i.answer ?? ""]
+                array.append(obj)
+            }
+
         }
+        tableView.reloadData()
     }
 }

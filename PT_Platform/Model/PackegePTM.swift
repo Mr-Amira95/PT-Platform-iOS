@@ -9,12 +9,12 @@ import Foundation
 
 class PackegePTM{
     
-    var id : Int
+    var id : String
     var name : String
     var description : String
     var price : String
     var style : String
-    var date : Double
+    var date : String
     var is_free : Bool
     var is_shop : Bool
     var can_shop : Bool
@@ -25,7 +25,7 @@ class PackegePTM{
     var startAndEndDate : String
     
     
-    init(id:Int,name:String,description:String,price:String,style:String,date:Double,is_free:Bool,is_shop:Bool,can_shop:Bool,permissionsCallVideo:Int,permissionsWorkoutSchedule:Bool,permissionsFoodPlan:Bool,purchase_apple_id:String
+    init(id:String,name:String,description:String,price:String,style:String,date:String,is_free:Bool,is_shop:Bool,can_shop:Bool,permissionsCallVideo:Int,permissionsWorkoutSchedule:Bool,permissionsFoodPlan:Bool,purchase_apple_id:String
          ,startAndEndDate:String){
         
         self.id = id

@@ -14,13 +14,15 @@ class QuestionsCell: UITableViewCell {
     
     
     func setData(data: QuestionsM){
-        lblQuestion.text = data.question as? String ?? ""
-        txtAnswer.text = data.answer as? String ?? ""
+        guard let answer = data.answer else {return}
+        guard let question = data.question else {return}
+        lblQuestion.text = question
+        txtAnswer.text = answer
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
     
 }

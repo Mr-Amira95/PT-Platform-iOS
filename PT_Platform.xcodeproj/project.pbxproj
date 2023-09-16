@@ -227,6 +227,7 @@
 		A1FD4E5928E3066600AACDAE /* ListOfUserInCoachVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD4E5828E3066600AACDAE /* ListOfUserInCoachVC.swift */; };
 		A1FD4E5D28E3083500AACDAE /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD4E5B28E3083500AACDAE /* UserCell.swift */; };
 		A1FD4E5E28E3083500AACDAE /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1FD4E5C28E3083500AACDAE /* UserCell.xib */; };
+		AB18CD802AAFB427000F2DFE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18CD7F2AAFB427000F2DFE /* String.swift */; };
 		BD617DCD28385BB90080061F /* BannersM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617DCC28385BB90080061F /* BannersM.swift */; };
 		BD617DCF283864BF0080061F /* NewsfeedM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617DCE283864BF0080061F /* NewsfeedM.swift */; };
 		BD617E0E283A22870080061F /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617E0D283A22870080061F /* IntroVC.swift */; };
@@ -516,6 +517,7 @@
 		A1FD4E5B28E3083500AACDAE /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		A1FD4E5C28E3083500AACDAE /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		A38A5C49DAC7F75A58EEF8AA /* Pods-PT_Platform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT_Platform.release.xcconfig"; path = "Target Support Files/Pods-PT_Platform/Pods-PT_Platform.release.xcconfig"; sourceTree = "<group>"; };
+		AB18CD7F2AAFB427000F2DFE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		BD617DCC28385BB90080061F /* BannersM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersM.swift; sourceTree = "<group>"; };
 		BD617DCE283864BF0080061F /* NewsfeedM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedM.swift; sourceTree = "<group>"; };
 		BD617E0D283A22870080061F /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
@@ -1242,6 +1244,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E25D2D2918DECA00981140 /* PT_Platform.entitlements */,
+				AB18CD7E2AAFB40F000F2DFE /* Extention */,
 				A134BB6C283F9A3700135B68 /* Controller's */,
 				BD617E0C283A226A0080061F /* Intro */,
 				BD617DCB28385BA50080061F /* Model */,
@@ -1495,6 +1498,14 @@
 			path = UserCell;
 			sourceTree = "<group>";
 		};
+		AB18CD7E2AAFB40F000F2DFE /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				AB18CD7F2AAFB427000F2DFE /* String.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 		BD617DCB28385BA50080061F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1746,6 +1757,7 @@
 			files = (
 				BD617DCF283864BF0080061F /* NewsfeedM.swift in Sources */,
 				A1BF2BE228D6F22700780A0D /* BreakfastCell.swift in Sources */,
+				AB18CD802AAFB427000F2DFE /* String.swift in Sources */,
 				A1CA4BE329365D64006702F8 /* PersonalizedImageVC.swift in Sources */,
 				A1BC767F28D1D98300D87D14 /* NoAuthorizedVC.swift in Sources */,
 				27CA541027AB28E8000E8768 /* ShopVC.swift in Sources */,
@@ -2105,7 +2117,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2146,7 +2158,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;

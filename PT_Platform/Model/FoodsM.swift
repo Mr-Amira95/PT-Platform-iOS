@@ -9,15 +9,15 @@ import Foundation
 class FoodsM{
     var id : Int
     var sku : String
-    var calorie : Double
-    var carb : Double
-    var fat : Double
-    var protein : Double
+    var calorie : String
+    var carb : String
+    var fat : String
+    var protein : String
     var name : String
     var title : String
     
     
-    init(id:Int,sku:String,calorie:Double,carb:Double,fat:Double,protein:Double,name:String,title:String){
+    init(id:Int,sku:String,calorie:String,carb:String,fat:String,protein:String,name:String,title:String){
         self.id = id
         self.sku = sku
         self.calorie = calorie

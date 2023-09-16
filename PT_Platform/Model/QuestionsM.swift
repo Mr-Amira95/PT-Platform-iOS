@@ -9,8 +9,8 @@ import Foundation
 
 class QuestionsM{
     var id : Any
-    var question : Any
-    var answer : Any
+    var question : String?
+    var answer : String?
     
     init(id:Int,question:String,answer:String){
         self.id = id

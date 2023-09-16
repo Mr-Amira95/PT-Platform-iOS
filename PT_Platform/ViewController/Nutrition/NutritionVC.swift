@@ -95,28 +95,30 @@ class NutritionVC: UIViewController {
             if bool{
                 self.lblCalories.text = "\(target_calorie)Cal"
                 self.lblCalories2.text = "\(calories)/\(target_calorie) Cal"
-                self.progressView.progress = Float(calories)/Float(target_calorie)
+                print(calories)
+                print(target_calorie)
+                self.progressView.progress = (Float(calories) ?? 0.0)/(Float(target_calorie) ?? 0.0)
                 Shared.shared.nutritionCalories = "\(target_calorie)"
-                self.viewCal1.startProgress(to: CGFloat(Float(target_calorie)), duration: 1.0)
-                self.viewCal2.startProgress(to: CGFloat(Float(target_calorie)), duration: 1.0)
-                self.viewCal3.startProgress(to: CGFloat(Float(target_calorie)), duration: 1.0)
+                self.viewCal1.startProgress(to: CGFloat(Float(target_calorie) ?? 0.0), duration: 1.0)
+                self.viewCal2.startProgress(to: CGFloat(Float(target_calorie) ?? 0.0), duration: 1.0)
+                self.viewCal3.startProgress(to: CGFloat(Float(target_calorie) ?? 0.0), duration: 1.0)
                 
                 self.lblCarbs.text = "\(target_carb)"
                 Shared.shared.nutritionCarbs = "\(target_carb)"
                 self.lblCarbsNew.text = "\(carb)"
-                let carbValue: CGFloat = (carb == 0) ? 1 : CGFloat(Float(carb)/Float(target_carb)*100)
+                let carbValue: CGFloat = (Float(carb) == 0) ? 1 : CGFloat((Float(carb) ?? 0.0)/(Float(target_carb) ?? 0.0)*100)
                 self.viewCarbs.startProgress(to: carbValue, duration: 1.0)
                 
                 self.lblFat.text = "\(target_fat)"
                 Shared.shared.nutritionFat = "\(target_fat)"
                 self.lblFatNew.text = "\(fat)"
-                let fatValue: CGFloat = (fat == 0) ? 1 : CGFloat(Float(fat)/Float(target_fat)*100)
+                let fatValue: CGFloat = (Float(fat) == 0) ? 1 : CGFloat((Float(fat) ?? 0.0)/(Float(target_fat) ?? 0.0)*100)
                 self.viewFat.startProgress(to: fatValue, duration: 1.0)
                 
                 self.lblProtein.text = "\(target_protein)"
                 Shared.shared.nutritionProtein = "\(target_protein)"
                 self.lblProteinNew.text = "\(protein)"
-                let proteinValue: CGFloat = (protein == 0) ? 1 : CGFloat(Float(protein)/Float(target_protein)*100)
+                let proteinValue: CGFloat = (Float(protein) == 0) ? 1 : CGFloat((Float(protein) ?? 0.0)/(Float(target_protein) ?? 0.0)*100)
                 self.viewProtei.startProgress(to: proteinValue, duration: 1.0)
             }else{
                 ToastView.shared.short(self.view, txt_msg: message)

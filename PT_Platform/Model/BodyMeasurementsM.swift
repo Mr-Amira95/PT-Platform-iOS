@@ -10,23 +10,23 @@ import Foundation
 class BodyMeasurementsM{
     
     var date : String
-    var neck : Double
-    var chest : Double
-    var left_arm : Double
-    var right_arm : Double
-    var waist : Double
-    var belly : Double
-    var lower_belly : Double
-    var upper_belly : Double
-    var hips : Double
-    var left_thigh : Double
-    var right_thigh : Double
-    var lift_calf : Double
-    var right_calf : Double
+    var neck : String
+    var chest : String
+    var left_arm : String
+    var right_arm : String
+    var waist : String
+    var belly : String
+    var lower_belly : String
+    var upper_belly : String
+    var hips : String
+    var left_thigh : String
+    var right_thigh : String
+    var lift_calf : String
+    var right_calf : String
     
     
     
-    init(date:String,neck:Double,chest:Double,left_arm:Double,right_arm:Double,waist:Double,belly:Double,lower_belly:Double,upper_belly:Double,hips:Double,left_thigh:Double,right_thigh:Double,lift_calf:Double,right_calf:Double){
+    init(date:String,neck:String,chest:String,left_arm:String,right_arm:String,waist:String,belly:String,lower_belly:String,upper_belly:String,hips:String,left_thigh:String,right_thigh:String,lift_calf:String,right_calf:String){
         
         self.date = date
         self.neck = neck
