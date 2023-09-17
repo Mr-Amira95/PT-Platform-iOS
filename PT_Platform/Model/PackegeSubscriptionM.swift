@@ -18,7 +18,7 @@ class PackegeSubscriptionM{
     var is_free : Bool
     var is_shop : Bool
     var can_shop : Bool
-    var permissionsCallVideo : Int
+    var permissionsCallVideo : String
     var permissionsWorkoutSchedule : Bool
     var permissionsFoodPlan : Bool
     var purchase_apple_id : String
@@ -26,7 +26,7 @@ class PackegeSubscriptionM{
     
     
     
-    init(id:Int,name:String,description:String,price:String,style:String,date:String,is_free:Bool,is_shop:Bool,can_shop:Bool,permissionsCallVideo:Int,permissionsWorkoutSchedule:Bool,permissionsFoodPlan:Bool,purchase_apple_id:String,startAndEndDate:String){
+    init(id:Int,name:String,description:String,price:String,style:String,date:String,is_free:Bool,is_shop:Bool,can_shop:Bool,permissionsCallVideo:String,permissionsWorkoutSchedule:Bool,permissionsFoodPlan:Bool,purchase_apple_id:String,startAndEndDate:String){
         
         self.id = id
         self.name = name

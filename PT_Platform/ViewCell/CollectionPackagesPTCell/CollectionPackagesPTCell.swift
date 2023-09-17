@@ -122,6 +122,7 @@ extension CollectionPackagesPTCell : UICollectionViewDelegate,UICollectionViewDa
             Shared.shared.packageDuration = "\(package.date) months"
             Shared.shared.packageDes = "\(package.description)\n"
             Shared.shared.packageId = "\(package.id)"
+            print("\(package.id)")
             Shared.shared.packagePurchaseAppleId = package.purchase_apple_id
             Shared.shared.packageFeatures = "Video call: \(package.permissionsCallVideo)\n\nWorkout Schedule: \(package.permissionsWorkoutSchedule)\n\nFood Plan: \(package.permissionsFoodPlan)\n"
             Shared.shared.btnBack = "PT Packages"

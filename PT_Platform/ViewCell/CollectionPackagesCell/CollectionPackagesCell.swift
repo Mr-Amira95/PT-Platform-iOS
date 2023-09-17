@@ -122,6 +122,7 @@ extension CollectionPackagesCell : UICollectionViewDelegate,UICollectionViewData
                 Shared.shared.packageDuration = "\(package.date) months"
                 Shared.shared.packageDes = "\(package.description)\n"
                 Shared.shared.packageId = "\(package.id)"
+                print("\(package.id)")
                 Shared.shared.packageFeatures = ""
                 Shared.shared.packagePurchaseAppleId = package.purchase_apple_id
                 Shared.shared.packageIsFree = package.is_free

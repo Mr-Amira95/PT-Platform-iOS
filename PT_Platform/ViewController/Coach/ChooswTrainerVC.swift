@@ -85,15 +85,30 @@ extension ChooswTrainerVC : UICollectionViewDelegate,UICollectionViewDataSource,
         Shared.shared.saveCoachImage(auth: datalist[indexPath.item].logo)
         Shared.shared.saveCoachId(auth: datalist[indexPath.item].id)
         if datalist[indexPath.item].is_subscription {
+
+           
+            let topVC = topMostController()
+            print(topVC)
+            topVC.removeFromParent()
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadHomePageCoachVC"), object: nil)
         }else{
             let storyboard = UIStoryboard(name: "Packages", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "ShopVC") as! ShopVC
             self.navigationController?.pushViewController(controller, animated: true)
-
         }
         
         
     }
     
+}
+
+extension ChooswTrainerVC {
+    func topMostController() -> UIViewController {
+        var topController: UIViewController = UIApplication.shared.keyWindow!.rootViewController!
+        while (topController.presentedViewController != nil) {
+            topController = topController.presentedViewController!
+        }
+        return topController
+    }
+
 }

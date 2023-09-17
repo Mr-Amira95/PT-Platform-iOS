@@ -60,7 +60,7 @@ class ShopCheckoutVC: UIViewController {
         parameter = ["package_id" : Shared.shared.packageId,
                      "payment_method":"stripe",
                      "coach_id":"\(Shared.shared.getCoachId() ?? 0)"]
-        
+        print(parameter)
         ControllerService.instance.packagePost(param: parameter) { data, bool in
             Spinner.instance.removeSpinner()
             if bool {
@@ -127,6 +127,7 @@ extension ShopCheckoutVC: SKProductsRequestDelegate, SKPaymentTransactionObserve
                      "payment_method":"purchase",
                      "txn_id":"\(Int.random(in: 0..<10000000000000))",
                      "coach_id":"\(Shared.shared.getCoachId() ?? 0)"]
+        print(parameter)
         
         ControllerService.instance.packagePost(param: parameter) { data, bool in
             Spinner.instance.removeSpinner()

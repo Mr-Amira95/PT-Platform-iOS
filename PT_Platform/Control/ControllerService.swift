@@ -1968,7 +1968,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
     func PackagesApi(complition: @escaping(_ value:[PackegeSubscriptionM],_ value:[PackegePTM],_ value:Bool)-> Void){
         var Datalist : [PackegeSubscriptionM] = []
         var Datalist2 : [PackegePTM] = []
-        var permissionsCallVideo = 0
+        var permissionsCallVideo = "0"
         var permissionsWorkoutSchedule = false
         var permissionsFoodPlan = false
         var is_shop = false
@@ -1990,6 +1990,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            let subscription = data["subscription"] as! [[String:Any]]
                            for data2 in subscription{
                                let id = data2["id"] as? Int ?? 0
+                               print(id)
                                let name = data2["name"] as? String ?? ""
                                let description = data2["description"] as? String ?? ""
                                let price_object = data2["price_object"] as! NSDictionary
@@ -2002,7 +2003,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let is_free = data2["is_free"] as? Bool ?? false
                                let permissions = data2["permissions"] as? NSDictionary
                                if permissions != nil{
-                                    permissionsCallVideo = permissions?["call_video"] as? Int ?? 0
+                                    permissionsCallVideo = permissions?["call_video"] as? String ?? "0"
                                     permissionsWorkoutSchedule = permissions?["workout_schedule"] as! Bool
                                     permissionsFoodPlan = permissions!["food_plan"] as! Bool
                                }
@@ -2023,7 +2024,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                            }
                            let personal_training = data["personal_training"] as! [[String:Any]]
                            for data2 in personal_training{
-                               let id = data2["id"] as? String ?? "0"
+                               let id = data2["id"] as? Int ?? 0
                                let name = data2["name"] as? String ??  ""
                                let description = data2["description"] as? String ?? ""
                                let price_object = data2["price_object"] as! NSDictionary
@@ -2036,7 +2037,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let is_free = data2["is_free"] as! Bool
                                let permissions = data2["permissions"] as? NSDictionary
                                if permissions != nil{
-                                   permissionsCallVideo = permissions?["call_video"] as? Int ?? 0
+                                   permissionsCallVideo = permissions?["call_video"] as? String ?? "0"
                                    permissionsWorkoutSchedule = permissions?["workout_schedule"] as! Bool
                                    permissionsFoodPlan = permissions?["food_plan"] as! Bool
                                }
@@ -2070,6 +2071,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
         let headers2: HTTPHeaders = ["Accept":"application/json",
                                     "Authorization":"Bearer \(Shared.shared.getUserToken() ?? "")",
                                      "Accept-Language": Shared.shared.getUserLanguage() ?? "en"]
+        print(headers2.self)
         Alamofire.request("\(packages_url)", method: .post, parameters: param, encoding: JSONEncoding.default, headers: headers2).responseJSON {
                (response) in
                let statusCode = response.response?.statusCode
