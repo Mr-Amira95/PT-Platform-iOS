@@ -14,9 +14,25 @@ class IntroVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let root = storyboard.instantiateViewController(withIdentifier: "HomePageCoachVC") as! HomePageCoachVC
+//        self.present(root, animated: true, completion: nil)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let root = storyboard.instantiateViewController(withIdentifier: "HomePageCoachVC") as! HomePageCoachVC
-        self.present(root, animated: true, completion: nil)
+        let root = storyboard.instantiateViewController(withIdentifier: "ManTabBar") as! ManTabBar
+        if Shared.shared.getCoachId() == nil {
+            let controller = storyboard.instantiateViewController(withIdentifier: "ChooswTrainerVC") as! ChooswTrainerVC
+            let nav = UINavigationController(rootViewController: controller)
+            root.viewControllers?[1] = nav
+            root.viewControllers?[1].tabBarItem.title = "Coach"
+            root.viewControllers?[1].tabBarItem.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 19)], for: .normal)
+            
+        }else{
+            let controller = storyboard.instantiateViewController(withIdentifier: "ChooswTrainerVC") as! ChooswTrainerVC
+            let nav = UINavigationController(rootViewController: controller)
+            root.viewControllers?[1] = nav
+            root.viewControllers?[1].tabBarItem.title = "Coach"
+            root.viewControllers?[1].tabBarItem.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 19)], for: .normal)
+        }
     }
 
     

@@ -27,6 +27,7 @@ class HistoryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         if LanguageManager.shared.currentLanguage == .en{
             imgBack.image = UIImage(named: "btnBack")
         }else{
@@ -43,19 +44,24 @@ class HistoryVC: UIViewController {
             let dateTimeComponents = userCalendar.dateComponents(requestedComponents, from: currentDateTime)
             Shared.shared.datTo = "\(dateTimeComponents.day ?? 0)"
             Shared.shared.monthto = "\(dateTimeComponents.year ?? 0)-\(dateTimeComponents.month ?? 0)"
-            getWorkoutdata()
+           
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getWorkoutdata()
+    }
     
     func getFavouritesdata(){
-        Spinner.instance.showSpinner(onView: view)
+//        Spinner.instance.showSpinner(onView: view)
         ControllerService.instance.FavouritesVideoPage { Fav, message, bool  in
-            Spinner.instance.removeSpinner()
             if bool{
                 self.datalist = Fav
+                Spinner.instance.removeSpinner()
                 self.collectionView.reloadData()
             }else{
+                Spinner.instance.removeSpinner()
                 ToastView.shared.short(self.view, txt_msg: message)
             }
         }
@@ -63,11 +69,13 @@ class HistoryVC: UIViewController {
     func getWorkoutdata(){
         Spinner.instance.showSpinner(onView: view)
         ControllerService.instance.WorkoutTodayVideoPage { Workout, message, bool  in
-            Spinner.instance.removeSpinner()
+            
             if bool{
                 self.datalist = Workout
+                Spinner.instance.removeSpinner()
                 self.collectionView.reloadData()
             }else{
+                Spinner.instance.removeSpinner()
                 ToastView.shared.short(self.view, txt_msg: message)
             }
         }
@@ -98,7 +106,7 @@ extension HistoryVC : UICollectionViewDelegate,UICollectionViewDataSource,UIColl
         Shared.shared.titleFav = Favourites.title
         Shared.shared.descriptionFav = Favourites.description
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "NavDetailsCellVC")
+        let controller = storyboard.instantiateViewController(withIdentifier: "DetailsCellVC") as! DetailsCellVC
         controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true, completion: nil)
 

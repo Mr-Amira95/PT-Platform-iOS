@@ -81,19 +81,26 @@ extension ChooswTrainerVC : UICollectionViewDelegate,UICollectionViewDataSource,
         return cell!
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        Shared.shared.saveCoachName(auth: "\(datalist[indexPath.item].last_name)")
-        Shared.shared.saveCoachImage(auth: datalist[indexPath.item].logo)
-        Shared.shared.saveCoachId(auth: datalist[indexPath.item].id)
-        if datalist[indexPath.item].is_subscription {
 
-           
-            let topVC = topMostController()
-            print(topVC)
-            topVC.removeFromParent()
+        if datalist[indexPath.item].is_subscription {
+            Shared.shared.saveCoachName(auth: "\(datalist[indexPath.item].last_name)")
+            Shared.shared.saveCoachImage(auth: datalist[indexPath.item].logo)
+            Shared.shared.saveCoachId(auth: datalist[indexPath.item].id)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "HomePageCoachVC")
+            let nav = UINavigationController(rootViewController: controller)
+            if let tabBarController = self.tabBarController {
+                var updatedViewControllers = tabBarController.viewControllers
+                updatedViewControllers?[1] = nav
+                updatedViewControllers?[1].tabBarItem.title = "Coach"
+                tabBarController.selectedViewController?.tabBarItem.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 19)], for: .normal)
+                tabBarController.viewControllers = updatedViewControllers
+            }
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadHomePageCoachVC"), object: nil)
         }else{
             let storyboard = UIStoryboard(name: "Packages", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "ShopVC") as! ShopVC
+            controller.coachId = datalist[indexPath.item].id
             self.navigationController?.pushViewController(controller, animated: true)
         }
         

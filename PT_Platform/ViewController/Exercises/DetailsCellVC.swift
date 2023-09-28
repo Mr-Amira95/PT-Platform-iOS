@@ -46,19 +46,34 @@ class DetailsCellVC: UIViewController {
     var onAddRemoveTodayWorkout: ((Bool) -> Void)?
     var isAddedToFav = false
     var isAddedToTodayWorkout = false
-    
+    var selectedIndex = 0
+    var type = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         onAddRemoveFavourite = { [weak self] isAdded in
             let title = !isAdded ? "Add to favourites" : "Remove from favourites"
-            self?.btnAddToFavourite.setTitle(title, for: .normal)
+            self?.btnAddToFavourite.setTitle(title, for:.normal)
             self?.isAddedToFav = isAdded
         }
-        onAddRemoveTodayWorkout = { [weak self] isAdded in
-            let title = !isAdded ? "Add to today's workout" : "Remove from today's workout"
-            self?.btnAddToTodayWorkout.setTitle(title, for: .normal)
-            self?.isAddedToTodayWorkout = isAdded
-        }
+            self.onAddRemoveTodayWorkout = { [weak self] isAdded in
+                guard let self = self else {return}
+                print(isAdded)
+                if self.type == 1 {
+                    if isAdded == true {
+                        self.datalist[self.selectedIndex].is_workout = 1
+                        self.btnAddToTodayWorkout.setTitle("Remove from today's workout", for: .normal)
+                    }else{
+                        self.datalist[self.selectedIndex].is_workout = 0
+                        self.btnAddToTodayWorkout.setTitle("Add to today's workout", for: .normal)
+                    }
+                }else{
+                    let title = !isAdded ? "Add to today's workout" : "Remove from today's workout"
+                    self.btnAddToTodayWorkout.setTitle(title, for: .normal)
+                }
+                self.isAddedToTodayWorkout = isAdded
+            }
+
+      
         if LanguageManager.shared.currentLanguage == .en{
             btnBack.setImage(UIImage(named: "btnBack"), for: .normal)
         }else{
@@ -115,8 +130,6 @@ class DetailsCellVC: UIViewController {
         }
         
     }
-    
-
     
     @IBAction func btnBack(_ sender: Any) {
         avpController.player?.pause()
@@ -250,6 +263,11 @@ class DetailsCellVC: UIViewController {
                     if category.count == 0{
                         ToastView.shared.short(self.view, txt_msg: "No video")
                     }else{
+                        if category[0].is_workout == 1{
+                            self.btnAddToTodayWorkout.setTitle("Remove from today's workout", for: .normal)
+                        }else{
+                            self.btnAddToTodayWorkout.setTitle("Add to today's workout", for: .normal)
+                        }
                         self.image = category[0].image
                         self.counter = 0
                         self.url = category[0].video
@@ -410,6 +428,7 @@ class DetailsCellVC: UIViewController {
         ControllerService.instance.SetWorkoutVideoPage(param: parameter) { message, bool in
             Spinner.instance.removeSpinner()
             if bool{
+                print(self.isAddedToTodayWorkout)
                 self.onAddRemoveTodayWorkout?(!self.isAddedToTodayWorkout)
                 ToastView.shared.short(self.view, txt_msg: message)
             }else{
@@ -441,8 +460,6 @@ class DetailsCellVC: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-
-
 }
 
 extension DetailsCellVC : UITableViewDataSource, UITableViewDelegate {
@@ -461,6 +478,7 @@ extension DetailsCellVC : UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
         avpController.player?.pause()
         self.url = datalist[indexPath.row].video
         Shared.shared.video_id = datalist[indexPath.row].id
@@ -477,7 +495,13 @@ extension DetailsCellVC : UITableViewDataSource, UITableViewDelegate {
         }else{
             self.btnSeeMore.isHidden = true
         }
-
+        
+        if datalist[indexPath.row].is_workout == 1 {
+            btnAddToTodayWorkout.setTitle("Remove from today's workout", for: .normal)
+        }else{
+            btnAddToTodayWorkout.setTitle("Add to today's workout", for: .normal)
+        }
+ 
     }
     
 }

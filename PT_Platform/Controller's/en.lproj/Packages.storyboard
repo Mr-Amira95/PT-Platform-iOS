@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rAl-oL-JRi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rAl-oL-JRi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -281,7 +281,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S8O-Tx-ghw">
-                                <rect key="frame" x="0.0" y="109" width="414" height="240"/>
+                                <rect key="frame" x="0.0" y="109" width="414" height="180"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiV-ew-vHt">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
@@ -364,51 +364,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGc-Oa-hG8">
-                                        <rect key="frame" x="0.0" y="190" width="414" height="50"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvB-y3-ELz">
-                                                <rect key="frame" x="0.0" y="0.0" width="13" height="50"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="JOZ-ZD-Dqg"/>
-                                                    <constraint firstAttribute="width" constant="13" id="izu-zS-cp1"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvz-Xo-Nz3">
-                                                <rect key="frame" x="13" y="0.0" width="401" height="50"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RadioBtn1" translatesAutoresizingMaskIntoConstraints="NO" id="o0s-9F-jTw">
-                                                        <rect key="frame" x="3" y="17" width="16" height="16"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit card" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-VJ-MLI">
-                                                        <rect key="frame" x="26" y="16.5" width="72" height="17"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvM-FW-EhY">
-                                                        <rect key="frame" x="31" y="8" width="30" height="34"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="Ic6-VJ-MLI" firstAttribute="leading" secondItem="o0s-9F-jTw" secondAttribute="trailing" constant="7" id="4aS-Gp-gLm"/>
-                                                    <constraint firstItem="o0s-9F-jTw" firstAttribute="leading" secondItem="dvz-Xo-Nz3" secondAttribute="leading" constant="3" id="I1B-Tk-ocK"/>
-                                                    <constraint firstItem="Ic6-VJ-MLI" firstAttribute="centerY" secondItem="o0s-9F-jTw" secondAttribute="centerY" id="SSY-bq-BPu"/>
-                                                    <constraint firstItem="o0s-9F-jTw" firstAttribute="centerY" secondItem="dvz-Xo-Nz3" secondAttribute="centerY" id="ZCd-7W-s3k"/>
-                                                    <constraint firstItem="rvM-FW-EhY" firstAttribute="centerY" secondItem="o0s-9F-jTw" secondAttribute="centerY" id="afS-pJ-alZ"/>
-                                                    <constraint firstItem="rvM-FW-EhY" firstAttribute="leading" secondItem="o0s-9F-jTw" secondAttribute="trailing" constant="12" id="lqu-OC-3Jw"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ps5-TN-OzF"/>
-                                        </constraints>
-                                    </stackView>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8S-8D-cuO">
@@ -847,7 +802,6 @@ journey of change now</string>
         </scene>
     </scenes>
     <resources>
-        <image name="RadioBtn1" width="16" height="16"/>
         <image name="SignInImg" width="415" height="896"/>
         <image name="Succesful" width="265" height="265"/>
         <image name="arrow.left" catalog="system" width="128" height="95"/>

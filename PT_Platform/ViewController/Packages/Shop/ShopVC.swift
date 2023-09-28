@@ -16,7 +16,7 @@ class ShopVC: UIViewController {
     
     var datalist = [PackegeSubscriptionM]()
     var datalistPT = [PackegePTM]()
-    
+    var coachId = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class ShopVC: UIViewController {
     
     func getPackeges(){
         Spinner.instance.showSpinner(onView: view)
-        ControllerService.instance.PackagesApi { subscription, pt, bool in
+        ControllerService.instance.PackagesApi(coachID: coachId) { subscription, pt, bool in
             Spinner.instance.removeSpinner()
             if bool{
                 if subscription.count == 0 && pt.count == 0{

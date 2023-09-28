@@ -67,7 +67,7 @@ class CalenderCell: UITableViewCell {
             if (count <= startingSpacec || count - startingSpacec > daysInMonth){
                 totalSquares.append("")
             }else{
-                if currentMonth >= Int(CalendarHelper().monthString(date: selectedDate))!{
+                if currentMonth >= Int(CalendarHelper().monthString(date: selectedDate)) ?? 0{
                     if currentDay <= (count - startingSpacec){
                         totalSquares.append(String(count - startingSpacec))
                         selectedIndex = currentDay
@@ -84,8 +84,8 @@ class CalenderCell: UITableViewCell {
         monthLabel.text = CalendarHelper().yearString(date: selectedDate) + "-" + CalendarHelper().monthString(date: selectedDate)
         Shared.shared.monthto = CalendarHelper().yearString(date: selectedDate) + "-" + CalendarHelper().monthString(date: selectedDate)
         
-        if currentYear < Int(CalendarHelper().yearString(date: selectedDate))!{
-            if currentMonth >= Int(CalendarHelper().monthString(date: selectedDate))!{
+        if currentYear < Int(CalendarHelper().yearString(date: selectedDate)) ?? 0{
+            if currentMonth >= Int(CalendarHelper().monthString(date: selectedDate)) ?? 0{
                 btnPrevious.isHidden = true
             }else{
                 btnPrevious.isHidden = false

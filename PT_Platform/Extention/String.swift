@@ -2,7 +2,7 @@
 //  String.swift
 //  PT_Platform
 //
-//  Created by roya TV on 11/09/2023.
+//  Created by mohammad lutfi on 11/09/2023.
 //
 
 import Foundation

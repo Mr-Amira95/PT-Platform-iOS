@@ -556,6 +556,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let is_favourite = data2["is_favourite"] as! Int
                                let is_today_log = data2["is_today_log"] as! Int
                                let is_workout = data2["is_workout"] as! Int
+                               print(is_workout)
                                let obj = VideoM(id: id, title: title, description: description, image: image, video: video, is_favourite: is_favourite, is_today_log: is_today_log, is_workout: is_workout)
                                Datalist.append(obj)
                            }
@@ -668,6 +669,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                                let is_favourite = data2["is_favourite"] as! Int
                                let is_today_log = data2["is_today_log"] as! Int
                                let is_workout = data2["is_workout"] as! Int
+                               print(is_workout)
                                let obj = VideoM(id: id, title: title, description: description, image: image, video: video, is_favourite: is_favourite, is_today_log: is_today_log, is_workout: is_workout)
                                Datalist.append(obj)
                            }
@@ -1965,7 +1967,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                }
             }
         }
-    func PackagesApi(complition: @escaping(_ value:[PackegeSubscriptionM],_ value:[PackegePTM],_ value:Bool)-> Void){
+    func PackagesApi(coachID:Int,complition: @escaping(_ value:[PackegeSubscriptionM],_ value:[PackegePTM],_ value:Bool)-> Void){
         var Datalist : [PackegeSubscriptionM] = []
         var Datalist2 : [PackegePTM] = []
         var permissionsCallVideo = "0"
@@ -1976,7 +1978,7 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
         let headers2: HTTPHeaders = ["Accept":"application/json",
                                     "Authorization":"Bearer \(Shared.shared.getUserToken() ?? "")",
                                      "Accept-Language": Shared.shared.getUserLanguage() ?? "en"]
-        Alamofire.request("\(packages_url)?coach_id=\(Shared.shared.getCoachId() ?? 0)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers2).responseJSON {
+        Alamofire.request("\(packages_url)?coach_id=\(coachID)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers2).responseJSON {
                (response) in
                let statusCode = response.response?.statusCode
                if statusCode == 200 || statusCode == 422 {
@@ -2352,8 +2354,8 @@ func Login(param: [String: Any],complition: @escaping(_ value:String,_ value:Boo
                        if success == 1{
                            let data = dic["data"] as! [[String:Any]]
                            for data2 in data{
-                               let id = data2["id"] as! Int
-                               let userId = data2["user_id"] as! Int
+                               let id = data2["id"] as? Int ?? 0
+                               let userId = data2["user_id"] as? Int ?? 0
                                let timeLink = data2["time"] as? String ?? "time"
                                let dateLink = data2["date"] as? String ?? "time"
                                let coach_time_reservation = data2["coach_time_reservation"] as! NSDictionary

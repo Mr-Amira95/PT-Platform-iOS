@@ -26,7 +26,7 @@ class HomePageCoachVC: UIViewController {
     var datalist = [BannersM]()
     var impArray = [SDWebImageSource]()
     var datalistCoaches = [UserscoachesM]()
-    
+    var coachid = 0
     
     
     
@@ -107,16 +107,24 @@ class HomePageCoachVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(reloadHomePageCoachVC), name: NSNotification.Name(rawValue: "reloadHomePageCoachVC"), object: nil)
         }
         NotificationCenter.default.addObserver(self, selector: #selector(reloadDataNotification), name: NSNotification.Name(rawValue: "reloadDataNotification"), object: nil)
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        print(Shared.shared.getCoachId())
         if Shared.shared.getCoachId() == 0 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "ChooswTrainerVC")
-            controller.modalPresentationStyle = .fullScreen
-            self.navigationController?.pushViewController(controller, animated: true)
+            let nav = UINavigationController(rootViewController: controller)
+            if let tabBarController = self.tabBarController {
+                var updatedViewControllers = tabBarController.viewControllers
+                updatedViewControllers?[1] = nav
+                tabBarController.viewControllers = updatedViewControllers
+                tabBarController.selectedViewController?.tabBarItem.title = "Coach"
+                tabBarController.selectedViewController?.tabBarItem.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 19)], for: .normal)
+            }
+            
         } else if Shared.shared.getusertype() != "Coach"{
             getAssignedCoach()
         }
@@ -144,6 +152,8 @@ class HomePageCoachVC: UIViewController {
             Shared.shared.btnBack = "Shop"
             let storyboard = UIStoryboard(name: "Packages", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "ShopVC") as! ShopVC
+            controller.coachId = Shared.shared.getCoachId() ?? 0
+            print(Shared.shared.getCoachId() ?? 0)
             self.navigationController?.pushViewController(controller, animated: true)
         }else if Shared.shared.notificationType == "calender" || Shared.shared.notificationType == "approved_video_chat"{
             Shared.shared.btnBack = "Calendar"
@@ -192,6 +202,8 @@ class HomePageCoachVC: UIViewController {
                 }else{
                     Spinner.instance.removeSpinner()
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadHomePageCoachVC"), object: nil)
+                    self.coachid = self.datalistCoaches[0].id
+                    print(self.coachid)
                 }
             }
         }
@@ -396,6 +408,8 @@ extension HomePageCoachVC : UICollectionViewDelegate,UICollectionViewDataSource,
         }else if models3[indexPath.row].text == "Shop" || models3[indexPath.row].text == "المتجر"{
             let storyboard = UIStoryboard(name: "Packages", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "ShopVC") as! ShopVC
+            print(Shared.shared.getCoachId() ?? 0)
+            controller.coachId = Shared.shared.getCoachId() ?? 0
             self.navigationController?.pushViewController(controller, animated: true)
         }else if models3[indexPath.row].text == "Challenges" || models3[indexPath.row].text == "تحديات"{
             if Shared.shared.getusertype() == "Coach"{

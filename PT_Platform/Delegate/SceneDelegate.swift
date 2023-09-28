@@ -76,9 +76,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     if Shared.shared.getusertype() != "Coach"{
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let root = storyboard.instantiateViewController(withIdentifier: "ManTabBar") as! ManTabBar
+                        root.selectedIndex = 0
                         self.window?.rootViewController = root
                         self.window?.makeKeyAndVisible()
-                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadHomePageCoachVC"), object: nil)
+//                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadHomePageCoachVC"), object: nil)
                     }else{
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let root = storyboard.instantiateViewController(withIdentifier: "NavHomePageCoachVC")

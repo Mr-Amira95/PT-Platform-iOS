@@ -25,8 +25,8 @@ class TraineeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-    
+        
+        
     }
     
     @IBAction func btnBack(_ sender: Any) {
@@ -55,11 +55,20 @@ class TraineeVC: UIViewController {
                          "password":passwordTxt.text!,
                          "password_confirmation":password_confirmationTxt.text!,
                          "device": device!] as [String:Any]
+            print(param)
+            print(UIDevice.current.identifierForVendor?.uuidString)
             ControllerService.instance.Signup(param: param) { message, bool in
                 Spinner.instance.removeSpinner()
                 if bool == true{
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let root = storyboard.instantiateViewController(withIdentifier: "ManTabBar") as! ManTabBar
+                    if Shared.shared.getCoachId() == nil {
+                        let controller = storyboard.instantiateViewController(withIdentifier: "ChooswTrainerVC") as! ChooswTrainerVC
+                        let nav = UINavigationController(rootViewController: controller)
+                        root.viewControllers?[1] = nav
+                        root.viewControllers?[1].tabBarItem.title = "Coach"
+                        root.viewControllers?[1].tabBarItem.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 19)], for: .normal)
+                    }
                     self.present(root, animated: true, completion: nil)
                 }else{
                     let alert = UIAlertController(title: "Wrong", message: message, preferredStyle: UIAlertController.Style.alert)
@@ -67,14 +76,9 @@ class TraineeVC: UIViewController {
                     self.present(alert, animated: true, completion: nil)
                 }
             }
-            }
-            
         }
         
-           
-       
+    }
     
-   
-
 }
 

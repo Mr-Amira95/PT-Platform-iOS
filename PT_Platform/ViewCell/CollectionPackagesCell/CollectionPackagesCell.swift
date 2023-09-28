@@ -136,11 +136,11 @@ extension CollectionPackagesCell : UICollectionViewDelegate,UICollectionViewData
 
     }
     
-    
     func Checkout(package_id: String) {
             var parameter = ["package_id" : package_id,
                          "payment_method":"free",
-                         "coach_id":"\(Shared.shared.getCoachId() ?? 0)"]
+                             "coach_id":"\(Vc?.coachId ?? 0)"]
+        
         Spinner.instance.showSpinner(onView: (Vc?.view)!)
         ControllerService.instance.packagePost(param: parameter) { data, bool in
             Spinner.instance.removeSpinner()

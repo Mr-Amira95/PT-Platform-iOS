@@ -228,6 +228,9 @@
 		A1FD4E5D28E3083500AACDAE /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD4E5B28E3083500AACDAE /* UserCell.swift */; };
 		A1FD4E5E28E3083500AACDAE /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1FD4E5C28E3083500AACDAE /* UserCell.xib */; };
 		AB18CD802AAFB427000F2DFE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18CD7F2AAFB427000F2DFE /* String.swift */; };
+		AB18DB222AB8A78C0026D7B8 /* AppDelegateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18DB212AB8A78C0026D7B8 /* AppDelegateExt.swift */; };
+		AB18DB252AB8A8630026D7B8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18DB242AB8A8630026D7B8 /* Route.swift */; };
+		AB18DB272AB8A9950026D7B8 /* UIStoryboardEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18DB262AB8A9950026D7B8 /* UIStoryboardEx.swift */; };
 		BD617DCD28385BB90080061F /* BannersM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617DCC28385BB90080061F /* BannersM.swift */; };
 		BD617DCF283864BF0080061F /* NewsfeedM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617DCE283864BF0080061F /* NewsfeedM.swift */; };
 		BD617E0E283A22870080061F /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617E0D283A22870080061F /* IntroVC.swift */; };
@@ -518,6 +521,9 @@
 		A1FD4E5C28E3083500AACDAE /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		A38A5C49DAC7F75A58EEF8AA /* Pods-PT_Platform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT_Platform.release.xcconfig"; path = "Target Support Files/Pods-PT_Platform/Pods-PT_Platform.release.xcconfig"; sourceTree = "<group>"; };
 		AB18CD7F2AAFB427000F2DFE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AB18DB212AB8A78C0026D7B8 /* AppDelegateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExt.swift; sourceTree = "<group>"; };
+		AB18DB242AB8A8630026D7B8 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		AB18DB262AB8A9950026D7B8 /* UIStoryboardEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardEx.swift; sourceTree = "<group>"; };
 		BD617DCC28385BB90080061F /* BannersM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersM.swift; sourceTree = "<group>"; };
 		BD617DCE283864BF0080061F /* NewsfeedM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedM.swift; sourceTree = "<group>"; };
 		BD617E0D283A22870080061F /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
@@ -1244,6 +1250,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E25D2D2918DECA00981140 /* PT_Platform.entitlements */,
+				AB18DB232AB8A8470026D7B8 /* General classes */,
 				AB18CD7E2AAFB40F000F2DFE /* Extention */,
 				A134BB6C283F9A3700135B68 /* Controller's */,
 				BD617E0C283A226A0080061F /* Intro */,
@@ -1502,8 +1509,18 @@
 			isa = PBXGroup;
 			children = (
 				AB18CD7F2AAFB427000F2DFE /* String.swift */,
+				AB18DB212AB8A78C0026D7B8 /* AppDelegateExt.swift */,
+				AB18DB262AB8A9950026D7B8 /* UIStoryboardEx.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		AB18DB232AB8A8470026D7B8 /* General classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB18DB242AB8A8630026D7B8 /* Route.swift */,
+			);
+			path = "General classes";
 			sourceTree = "<group>";
 		};
 		BD617DCB28385BA50080061F /* Model */ = {
@@ -1788,6 +1805,7 @@
 				A1B896ED28D3123000D29E29 /* PersonalizedVideoCell.swift in Sources */,
 				27D95E7927B0871500973D2F /* BodyCell.swift in Sources */,
 				A139E91028ED81740002CC5C /* SupplementsFoodM.swift in Sources */,
+				AB18DB252AB8A8630026D7B8 /* Route.swift in Sources */,
 				BDD73B6128367E44002D129B /* Constant.swift in Sources */,
 				277ACB0F279E2400006F756A /* FollowUsVC.swift in Sources */,
 				A1804F7727A3E92D00DC49BA /* DetailsCellVC.swift in Sources */,
@@ -1869,6 +1887,7 @@
 				27D574EC27A7323E00DC1E39 /* Details2Cell.swift in Sources */,
 				CE8BBCC42A2E37DB00361AD0 /* DeviceHelper.swift in Sources */,
 				27D95E8C27B099CC00973D2F /* DayCell.swift in Sources */,
+				AB18DB222AB8A78C0026D7B8 /* AppDelegateExt.swift in Sources */,
 				A147665F27A232E10019A77C /* ManTabBar.swift in Sources */,
 				A1BBFBA128BCBA4A0006CD74 /* AvailableCell.swift in Sources */,
 				A19EB50928DA012200E75D1C /* EnterYourEmailVC.swift in Sources */,
@@ -1889,6 +1908,7 @@
 				A1BBFBAB28BCF3460006CD74 /* SelectCoachVC.swift in Sources */,
 				A15C48962847A24000BF743E /* AddFoodVC.swift in Sources */,
 				27CA541927AB3B98000E8768 /* ShopCheckoutVC.swift in Sources */,
+				AB18DB272AB8A9950026D7B8 /* UIStoryboardEx.swift in Sources */,
 				27D95E9127B0AB0C00973D2F /* BodyMCell.swift in Sources */,
 				A1BF2BF728D70E4E00780A0D /* DinnerFoodM.swift in Sources */,
 				A1D7A0FE2945B8CF00ADCA51 /* ForgotPasswordVC.swift in Sources */,
@@ -2117,7 +2137,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2136,7 +2156,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qtechnetworks.gyms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2158,7 +2178,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2177,7 +2197,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qtechnetworks.gyms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

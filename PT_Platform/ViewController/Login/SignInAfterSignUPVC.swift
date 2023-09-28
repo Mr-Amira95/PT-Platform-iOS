@@ -52,7 +52,7 @@ class SignInAfterSignUPVC: UIViewController {
                       "platform":Shared.shared.platform,
                       "timezone":Shared.shared.timezone,
                       "app_version":Shared.shared.appVersion] as [String:Any]
-        let param = ["email":EmailTxt.text!,
+            let param = ["email":EmailTxt.text ?? "",
                      "password":PasswordTxt.text!,
                      "device": device] as [String:Any]
             ControllerService.instance.Login(param: param) { message, bool in
@@ -71,6 +71,13 @@ class SignInAfterSignUPVC: UIViewController {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let root = storyboard.instantiateViewController(withIdentifier: "ManTabBar") as! ManTabBar
                     root.modalPresentationStyle = .fullScreen
+                    if Shared.shared.getCoachId() == nil {
+                        let controller = storyboard.instantiateViewController(withIdentifier: "ChooswTrainerVC") as! ChooswTrainerVC
+                        let nav = UINavigationController(rootViewController: controller)
+                        root.viewControllers?[1] = nav
+                        root.viewControllers?[1].tabBarItem.title = "Coach"
+                        root.viewControllers?[1].tabBarItem.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 19)], for: .normal)
+                    }
                     self.present(root, animated: true, completion: nil)
                 }
             }else{

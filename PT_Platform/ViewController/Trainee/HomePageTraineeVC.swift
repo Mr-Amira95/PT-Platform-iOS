@@ -135,6 +135,9 @@ extension HomePageTraineeVC : UICollectionViewDelegate,UICollectionViewDataSourc
             let controller = storyboard.instantiateViewController(withIdentifier: "ChooswTrainerVC")
             controller.modalPresentationStyle = .fullScreen
             self.navigationController?.pushViewController(controller, animated: true)
+//            if let tabBarController = tabBarController{
+//                tabBarController.selectedIndex = 1
+//            }
         }else if models1[indexPath.row].text == "Nutrition" || models1[indexPath.row].text == "التغذية"{
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "NutritionVC") as! NutritionVC

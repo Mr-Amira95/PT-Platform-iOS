@@ -36,7 +36,8 @@ class ExploreDetailsVC: UIViewController {
     
     @IBAction func btnExplore(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "NavDetailsCellVC")
+        let controller = storyboard.instantiateViewController(withIdentifier: "DetailsCellVC") as! DetailsCellVC
+        controller.type = 1
         controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true, completion: nil)
     }
