@@ -17,4 +17,12 @@ extension String{
     var toFloat:Float{
         return Float(self)!
     }
+    func changeToEnglishNumber()->String{
+        
+        let NumberStr: String = self
+        let Formatter: NumberFormatter = NumberFormatter()
+        Formatter.locale = Locale(identifier: "EN")
+        let final = Formatter.number(from: NumberStr)
+        return final?.stringValue ?? "0.0"
+    }
 }

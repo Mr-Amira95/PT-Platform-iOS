@@ -231,6 +231,7 @@
 		AB18DB222AB8A78C0026D7B8 /* AppDelegateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18DB212AB8A78C0026D7B8 /* AppDelegateExt.swift */; };
 		AB18DB252AB8A8630026D7B8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18DB242AB8A8630026D7B8 /* Route.swift */; };
 		AB18DB272AB8A9950026D7B8 /* UIStoryboardEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18DB262AB8A9950026D7B8 /* UIStoryboardEx.swift */; };
+		AB7BD7E22ACDEF9100B248C4 /* UiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BD7E12ACDEF9100B248C4 /* UiViewController.swift */; };
 		BD617DCD28385BB90080061F /* BannersM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617DCC28385BB90080061F /* BannersM.swift */; };
 		BD617DCF283864BF0080061F /* NewsfeedM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617DCE283864BF0080061F /* NewsfeedM.swift */; };
 		BD617E0E283A22870080061F /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD617E0D283A22870080061F /* IntroVC.swift */; };
@@ -524,6 +525,7 @@
 		AB18DB212AB8A78C0026D7B8 /* AppDelegateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExt.swift; sourceTree = "<group>"; };
 		AB18DB242AB8A8630026D7B8 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		AB18DB262AB8A9950026D7B8 /* UIStoryboardEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardEx.swift; sourceTree = "<group>"; };
+		AB7BD7E12ACDEF9100B248C4 /* UiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewController.swift; sourceTree = "<group>"; };
 		BD617DCC28385BB90080061F /* BannersM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersM.swift; sourceTree = "<group>"; };
 		BD617DCE283864BF0080061F /* NewsfeedM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedM.swift; sourceTree = "<group>"; };
 		BD617E0D283A22870080061F /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
@@ -1511,6 +1513,7 @@
 				AB18CD7F2AAFB427000F2DFE /* String.swift */,
 				AB18DB212AB8A78C0026D7B8 /* AppDelegateExt.swift */,
 				AB18DB262AB8A9950026D7B8 /* UIStoryboardEx.swift */,
+				AB7BD7E12ACDEF9100B248C4 /* UiViewController.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -1834,6 +1837,7 @@
 				A199550128AE27CC00C17917 /* QuestionsVC.swift in Sources */,
 				A1804F7427A369BF00DC49BA /* Cell1.swift in Sources */,
 				27CA542D27AB6622000E8768 /* AgeCell.swift in Sources */,
+				AB7BD7E22ACDEF9100B248C4 /* UiViewController.swift in Sources */,
 				277ACB15279E3521006F756A /* NewsCell.swift in Sources */,
 				27CA543127AB6639000E8768 /* WeightCell.swift in Sources */,
 				A1BBFBA528BCC6BE0006CD74 /* AvailableTableCell.swift in Sources */,
@@ -2137,7 +2141,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2156,7 +2160,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qtechnetworks.gyms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2178,7 +2182,7 @@
 				CODE_SIGN_ENTITLEMENTS = PT_Platform/PT_Platform.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 8U2UN9LLF2;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2197,7 +2201,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qtechnetworks.gyms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

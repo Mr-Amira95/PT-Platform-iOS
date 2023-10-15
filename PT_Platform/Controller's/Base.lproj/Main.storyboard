@@ -7871,12 +7871,12 @@
         <scene sceneID="PaU-6b-mTH">
             <objects>
                 <viewController storyboardIdentifier="HistoryListVC" id="hkf-cA-ucG" customClass="HistoryListVC" customModule="PT_Platform" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="vlQ-Y5-gUp">
+                    <view key="view" contentMode="scaleToFill" id="vlQ-Y5-gUp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KZI-dp-P87">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZI-dp-P87">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ag-PA-Kqz">
                                         <rect key="frame" x="8" y="8" width="340" height="53"/>
@@ -7923,7 +7923,6 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="6Ag-PA-Kqz" secondAttribute="trailing" constant="66" id="Nee-dZ-zLq"/>
                                     <constraint firstItem="6Ag-PA-Kqz" firstAttribute="leading" secondItem="KZI-dp-P87" secondAttribute="leading" constant="8" id="QUf-ni-WVB"/>
-                                    <constraint firstAttribute="bottom" secondItem="6Ag-PA-Kqz" secondAttribute="bottom" constant="757" id="WQL-Sp-LJ7"/>
                                     <constraint firstItem="6Ag-PA-Kqz" firstAttribute="top" secondItem="KZI-dp-P87" secondAttribute="top" constant="8" id="yQe-Rp-Tl0"/>
                                 </constraints>
                             </view>
@@ -11380,7 +11379,7 @@
             <size key="intrinsicContentSize" width="135" height="25.5"/>
         </designable>
         <designable name="U5A-lO-EiK">
-            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="85" height="24"/>
         </designable>
         <designable name="V3c-OD-yTR">
             <size key="intrinsicContentSize" width="47" height="25.5"/>
@@ -11401,7 +11400,7 @@
             <size key="intrinsicContentSize" width="85" height="24"/>
         </designable>
         <designable name="uLu-1i-Mf9">
-            <size key="intrinsicContentSize" width="334" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="160" height="24"/>
         </designable>
         <designable name="vRU-Pf-IRc">
             <size key="intrinsicContentSize" width="94" height="25.5"/>

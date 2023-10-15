@@ -89,9 +89,11 @@ class ListFoodPopupVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func btnSelect(_ sender: Any) {
-        Shared.shared.FoodListMArray = dataList as NSArray
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadDataFoodInAddFoodVC"), object: nil)
-        self.dismiss(animated: true)
+        if !dataList.isEmpty{
+            Shared.shared.FoodListMArray = dataList as NSArray
+        }
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadDataFoodInAddFoodVC"), object: nil)
+            self.dismiss(animated: true)
     }
     
     

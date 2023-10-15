@@ -38,6 +38,10 @@ class ChooswTrainerVC: UIViewController {
         }
         txtSearch.delegate = self
         self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getdata()
     }
 

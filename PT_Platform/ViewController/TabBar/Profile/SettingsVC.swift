@@ -54,7 +54,8 @@ class SettingsVC: UIViewController {
     }
     
     @IBAction func btnTerms(_ sender: Any) {
-        if let url = URL(string: "https://pt.qtechnetworks.co/app/terms-conditions") {
+//        if let url = URL(string: "https://pt.qtechnetworks.co/app/terms-conditions") {
+        if let url = URL(string: "https://www.ptplatform.app/app/privacy-policy") {
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:])
             }

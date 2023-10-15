@@ -31,9 +31,14 @@ class ListOfUserInCoachVC: UIViewController {
             imgBack.image = UIImage(named: "btnBackAr")
         }
         self.navigationController?.navigationBar.isHidden = true
-        getdata()
+       
         btnBack.text = "Choose your trainee"
         txtSearch.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getdata()
     }
     
     func getdata(){
@@ -41,6 +46,7 @@ class ListOfUserInCoachVC: UIViewController {
         ControllerService.instance.personalTraningCoachPage { data, message, bool in
             if bool{
                 self.datalist = data
+                print(data)
                 self.collectionView.reloadData()
             }else{
                 ToastView.shared.short(self.view, txt_msg: message)

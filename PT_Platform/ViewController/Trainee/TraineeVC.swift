@@ -71,7 +71,7 @@ class TraineeVC: UIViewController {
                     }
                     self.present(root, animated: true, completion: nil)
                 }else{
-                    let alert = UIAlertController(title: "Wrong", message: message, preferredStyle: UIAlertController.Style.alert)
+                    let alert = UIAlertController(title: message, message: message, preferredStyle: UIAlertController.Style.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }

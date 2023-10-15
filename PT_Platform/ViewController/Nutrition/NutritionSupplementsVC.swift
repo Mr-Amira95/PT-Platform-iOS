@@ -40,6 +40,13 @@ class NutritionSupplementsVC: UIViewController {
         txtSearch.delegate = self
         self.navigationController?.navigationBar.isHidden = true
         lblTitle.text = Shared.shared.btnSubBack
+  
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(Shared.shared.search)
+        Shared.shared.search = ""
         if Shared.shared.btnSubBack == "Supplements" || Shared.shared.btnSubBack == "المكملات"{
             getSupplementsdata()
         }else{
@@ -52,12 +59,13 @@ class NutritionSupplementsVC: UIViewController {
         ControllerService.instance.supplementsApi { category, bool in
             Spinner.instance.removeSpinner()
             if bool{
+                print(category)
+                self.datalist.removeAll()
                 self.datalist = category
                 self.collectionView.reloadData()
             }else{
                 ToastView.shared.short(self.view, txt_msg: "Sothing wrong")
             }
-
         }
     }
     func getRecipesdata(){
@@ -65,6 +73,7 @@ class NutritionSupplementsVC: UIViewController {
         ControllerService.instance.recipesApi { category, bool in
             Spinner.instance.removeSpinner()
             if bool{
+                self.datalistRecipes.removeAll()
                 self.datalistRecipes = category
                 self.collectionView.reloadData()
             }else{

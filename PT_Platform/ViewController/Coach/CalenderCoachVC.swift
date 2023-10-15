@@ -88,14 +88,15 @@ extension CalenderCoachVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func moreData(){
-        Spinner.instance.showSpinner(onView: view)
+//        Spinner.instance.showSpinner(onView: view)
         var Datalist : [CalenderCoachM] = []
      let headers2: HTTPHeaders = ["Accept":"application/json",
                                   "Authorization":"Bearer \(Shared.shared.getUserToken() ?? "")",
                                   "Accept-Language": Shared.shared.getUserLanguage() ?? "en"]
      Alamofire.request("\(calender_coach_url)?skip=\(countOfProducts)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers2).responseJSON {
             (response) in
-         Spinner.instance.removeSpinner()
+         
+//             Spinner.instance.removeSpinner()
             let statusCode = response.response?.statusCode
             if statusCode == 200 || statusCode == 422 {
                 switch response.result {
@@ -135,6 +136,8 @@ extension CalenderCoachVC: UITableViewDataSource, UITableViewDelegate {
                     }
                 case .failure(let error):
                     print(error)
+                    
+                  
                 }
             }
          }

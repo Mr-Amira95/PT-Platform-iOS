@@ -123,6 +123,7 @@ class ProgressVC: UIViewController {
                 ToastView.shared.short(self.view, txt_msg: "Somthing wrong")
             }
         }
+        tableView.reloadData()
     }
     
     @IBAction func btnBack(_ sender: Any) {
@@ -143,7 +144,7 @@ extension ProgressVC : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{
-            return 320
+            return 350
         }else if indexPath.section == 1{
             return 700
         }

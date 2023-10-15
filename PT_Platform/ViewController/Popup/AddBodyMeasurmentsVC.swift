@@ -116,19 +116,21 @@ class AddBodyMeasurmentsVC: UIViewController {
     }
     
     @IBAction func btnUpdate(_ sender: Any) {
-        let parameter = ["neck" : txtNeck.text!,
-                         "chest" : txtChest.text!,
-                         "left_arm" : txtLeftArm.text!,
-                         "right_arm" : txtRightArm.text!,
-                         "waist" : txtWaist.text!,
-                         "belly" : txtBelly.text!,
-                         "lower_belly" : txtLowerBelly.text!,
-                         "upper_belly" : txtUpperBelly.text!,
-                         "hips" : txtHips.text!,
-                         "left_thigh" : txtLeftThigh.text!,
-                         "right_thigh" : txtRightThigh.text!,
-                         "lift_calf" : txtLeftCalf.text!,
-                         "right_calf" : txtRightCalf.text!]
+        
+        print("١١".changeToEnglishNumber())
+        let parameter = ["neck" : txtNeck.text?.changeToEnglishNumber() ,
+                         "chest" :txtChest.text?.changeToEnglishNumber(),
+                         "left_arm" : txtLeftArm.text?.changeToEnglishNumber() ,
+                         "right_arm" :txtRightArm.text?.changeToEnglishNumber(),
+                         "waist" :txtWaist.text?.changeToEnglishNumber(),
+                         "belly" :txtBelly.text?.changeToEnglishNumber(),
+                         "lower_belly" : txtLowerBelly.text?.changeToEnglishNumber() ,
+                         "upper_belly" :txtUpperBelly.text?.changeToEnglishNumber(),
+                         "hips" :txtHips.text?.changeToEnglishNumber(),
+                         "left_thigh" :txtLeftThigh.text?.changeToEnglishNumber(),
+                         "right_thigh" : txtRightThigh.text?.changeToEnglishNumber(),
+                         "lift_calf" :  txtLeftCalf.text?.changeToEnglishNumber(),
+                         "right_calf" : txtRightCalf.text?.changeToEnglishNumber() ]
         if txtNeck.text! == "" || txtChest.text! == "" || txtLeftArm.text! == "" || txtRightArm.text! == "" || txtWaist.text! == "" || txtBelly.text! == "" || txtLowerBelly.text! == "" || txtUpperBelly.text! == "" || txtHips.text! == "" || txtLeftThigh.text! == "" || txtRightThigh.text! == "" || txtLeftCalf.text! == "" || txtRightCalf.text! == ""{
             ToastView.shared.short(self.view, txt_msg: "Please, enter all values")
         }else{
